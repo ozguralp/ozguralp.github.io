@@ -1,1349 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JM8CQZCG3L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ozgur Alp – Offensive Security & Bug Bounty Professional</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #111, #222);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #fca311;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .stat {
+      flex: 1 1 200px;
+      margin: 10px;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #555;
+    }
+    a {
+      color: #fca311;
+      text-decoration: none;
+    }
+    .more-content {
+      display: none;
+      margin-top: 1em;
+    }
+    .show-button {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #fca311;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ozgur Alp</h1>
+    <p>Offensive Security & Bug Bounty Professional | Top 3 Synack Researcher (All Time) | $2M+ Earned</p>
+  </header>
 
-  gtag('config', 'G-JM8CQZCG3L');
-</script>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="referrer" content="no-referrer"/>
-    <title>Ozgur Alp</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Menu CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-  </head>
-  <body>
-    <!-- Header Area wrapper Starts -->
-
-
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolios">
-                  Work
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#stats">
-                  Statistics
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="onepage-nev mobile-menu">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          <li>
-            <a href="#portfolio">Work</a>
-          </li>
-          <li>
-            <a href="#stats">Statistics</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-              <div class="contents">
-                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi. I am</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Ozgur Alp</h2>
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Bug Bounty Hunter & Offensive Security Consultant</p>
-                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
-                  <li>
-                    <a class="linkedin" href="https://www.linkedin.com/in/ozguralp" target="_blank"><i class="icon-social-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a class="twitter" href="https://twitter.com/ozgur_bbh" target="_blank"><i class="icon-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a class="medium" href="https://medium.com/@ozguralp" target="_blank"><i class="icon-note"></i></a>
-                  </li>
-                  <li>
-                    <a class="acropolis" href="https://acropolis.synack.com/inductees/ozgur/"><i class="icon-trophy"></i></a>
-                  </li>
-                  <li>
-                    <a class="youtube" href="https://www.youtube.com/channel/UCPiVsTbs5Vn4jJ3BWytdtVw"><i class="icon-social-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a class="github" href="https://github.com/ozguralp" target="_blank"><i class="icon-social-github"></i></a>
-                  </li>
-                </ul>
-                <div class="header-button wow fadeInUp" data-wow-delay="1s">
-                  <a href="mailto:info@ozguralp.com" class="btn btn-common">Contact me</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Hero Area End -->
-
-    </header>
-    <!-- Header Area wrapper End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-1.jpg" alt="">
-            </div>
-          </div> 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>About Me</h3>
-              <p align=justify>10 year experienced offensive cyber security specialist, lecturer and instructor holding OSCP, OSWE and CEH certificates. At his first job, worked 4 years on Deloitte Turkey as consultant and participated as technical lead and second level customer relations management responsible of the cyber security operations team. In this time period, involved with 200 different on-field or remote security projects to the both multinational and domestic companies belong to various industries. After that, started working independent as bug bounty hunter & offensive security consultant on-demand. Reported over 2000 critical & high & medium level vulnerabilities to the various platforms, conducted long/short term consultancy jobs individually and participated trainings as instructor on the subjects of offensive security. Currently holding on top 3 rank at all time statistics at Synack in terms of both most accepted vulnerabilities/earned payouts. One of the top bug hunter performers who passed 1 million $ milestone for all time earnings among all over the world. Have awards and championships as <i>SRT Grand Champion 2019|2020|2021</i>, <i>Most Trusted Hacker 2021</i>, <i>SRT of the Year 2021</i> and <i>Mentor of the Year 2022</i> from Synack. Hold part-time lectures at two prestigious university in Istanbul, in the subjects of <i>Introduction to Cyber Security</i> and <i>Web Application Hacking</i>.</p>
-              <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Ozgur Alp</span></li>
-                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">10+ Years</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">Turkey</span></li>
-                </ul>
-              </div>
-              <a href="mailto:info@ozguralp.com" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
-            </div>
-          </div>   
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Services Section Start -->
-    <section id="services" class="services section-padding">
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I Do</h2>
-      <div class="container">
-        <div class="row">
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="icon-trophy"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Bug Bounty Hunter</a></h3>
-                <p>Finding critical security flaws over reputable platforms such as <a href=https://acropolis.synack.com/inductees/ozgur/ target="_blank">Synack</a> and <a href=https://cs.detectify.com/profile/ozgur target="_blank">Detectify</a>.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="icon-people"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Consultancy</a></h3>
-                <p>Working on offensive security area. Have individual references from such as <a href=https://tr.wikipedia.org/wiki/GittiGidiyor target="_blank">eBay Turkey</a> and <a href=https://btcturk.com target="_blank">Btcturk.</a></p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="icon-graduation"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Lecturer</a></h3>
-                <p>Over 4 years experience at 2 different reputable university in Istanbul, including <a href="https://www.bilgi.edu.tr/en/academic/school-of-advanced-vocational-studies/computer-technology/information-security-technology/" target="_blank">Bilgi</a> and <a href=https://bau.edu.tr/content/9271-cyber-security-english-thesis-course-plan target="_blank">Bahcesehir.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="icon-screen-desktop"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Instructor</a></h3>
-                <p>Group trainings held on the topics of offsec and bug bounty, coordinated with <a href=https://bilginc.com/en target="_blank">Bilginc</a> and <a href=https://www.bluemarkacademy.com/ target="_blank">BlueMark</a>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- Resume Section Start -->
-    <div id="resume" class="section-padding">
-      <div class="container">
-          <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I Did</h2>
-
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="education wow fadeInRight" data-wow-delay="0.3s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-graduation"></i>
-                  <h2 class="timelin-title">Education</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Master of Arts - Istanbul Bilgi University</h3>
-                    <span>2015 - 2018</span>
-                    <p class="line-text">Degree: Cyber Law</br>Master Thesis: Cyber Security in Smart Cities</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Bachelor of Science - SUNY at Binghamton</h3>
-                    <span>2010 - 2013</span>
-                    <p class="line-text">Degree: Computer Science </br>Coordinated dual-diploma program with Istanbul Technical University.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Bachelor of Engineering - Istanbul Technical University</h3>
-                    <span>2007 - 2013</span>
-                    <p class="line-text">Degree: Information Systems Engineering</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-briefcase"></i>
-                  <h2 class="timelin-title">Experience</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Bug Bounty Hunter & Security Consultant - Self-Employed</h3>
-                    <span>Mar 2017 - Present</span>
-                    <p class="line-text">Working as independent bug bounty hunter & offensive security consultant on-demand within self-employed job.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Lecturer - Several Universities</h3>
-                    <span>Apr 2016 - Jan 2020</span>
-                    <p class="line-text">Istanbul Bilgi University:</br>• Introduction to Cyber Security I – Fall 2016, Fall 2017, Fall 2018, Fall 2019</br>• Introduction to Cyber Security II – Spring 2017, Spring 2018, Spring 2019</br>Bahcesehir University:</br>• Web Application Security: Hacking and Defence – Spring 2019
-</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Security Consultant - Deloitte</h3>
-                    <span>Aug 2013 - Mar 2017</span>
-                    <p class="line-text">Jun 2016 - Mar 2017: Senior Consultant</br>Jun 2014 - May 2016: Consultant</br>Aug 2013 - May 2014: Specialist</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section>
+    <h2>About Me</h2>
+    <p>I’m a cybersecurity expert with 10+ years of experience in offensive security, bug hunting, and consulting. I currently rank among Synack’s Top 3 researchers of all time, with over 2000 accepted vulnerabilities — including more than 250 critical findings — across 700+ projects for 200 unique clients. I hold OSCP and OSWE certifications, and have earned Synack’s highest honors: the TITAN title for top annual performance (awarded 4 times in the last 5 years), and LEGEND status for fulfilling all 5 elite criteria — a lifetime achievement held by only three people globally.</p>
+    <p>Beyond hands-on work, I actively contribute to the security community through technical blogging, public speaking, and university-level instruction. For four years, I taught undergraduate courses such as “Introduction to Cybersecurity” and “Web Application Hacking” at two prestigious universities in Istanbul. As a Synack Circle of Trust member, I advise on platform changes and researcher experience. I’ve helped 20+ new researchers join via the Envoy program and mentor 4–5 SRTs long-term. I’ve represented Synack at global live events (Mexico, Bali, Costa Rica, Portugal), engaged in an on-site client project in Hong Kong, spoke at Black Hat, supported the booth, contributed to Synack’s blogs, podcasts, and spotlight interviews, and appeared on their homepage as one of the faces of the SRT. I also organized the first official global SRT hangout to foster community engagement and collaboration.</p>
     </div>
-    <!-- Resume Section End -->
+  <h2>Highlights</h2>
+  <div class="stats">
+    <div class="stat">
+      <h3>2000+</h3>
+      <p>Accepted Vulnerabilities</p>
+    </div>
+    <div class="stat">
+      <h3>250+</h3>
+      <p>Critical Findings </p><p>(CVSS 9.0+)</p>
+    </div>
+    <div class="stat">
+      <h3>700+</h3>
+      <p>Unique Projects</p>
+    </div>
+    <div class="stat">
+      <h3>200+</h3>
+      <p>Unique Clients</p>
+    </div>
+    <div class="stat">
+      <h3>Top 3</h3>
+      <p>All-Time Synack Researcher<br>by accepted reports & payouts</p>
+    </div>
+    <div class="stat">
+      <h3>TITAN x4</h3>
+      <p>Top annual performance award<br>Earned 4 times in 5 years</p>
+    </div>
+    <div class="stat">
+      <h3>LEGEND 5/5</h3>
+      <p>Achieved all 5 elite criteria<br>Lifetime Hall of Fame Title (1 of 3 globally)</p>
+    </div>
+  </div>
 
-    <!-- Portfolio Section -->
-    <section id="portfolios" class="section-padding">
-      <!-- Container Starts -->
-      <div class="container">        
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Remarkable Works</h2>
-        <div class="row">          
-          <div class="col-md-12">
-            <!-- Portfolio Controller/Buttons -->
-            <div class="controls text-center">
-              <a class="filter active btn btn-common" data-filter="all">
-                All 
-              </a>
-              <a class="filter btn btn-common" data-filter=".newspaper">
-                Newspaper 
-              </a>
-              <a class="filter btn btn-common" data-filter=".competitions">
-                Competitions
-              </a>
-              <a class="filter btn btn-common" data-filter=".blogs">
-                Articles 
-              </a>
-              <a class="filter btn btn-common" data-filter=".certificates">
-                Certificates 
-              </a>
-              <a class="filter btn btn-common" data-filter=".webinars">
-                Interviews/Webinars
-              </a>
-              <a class="filter btn btn-common" data-filter=".cve">
-                CVE
-              </a>
+    <h2>Contact</h2>
+    <p>You can reach me via <a href="https://www.linkedin.com/in/ozguralp/" target="_blank">LinkedIn</a> or <a href="mailto:info@ozguralp.com">email</a>.</p>
+    <h2>More References</h2>
+    <ul>
+      <li><a href="https://acropolis.synack.com/inductees/ozgur" target="_blank">Synack Acropolis: Hall of Fame</a></li>
+      <li><a href="https://ozguralp.medium.com/" target="_blank">Blog: Medium</a></li>
+      <li><a href="https://x.com/ozgur_bbh" target="_blank">Social Media: X</a></li>
+      <li><a href="https://www.youtube.com/channel/UCPiVsTbs5Vn4jJ3BWytdtVw" target="_blank">Videos & Interviews: YouTube</a></li>
+      <li><a href="https://github.com/ozguralp" target="_blank">Some Projects: GitHub</a></li>
+    </ul>
+  <h2>Media & Appearances</h2>
 
-            </div>
-            <!-- Portfolio Controller/Buttons Ends-->
-          </div>
+<section>
+  <h2>Media & Appearances</h2>
+  <ul>
+    <li>
+      <strong>LHE Results:</strong>
+      <a href="https://web.archive.org/web/20221206190655/https://www.synack.com/srt-leaderboard/" target="_blank">Synack DEFCON Hacking Challenge</a>,
+      <a href="https://web.archive.org/web/20220410230405/https://www.synack.com/srt-hack4levels/" target="_blank">Synack Mexico Pre-LHE</a>,
+      <a href="https://web.archive.org/web/20221207205335/https://www.synack.com/blog/synack-hack4levels-hacker-house/" target="_blank">Synack Mexico LHE</a>,
+      <a href="https://web.archive.org/web/20220421231919/https://go.synack.com/Hacker-House-Leaderboard.html" target="_blank">Synack Bali Pre-LHE</a>,
+      <a href="https://web.archive.org/web/20220307192920/https://www.synack.com/blog/hacker-house-recap-costa-rica-with-video/" target="_blank">Synack Costa Rica LHE</a>,
+      <a href="https://web.archive.org/web/20220302102531/https://www.synack.com/blog/elite-researchers-convene-again-on-the-road2tokyo/" target="_blank">Synack Tokyo Pre-LHE</a>,
+      <a href="https://web.archive.org/web/20220401035812/https://www.synack.com/blog/synack-crowns-the-road2tokyo-grand-champion/" target="_blank">Synack Tokyo Virtual LHE</a>
+    </li>
 
-          <!-- Portfolio Recent Projects -->
+    <li>
+      <strong>Interviews (EN):</strong>
+      <a href="https://www.synack.com/exploits-explained/hacker-pathways/" target="_blank">Synack Pathways</a>,
+      <a href="https://www.youtube.com/watch?v=yYrxU3L9npg" target="_blank">A Day in the Life of an Ethical Hacker</a>,
+      <a href="https://www.cobalt.io/blog/pentester-spotlight-ozgur-alp" target="_blank">Cobalt Spotlight</a>,
+      <a href="https://www.youtube.com/watch?v=bp-yAM6nDwA" target="_blank">Ozgur Talk About Bug Bounties, Recon Workflow, How to Learn Different Topics & Life At Synack</a>,
+      <a href="https://web.archive.org/web/20220401035811/https://www.synack.com/blog/1-million-one-journey-the-story-of-%D3%A7zgur-alp/" target="_blank">$1 Million One Journey</a>,
+      <a href="https://web.archive.org/web/20211114082019/https://www.synack.com/blog/cyber-tips-tricks-with-srt-%D3%A7zgur-alp/" target="_blank">Cyber Tips & Tricks</a>
+    </li>
+    <li>
+      <strong>Interviews (TR):</strong>
+      <a href="https://www.youtube.com/watch?v=G82xj2LuPk0" target="_blank">Ödül Avcılığına Yolculuk</a>,
+      <a href="https://www.youtube.com/watch?v=W9xsOrqbjiU&t=11040s" target="_blank">6. İstanbul Güvenlik Konferansı</a>,
+      <a href="https://www.youtube.com/watch?v=EEhooWX8Aqg" target="_blank">Bi'Siber Bug Bounty Sohbeti</a>,
+      <a href="https://www.youtube.com/watch?v=bTLJ44ycLU4" target="_blank">Bugbounter: Ödül Avcıları Güvenlik Açıklarını Nasıl Keşfedip Raporluyor?</a>,
+      <a href="https://www.youtube.com/watch?v=bteWAeCnpo8" target="_blank">Herkes İçin Güvenlik | Bölüm-6: Bug Bounty'de Tam Zamanlı Çalışmak</a>,
+      <a href="https://www.youtube.com/watch?v=ptJxSnPS-IU" target="_blank">Misafir Takımı /w Özgür Alp (Bug Bounty, Siber Güvenlik, Kariyer)</a>,
+      <a href="https://www.youtube.com/watch?v=AR8SrnT_OG8&t=1s" target="_blank">MDI Experience 1 - Özgür Alp ile Bug Bounty ve API Security Üzerine</a>
+    </li>
 
-          <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix newspaper">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-3.jpg" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www2.deloitte.com/tr/tr/pages/risk/articles/ethic-hackers.html" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix newspaper">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-2.jpg" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-2.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.linkedin.com/posts/ozguralp_hacklenmek-ve-darmada%C4%9F%C4%B1n-olmak-m%C4%B1-hacklenmek-activity-6365141432784818176-NerD" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix newspaper">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-1.jpg" alt="" />  
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-1.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.linkedin.com/posts/ozguralp_global-d%C3%BCnyan%C4%B1n-kahramanlar%C4%B1-siber-g%C3%BCvenlik-activity-6553941360045502465-y1q_" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
+    <li>
+      <strong>Events:</strong>
+      <a href="https://web.archive.org/web/20220630101301/https://www.synack.com/blog/first-synack-hacker-hangout-turkey/" target="_blank">First SRT Hangout: Turkey</a>
+    </li>
 
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-4.jpg" alt="" /> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20221206190655/https://www.synack.com/srt-leaderboard/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-5.jpg" alt="" /> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20221207205335/https://www.synack.com/blog/synack-hack4levels-hacker-house/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-6.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220410230405/https://www.synack.com/srt-hack4levels/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-7.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-7.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220421231919/https://go.synack.com/Hacker-House-Leaderboard.html" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-8.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-8.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.synack.com/blog/hacker-pathways/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-9.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-9.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20221207205335/https://www.synack.com/blog/synack-hack4levels-hacker-house/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-10.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-10.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=1uLmIcTsV1w" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-11.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-11.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220630101301/https://www.synack.com/blog/first-synack-hacker-hangout-turkey/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-12.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-12.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220307192920/https://www.synack.com/blog/hacker-house-recap-costa-rica-with-video/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix certificates">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-13.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-13.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.offensive-security.com/pwk-oscp/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix certificates">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-14.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-14.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix certificates">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-15.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-15.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.offensive-security.com/awae-oswe/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-16.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-16.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=yYrxU3L9npg" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-17.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-17.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://twitter.com/SynackRedTeam/status/1262502409793933313" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-18.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-18.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://info.microsoft.com/ME-AzureApp-WBNR-FY20-06Jun-09-GIANTSAZUREDASoftwareSecurity-SRDEM25613_LP02OnDemandRegistration-ForminBody.html" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-19.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-19.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220302102531/https://www.synack.com/blog/elite-researchers-convene-again-on-the-road2tokyo/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-20.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-20.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=znUWeyzi7eg" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-21.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-21.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.cnnturk.com/video/turkiye/son-dakika-siber-korsanlar-is-basinda-video" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix cve">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-22.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-22.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1323" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-          	<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-24.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-24.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=u7oTmrGOWxY" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-			<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-25.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-25.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=pA_-jXCHBl8" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-26.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-26.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://blog.detectify.com/2020/08/14/crowdsource-success-story-from-an-out-of-scope-open-redirect-to-cve-2020-1323/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-          </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-27.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-27.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.cobalt.io/blog/pentester-spotlight-ozgur-alp" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-28.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-28.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://sillydaddy.me/infosec-bugbounty-ama/2020/09/10/Infosec-Bugbounty-AMA-Ozgur-Alp.html" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-29.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-29.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://twitter.com/ozgur_bbh/status/1311587197766823936" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-30.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-30.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220401035812/https://www.synack.com/blog/synack-crowns-the-road2tokyo-grand-champion/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-31.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-31.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=ReSSeREMudI" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
+    <li>
+      <strong>Talks:</strong>
+      <a href="https://www.youtube.com/watch?v=znUWeyzi7eg" target="_blank">A Less Known Attack Vector, Second Order IDOR Attacks</a>,
+      <a href="https://kommunity.com/gazicyber-cyber-security-community/events/g-force-days21-yapay-zeka-ve-siber-guvenlik-zirvesi-1872ab52" target="_blank">G-Force Days '21</a>,
+      <a href="https://kommunity.com/iztech-cybersec-society/events/softsec-summit24-32503281" target="_blank">SoftSec Summit '24</a>,
+      <a href="https://kommunity.com/bbtizmir/events/cyber-workshop-day-2-bug-bounty-2944403d" target="_blank">Cyber Workshop Day</a>,
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7200863216950771712/" target="_blank">Garanti BBVA Secure Developer Week</a>
+    </li>
 
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-32.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-32.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=G82xj2LuPk0" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-33.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-33.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://youtu.be/W9xsOrqbjiU?t=11040" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
+    <li>
+      <strong>External Blogs:</strong>
+      <a href="https://blog.detectify.com/industry-insights/crowdsource-success-story-from-an-out-of-scope-open-redirect-to-cve-2020-1323/" target="_blank">Crowdsource Success Story: From an Out-of-Scope Open Redirect to CVE-2020-1323</a>,
+      <a href="https://www.synack.com/exploits-explained/exploits-explained-5-unusual-authentication-bypass-techniques/" target="_blank">5 Unusual Authentication Bypass Techniques</a>
+    </li>
 
+    <li>
+      <strong>News:</strong>
+      <a href="https://www.cnnturk.com/video/turkiye/son-dakika-siber-korsanlar-is-basinda-video-1543346" target="_blank">CNN Türk: Siber korsanlar iş başında</a>,
+      <a href="https://www.youtube.com/watch?v=u7oTmrGOWxY" target="_blank">CNN Türk: A'dan Z'ye Röportaj</a>,
+      <a href="https://www.youtube.com/watch?v=pA_-jXCHBl8" target="_blank">Habertürk: Manşet Röportaj</a>
+    </li>
 
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix newspaper">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-34.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-34.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.linkedin.com/posts/ozguralp_hatal%C4%B1-bir-t%C4%B1klaman%C4%B1n-a%C4%9F%C4%B1r-bedeli-300-milyon-activity-6739129977142317056-FRIz" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-35.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-35.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage.html" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-36.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-36.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=EEhooWX8Aqg" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-37.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-37.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=bp-yAM6nDwA" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-38.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-38.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=bTLJ44ycLU4" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-39.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-39.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=bTLJ44ycLU4" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-40.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-40.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://kommunity.com/gazicyber-cyber-security-community/events/g-force-days21-yapay-zeka-ve-siber-guvenlik-zirvesi-1872ab52" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-41.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-41.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220401035811/https://www.synack.com/blog/1-million-one-journey-the-story-of-%D3%A7zgur-alp/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix newspaper">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-42.jpg" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-42.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.linkedin.com/feed/update/urn:li:activity:6812648865682989056/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-43.jpg" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-43.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20220318062703/https://www.synack.com/blog/synack-2021-guardians-of-trust-winners/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-44.jpg" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-44.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=ptJxSnPS-IU" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix competitions">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-45.png" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-45.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://twitter.com/SynackRedTeam/status/1448310703425789957" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-46.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-46.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://web.archive.org/web/20211114082019/https://www.synack.com/blog/cyber-tips-tricks-with-srt-%D3%A7zgur-alp/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-47.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-47.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://apisecure.co/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix blogs">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-48.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-48.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.synack.com/blog/exploits-explained-5-unusual-authentication-bypass-techniques/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-		<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-		<div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-49.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-49.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://www.youtube.com/watch?v=AR8SrnT_OG8&t=1s" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-		
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-		<div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-49.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-49.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="https://kommunity.com/iztech-cybersec-society/events/softsec-summit24-32503281" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-            <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-50.jpeg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-50.jpeg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="  https://kommunity.com/bbtizmir/events/cyber-workshop-day-2-bug-bounty-2944403d" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix webinars">
-                <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-51.png" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-51.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="  https://www.linkedin.com/feed/update/urn:li:activity:7200863216950771712/" target="_blank">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-              </div>
-
-
-
-        </div>
-      </div>
-      <!-- Container Ends -->
-    </section>
-    <!-- Portfolio Section Ends --> 
-
-    <!-- Counter Area Start-->
-    <section class="counter-section section-padding" id="stats">
-    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Statistics</h2>
-      <div class="container">
-        <div class="row">
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon"><i class="icon-check"></i></div>
-              <p>Up To</p>
-              <div class="counterUp">10000</div>
-              <p>Tested Applications</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon"><i class="icon-emotsmile"></i></div>
-              <p>At Least</p>
-              <div class="counterUp">500</div>
-              <p>Different Companies</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon"><i class="icon-star"></i></div>
-              <p>More Than</p>
-              <div class="counterUp">2000</div>
-              <p>Vulnerabilities Accepted</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon"><i class="icon-speedometer"></i></div>
-              <p>Around</p>
-              <div class="counterUp">85</div>
-              <p>Acceptance Rate</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Counter Area End-->
-
-
-    <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-              <ul class="social-icon">
-                  <li>
-                    <a class="linkedin" href="https://www.linkedin.com/in/ozguralp"><i class="icon-social-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a class="twitter" href="https://twitter.com/ozgur_bbh"><i class="icon-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a class="instagram" href="https://medium.com/@ozguralp"><i class="icon-note"></i></a>
-                  </li>
-                  <li>
-                    <a class="linkedin" href="https://github.com/ozguralp"><i class="icon-social-github"></i></a>
-                  </li>
-				  <li>
-                    <a class="instagram" href="https://www.youtube.com/channel/UCPiVsTbs5Vn4jJ3BWytdtVw"><i class="icon-social-youtube"></i></a>
-                  </li>
-                  <li>
-                    <a class="acropolis" href="https://acropolis.synack.com/inductees/ozgur/"><i class="icon-trophy"></i></a>
-                  </li>
-              </ul>
-              <p>Copyright © 2022 Ozgur Alp</br> All Rights Reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="icon-arrow-up"></i>
-    </a>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-    <script src="assets/js/map.js"></script>
-      
-  </body>
+    <li>
+      <strong>Awards:</strong>
+      <a href="https://web.archive.org/web/20220318062703/https://www.synack.com/blog/synack-2021-guardians-of-trust-winners/" target="_blank">Synack Guardians of Trust 2021 Winners</a>
+    </li>
+  </ul>
+</section>
+  <footer>
+    <p>&copy; 2025 Ozgur Alp. All rights reserved.</p>
+  </footer>
+</body>
 </html>

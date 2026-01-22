@@ -1,132 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM8CQZCG3L"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-JM8CQZCG3L');
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Özgür Alp – Offensive Security & Bug Bounty Professional</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
   <style>
+    :root {
+      --accent: #fca311;
+      --bg: #0a0a0a;
+      --card-bg: #161616;
+      --text: #f0f0f0;
+      --text-dim: #aaa;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
+
     header {
-      background: linear-gradient(to right, #111, #222);
+      background: linear-gradient(135deg, #111 0%, #222 100%);
       padding: 60px 20px;
       text-align: center;
+      border-bottom: 2px solid var(--accent);
     }
+
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0;
+      font-weight: 800;
+      letter-spacing: -1px;
     }
+
     header p {
       font-size: 1.1rem;
-      color: #aaa;
+      color: var(--text-dim);
+      margin-top: 8px;
     }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 20px 20px 60px 20px;
+      max-width: 1000px;
       margin: auto;
     }
+
     h2 {
-      color: #fca311;
+      color: var(--accent);
+      font-size: 1.7rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 8px;
+      font-weight: 700;
     }
+
+    .about-text p {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
     .stats {
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
-      margin-top: 20px;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px 0;
     }
+
     .stat {
-      flex: 1 1 200px;
-      margin: 10px;
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 8px;
+      background-color: var(--card-bg);
+      padding: 20px 10px;
+      border-radius: 10px;
       text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+      flex: 1 1 calc(20% - 15px);
+      min-width: 170px;
+      box-sizing: border-box;
     }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 20px;
-      color: #555;
+
+    .stat:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
     }
+
+    .stat h3 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+
+    .stat p {
+      margin: 8px 0 0;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    ul { list-style: none; padding: 0; }
+    li {
+      margin-bottom: 15px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 6px;
+    }
+
     a {
-      color: #fca311;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 600;
     }
-    .more-content {
-      display: none;
-      margin-top: 1em;
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      background-color: #050505;
+      text-align: center;
+      padding: 30px;
+      color: #444;
+      font-size: 0.85rem;
+      border-top: 1px solid #111;
     }
-    .show-button {
-      display: inline-block;
-      padding: 8px 12px;
-      background-color: #fca311;
-      color: #000;
-      border: none;
-      cursor: pointer;
-      margin-top: 1em;
-      font-weight: bold;
+
+    @media (max-width: 900px) {
+      .stat { flex: 1 1 calc(33.33% - 15px); }
+    }
+    @media (max-width: 600px) {
+      .stat { flex: 1 1 calc(50% - 15px); }
+      header h1 { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Özgür Alp</h1>
-    <p>Offensive Security & Bug Bounty Professional | Top 3 Synack Researcher (All Time) </p>
+    <p>Offensive Security & Bug Bounty Professional | Top 3 Synack Researcher (All Time)</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p align="justify">I’m a cybersecurity expert with 10+ years of experience in offensive security, bug hunting, and consulting. I currently rank among Synack’s Top 3 researchers of all time, with over 2000 accepted vulnerabilities — including more than 250 critical findings — across 700+ projects for 200 unique clients. I hold OSCP and OSWE certifications, and have earned Synack’s highest honors: the TITAN title for top annual performance (awarded 4 times in the last 5 years), and LEGEND status for fulfilling all 5 elite criteria — a lifetime achievement held by only three people globally.</p>
-    <p align="justify">Beyond hands-on work, I actively contribute to the security community through technical blogging, public speaking, and university-level instruction. For four years, I taught undergraduate courses such as “Introduction to Cybersecurity” and “Web Application Hacking” at two prestigious universities in Istanbul. As a Synack Circle of Trust member, I advise on platform changes and researcher experience. I’ve helped 20+ new researchers join via the Envoy program and mentor 4–5 SRTs long-term. I’ve represented Synack at global live events (Mexico, Bali, Costa Rica, Portugal), engaged in an on-site client project in Hong Kong, spoke at Black Hat, supported the booth, contributed to Synack’s blogs, podcasts, and spotlight interviews, and appeared on their homepage as one of the faces of the SRT. I also organized the first official global SRT hangout to foster community engagement and collaboration.</p>
+    <div class="about-text">
+      <p>I’m a cybersecurity specialist with over 10 years of experience in offensive security, consulting and training. I hold OSCP and OSWE certifications, and currently rank among the Top 3 all-time researchers on Synack, with 2000+ accepted vulnerabilities across more than 500 unique client projects, including 250+ critical findings (CVSS 9.0+).</p>
+      <p>As a LEGEND Hall of Fame inductee, I’ve fulfilled all five of Synack’s elite researcher criteria — a distinction achieved by only three people globally. I’ve earned TITAN status four years in a row, the platform’s highest annual recognition for performance and consistency. With over $2M in lifetime earnings solely from bug bounty work, I’m one of the the most impactful and trusted offensive researchers in the private bug bounty landscape.</p>
+      <p>I started my career at Deloitte Turkey, where I spent four years as a cybersecurity consultant and technical lead. During that time, I worked on over 200 projects for multinational and domestic companies across various industries. Since then, I’ve worked independently as a bug bounty hunter and on-demand offensive security consultant — reporting thousands of vulnerabilities and delivering consultancy and training services to companies around the world.</p>
+      <p>Beyond hands-on work, I actively contribute to the security community through technical blogging, public speaking, and university-level instruction. For four years, I taught undergraduate courses such as “Introduction to Cybersecurity” and “Web Application Hacking” at two prestigious universities in Istanbul. As a Synack Circle of Trust member, I advise on platform changes and researcher experience. I’ve helped 20+ new researchers join via the Envoy program and mentor 4–5 SRTs long-term. I’ve represented Synack at global live events (Mexico, Bali, Costa Rica, Portugal), engaged in an on-site client project in Hong Kong, spoke at Black Hat, supported the booth, contributed to Synack’s blogs, podcasts, and spotlight interviews, and appeared on their homepage as one of the faces of the SRT. I also organized the first official global SRT hangout to foster community engagement and collaboration.</p>
     </div>
-  <h2>Highlights</h2>
-  <div class="stats">
-    <div class="stat">
-      <h3>2000+</h3>
-      <p>Accepted Vulnerabilities</p>
+
+    <h2>Highlights</h2>
+    <div class="stats">
+      <div class="stat"><h3 class="counter" data-target="2000">0</h3><p>Accepted Vulnerabilities</p></div>
+      <div class="stat"><h3 class="counter" data-target="250">0</h3><p>Critical Findings (CVSS 9.0+)</p></div>
+      <div class="stat"><h3 class="counter" data-target="700">0</h3><p>Unique Projects</p></div>
+      <div class="stat"><h3 class="counter" data-target="200">0</h3><p>Unique Clients</p></div>
+      <div class="stat"><h3>Top 3</h3><p>All-Time Global Rank</p></div>
     </div>
-    <div class="stat">
-      <h3>250+</h3>
-      <p>Critical Findings </p><p>(CVSS 9.0+)</p>
-    </div>
-    <div class="stat">
-      <h3>700+</h3>
-      <p>Unique Projects</p>
-    </div>
-    <div class="stat">
-      <h3>200+</h3>
-      <p>Unique Clients</p>
-    </div>
-    <div class="stat">
-      <h3>Top 3</h3>
-      <p>All-Time Synack Researcher<br>by accepted reports & payouts</p>
-    </div>
-    <div class="stat">
-      <h3>TITAN x4</h3>
-      <p>Top annual performance award<br>Earned 4 times in 5 years</p>
-    </div>
-    <div class="stat">
-      <h3>LEGEND 5/5</h3>
-      <p>Achieved all 5 elite criteria<br>Lifetime Hall of Fame Title (1 of 3 globally)</p>
-    </div>
-  </div>
 
     <h2>Contact</h2>
-    <p>You can reach me via <a href="https://www.linkedin.com/in/ozguralp/" target="_blank">LinkedIn</a>, <a href="mailto:info@ozguralp.com">email</a> or book my time via <a href="https://intro.co/OzgurAlp" target="_blank">Intro</a>.</p>    <h2>More References</h2>
+    <p>You can reach me via <a href="https://www.linkedin.com/in/ozguralp/" target="_blank">LinkedIn</a>, <a href="mailto:info@ozguralp.com">email</a> or book my time via <a href="https://intro.co/OzgurAlp" target="_blank">Intro</a>.</p>
+
+    <h2>More References</h2>
     <ul>
       <li><a href="https://acropolis.synack.com/inductees/ozgur" target="_blank">Synack Acropolis: Hall of Fame</a></li>
       <li><a href="https://ozguralp.medium.com/" target="_blank">Blog: Medium</a></li>
@@ -135,77 +182,87 @@
       <li><a href="https://github.com/ozguralp" target="_blank">Some Projects: GitHub</a></li>
     </ul>
 
-  <h2>Media & Appearances</h2>
-  <ul>
-    <li align="justify">
-      <strong>LHE Results:</strong></br>
-      <a href="https://web.archive.org/web/20221206190655/https://www.synack.com/srt-leaderboard/" target="_blank">Synack DEFCON Hacking Challenge</a></br>
-      <a href="https://web.archive.org/web/20220410230405/https://www.synack.com/srt-hack4levels/" target="_blank">Synack Mexico Pre-LHE</a></br>
-      <a href="https://web.archive.org/web/20221207205335/https://www.synack.com/blog/synack-hack4levels-hacker-house/" target="_blank">Synack Mexico LHE</a></br>
-      <a href="https://web.archive.org/web/20220421231919/https://go.synack.com/Hacker-House-Leaderboard.html" target="_blank">Synack Bali Pre-LHE</a></br>
-      <a href="https://web.archive.org/web/20220307192920/https://www.synack.com/blog/hacker-house-recap-costa-rica-with-video/" target="_blank">Synack Costa Rica LHE</a></br>
-      <a href="https://web.archive.org/web/20220302102531/https://www.synack.com/blog/elite-researchers-convene-again-on-the-road2tokyo/" target="_blank">Synack Tokyo Pre-LHE</a></br>
-      <a href="https://web.archive.org/web/20220401035812/https://www.synack.com/blog/synack-crowns-the-road2tokyo-grand-champion/" target="_blank">Synack Tokyo Virtual LHE</a>
-    </li>
+    <h2>Media & Appearances</h2>
+    <ul>      
+      <li align="justify"><strong>Interviews (EN):</strong><br/>
+        <a href="https://www.synack.com/exploits-explained/hacker-pathways/" target="_blank">Synack Pathways</a><br/>
+        <a href="https://www.youtube.com/watch?v=yYrxU3L9npg" target="_blank">A Day in the Life of an Ethical Hacker</a><br/>
+        <a href="https://www.cobalt.io/blog/pentester-spotlight-ozgur-alp" target="_blank">Cobalt Spotlight</a><br/>
+        <a href="https://www.youtube.com/watch?v=bp-yAM6nDwA" target="_blank">Ozgur Talk About Bug Bounties, Recon Workflow, How to Learn Different Topics & Life At Synack</a><br/>
+        <a href="https://web.archive.org/web/20220401035811/https://www.synack.com/blog/1-million-one-journey-the-story-of-%D3%A7zgur-alp/" target="_blank">$1 Million One Journey</a><br/>
+        <a href="https://web.archive.org/web/20211114082019/https://www.synack.com/blog/cyber-tips-tricks-with-srt-%D3%A7zgur-alp/" target="_blank">Cyber Tips & Tricks</a><br/>
+        <a href="https://www.linkedin.com/pulse/bounty-hunting-ai-ozgur-alp-gurur-yetiskin-vd14f/" target="_blank">Bounty Hunting and AI with Ozgur Alp</a></li>
+      
+      <li align="justify"><strong>Interviews (TR):</strong><br/>
+        <a href="https://www.youtube.com/watch?v=G82xj2LuPk0" target="_blank">Ödül Avcılığına Yolculuk</a><br/>
+        <a href="https://www.youtube.com/watch?v=W9xsOrqbjiU&t=11040s" target="_blank">6. İstanbul Güvenlik Konferansı</a><br/>
+        <a href="https://www.youtube.com/watch?v=EEhooWX8Aqg" target="_blank">Bi'Siber Bug Bounty Sohbeti</a><br/>
+        <a href="https://www.youtube.com/watch?v=bTLJ44ycLU4" target="_blank">Bugbounter: Ödül Avcıları Güvenlik Açıklarını Nasıl Keşfedip Raporluyor?</a><br/>
+        <a href="https://www.youtube.com/watch?v=bteWAeCnpo8" target="_blank">Herkes İçin Güvenlik | Bölüm-6: Bug Bounty'de Tam Zamanlı Çalışmak</a><br/>
+        <a href="https://www.youtube.com/watch?v=ptJxSnPS-IU" target="_blank">Misafir Takımı /w Özgür Alp (Bug Bounty, Siber Güvenlik, Kariyer)</a><br/>
+        <a href="https://www.youtube.com/watch?v=AR8SrnT_OG8&t=1s" target="_blank">MDI Experience 1 - Özgür Alp ile Bug Bounty ve API Security Üzerine</a></li>
 
-    <li align="justify">
-      <strong>Interviews (EN):</strong></br>
-      <a href="https://www.synack.com/exploits-explained/hacker-pathways/" target="_blank">Synack Pathways</a></br>
-      <a href="https://www.youtube.com/watch?v=yYrxU3L9npg" target="_blank">A Day in the Life of an Ethical Hacker</a></br>
-      <a href="https://www.cobalt.io/blog/pentester-spotlight-ozgur-alp" target="_blank">Cobalt Spotlight</a></br>
-      <a href="https://www.youtube.com/watch?v=bp-yAM6nDwA" target="_blank">Ozgur Talk About Bug Bounties, Recon Workflow, How to Learn Different Topics & Life At Synack</a></br>
-      <a href="https://web.archive.org/web/20220401035811/https://www.synack.com/blog/1-million-one-journey-the-story-of-%D3%A7zgur-alp/" target="_blank">$1 Million One Journey</a></br>
-      <a href="https://web.archive.org/web/20211114082019/https://www.synack.com/blog/cyber-tips-tricks-with-srt-%D3%A7zgur-alp/" target="_blank">Cyber Tips & Tricks</a></br>
-      <a href="https://www.linkedin.com/pulse/bounty-hunting-ai-ozgur-alp-gurur-yetiskin-vd14f/" target="_blank">Bounty Hunting and AI with Ozgur Alp</a>
+      <li align="justify"><strong>News:</strong><br/>
+        <a href="https://www.cnnturk.com/video/turkiye/son-dakika-siber-korsanlar-is-basinda-video-1543346" target="_blank">CNN Türk: Siber korsanlar iş başında</a><br/>
+        <a href="https://www.youtube.com/watch?v=u7oTmrGOWxY" target="_blank">CNN Türk: A'dan Z'ye Röportaj</a><br/>
+        <a href="https://www.youtube.com/watch?v=pA_-jXCHBl8" target="_blank">Habertürk: Manşet Röportaj</a></li>
+ 
+      <li align="justify"><strong>Talks:</strong><br/>
+        <a href="https://www.youtube.com/watch?v=znUWeyzi7eg" target="_blank">Security BSides Athens: A Less Known Attack Vector, Second Order IDOR Attacks (2020)</a><br/>
+        <a href="https://kommunity.com/gazicyber-cyber-security-community/events/g-force-days21-yapay-zeka-ve-siber-guvenlik-zirvesi-1872ab52" target="_blank">G-Force Days: Modern Treasure Hunt, Bug Bounty (2021)</a><br/>
+        <a href="https://kommunity.com/iztech-cybersec-society/events/softsec-summit24-32503281" target="_blank">SoftSec Summit (2024)</a><br/>
+        <a href="https://kommunity.com/bbtizmir/events/cyber-workshop-day-2-bug-bounty-2944403d" target="_blank">Cyber Workshop Day (2024)</a><br/>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7200863216950771712/" target="_blank">Garanti BBVA Secure Developer Week (2024)</a><br/>
+        <a href="https://www.linkedin.com/posts/itu-infosec_cybercon-itusibergaesvenlik-cybersecurity-activity-7409937483389652992-F448/" target="_blank">İTÜ Infosec CYBERCON (2026)</a></li>      
 
-    </li>
-    <li align="justify">
-      <strong>Interviews (TR):</strong></br>
-      <a href="https://www.youtube.com/watch?v=G82xj2LuPk0" target="_blank">Ödül Avcılığına Yolculuk</a></br>
-      <a href="https://www.youtube.com/watch?v=W9xsOrqbjiU&t=11040s" target="_blank">6. İstanbul Güvenlik Konferansı</a></br>
-      <a href="https://www.youtube.com/watch?v=EEhooWX8Aqg" target="_blank">Bi'Siber Bug Bounty Sohbeti</a></br>
-      <a href="https://www.youtube.com/watch?v=bTLJ44ycLU4" target="_blank">Bugbounter: Ödül Avcıları Güvenlik Açıklarını Nasıl Keşfedip Raporluyor?</a></br>
-      <a href="https://www.youtube.com/watch?v=bteWAeCnpo8" target="_blank">Herkes İçin Güvenlik | Bölüm-6: Bug Bounty'de Tam Zamanlı Çalışmak</a></br>
-      <a href="https://www.youtube.com/watch?v=ptJxSnPS-IU" target="_blank">Misafir Takımı /w Özgür Alp (Bug Bounty, Siber Güvenlik, Kariyer)</a></br>
-      <a href="https://www.youtube.com/watch?v=AR8SrnT_OG8&t=1s" target="_blank">MDI Experience 1 - Özgür Alp ile Bug Bounty ve API Security Üzerine</a>
-    </li>
+      <li align="justify"><strong>External Blogs:</strong><br/>
+        <a href="https://blog.detectify.com/industry-insights/crowdsource-success-story-from-an-out-of-scope-open-redirect-to-cve-2020-1323/" target="_blank">Crowdsource Success Story: CVE-2020-1323</a><br/>
+        <a href="https://www.synack.com/exploits-explained/exploits-explained-5-unusual-authentication-bypass-techniques/" target="_blank">5 Unusual Authentication Bypass Techniques</a></li>
 
-    <li align="justify">
-      <strong>Events:</strong></br>
-      <a href="https://web.archive.org/web/20220630101301/https://www.synack.com/blog/first-synack-hacker-hangout-turkey/" target="_blank">First SRT Hangout: Turkey</a>
-    </li>
+      <li align="justify"><strong>Events:</strong> <br/>
+        <a href="https://web.archive.org/web/20220630101301/https://www.synack.com/blog/first-synack-hacker-hangout-turkey/" target="_blank">First SRT Hangout: Turkey</a></li>
 
-    <li align="justify">
-      <strong>Talks:</strong></br>
-      <a href="https://www.youtube.com/watch?v=znUWeyzi7eg" target="_blank">Security BSides Athens: A Less Known Attack Vector, Second Order IDOR Attacks (2020)</a></br>
-      <a href="https://kommunity.com/gazicyber-cyber-security-community/events/g-force-days21-yapay-zeka-ve-siber-guvenlik-zirvesi-1872ab52" target="_blank">G-Force Days: Modern Treasure Hunt, Bug Bounty (2021)</a></br>
-      <a href="https://kommunity.com/iztech-cybersec-society/events/softsec-summit24-32503281" target="_blank">SoftSec Summit: Bug Bounty 101, How to Start? (2024)</a></br>
-      <a href="https://kommunity.com/bbtizmir/events/cyber-workshop-day-2-bug-bounty-2944403d" target="_blank">Cyber Workshop Day: Bug Bounty 101, How to Start? (2024)</a></br>
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7200863216950771712/" target="_blank">Garanti BBVA Secure Developer Week: Interview with a Bug Bounter (2024)</a></br>
-      <a href="https://www.linkedin.com/posts/itu-infosec_cybercon-itusibergaesvenlik-cybersecurity-activity-7409937483389652992-F448/" target="_blank">İTÜ Infosec CYBERCON: Bug Bounties 201, Bug Hunting in the Age of AI (2026)</a> 
-    </li>
+      <li align="justify"><strong>Awards:</strong><br/>
+        <a href="https://web.archive.org/web/20220318062703/https://www.synack.com/blog/synack-2021-guardians-of-trust-winners/" target="_blank">Synack Guardians of Trust 2021 Winners</a></li>
 
-    <li align="justify">
-      <strong>External Blogs:</strong></br>
-      <a href="https://blog.detectify.com/industry-insights/crowdsource-success-story-from-an-out-of-scope-open-redirect-to-cve-2020-1323/" target="_blank">Crowdsource Success Story: From an Out-of-Scope Open Redirect to CVE-2020-1323</a></br>
-      <a href="https://www.synack.com/exploits-explained/exploits-explained-5-unusual-authentication-bypass-techniques/" target="_blank">5 Unusual Authentication Bypass Techniques</a>
-    </li>
+      <li align="justify"><strong>LHE Results:</strong><br/>
+        <a href="https://web.archive.org/web/20221206190655/https://www.synack.com/srt-leaderboard/" target="_blank">Synack DEFCON Hacking Challenge</a><br/>
+        <a href="https://web.archive.org/web/20220410230405/https://www.synack.com/srt-hack4levels/" target="_blank">Synack Mexico Pre-LHE</a><br/>
+        <a href="https://web.archive.org/web/20221207205335/https://www.synack.com/blog/synack-hack4levels-hacker-house/" target="_blank">Synack Mexico LHE</a><br/>
+        <a href="https://web.archive.org/web/20220421231919/https://go.synack.com/Hacker-House-Leaderboard.html" target="_blank">Synack Bali Pre-LHE</a><br/>
+        <a href="https://web.archive.org/web/20220307192920/https://www.synack.com/blog/hacker-house-recap-costa-rica-with-video/" target="_blank">Synack Costa Rica LHE</a><br/>
+        <a href="https://web.archive.org/web/20220302102531/https://www.synack.com/blog/elite-researchers-convene-again-on-the-road2tokyo/" target="_blank">Synack Tokyo Pre-LHE</a><br/>
+        <a href="https://web.archive.org/web/20220401035812/https://www.synack.com/blog/synack-crowns-the-road2tokyo-grand-champion/" target="_blank">Synack Tokyo Virtual LHE</a></li>
 
-    <li align="justify">
-      <strong>News:</strong></br>
-      <a href="https://www.cnnturk.com/video/turkiye/son-dakika-siber-korsanlar-is-basinda-video-1543346" target="_blank">CNN Türk: Siber korsanlar iş başında</a></br>
-      <a href="https://www.youtube.com/watch?v=u7oTmrGOWxY" target="_blank">CNN Türk: A'dan Z'ye Röportaj</a></br>
-      <a href="https://www.youtube.com/watch?v=pA_-jXCHBl8" target="_blank">Habertürk: Manşet Röportaj</a>
-    </li>
+    </ul>
+  </section>
 
-    <li align="justify">
-      <strong>Awards:</strong></br>
-      <a href="https://web.archive.org/web/20220318062703/https://www.synack.com/blog/synack-2021-guardians-of-trust-winners/" target="_blank">Synack Guardians of Trust 2021 Winners</a>
-    </li>
-  </ul>
-</section>
   <footer>
-    <p>&copy; 2025 Özgür Alp. All rights reserved.</p>
+    <p>&copy; 2026 Özgür Alp. All rights reserved.</p>
   </footer>
+
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    const startCount = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const inc = target / 60;
+          if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target + "+";
+          }
+        };
+        updateCount();
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      if(entries[0].isIntersecting) startCount();
+    }, { threshold: 0.5 });
+    observer.observe(document.querySelector('.stats'));
+  </script>
 </body>
 </html>

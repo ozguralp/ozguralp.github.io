@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM8CQZCG3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-JM8CQZCG3L');</script>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Spain — Travel Notes by Özgür Alp</title>
+  <link rel="canonical" href="https://ozguralp.com/travel/countries/spain.html"/>
+  <meta name="description" content="Travel notes from Spain: 1 posts covering 1 cities."/>
+  <meta property="og:title" content="Spain — Travel Notes"/><meta property="og:description" content="Travel notes from Spain."/>
+  <meta property="og:type" content="website"/><meta property="og:url" content="https://ozguralp.com/travel/countries/spain.html"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@ozgur_bbh"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .country-page{max-width:var(--max-width);margin:0 auto;padding:0 1.5rem 4rem}
+    .country-header{padding:1.5rem 2rem;margin-bottom:1.5rem}
+    .country-title-row{display:flex;align-items:baseline;gap:1rem}
+    .country-title-row h1{font-family:'DM Serif Display',Georgia,serif;font-size:2.25rem;font-weight:400;margin:0}
+    .country-title-row .flag{font-size:1.75rem}
+    .country-stats{display:flex;gap:2rem;margin-top:.75rem;font-size:.875rem;color:var(--text-muted)}
+    .country-stats .cs-num{font-weight:700;color:var(--accent)}
+    #countryMap{width:100%;height:400px;border-radius:12px;border:1px solid var(--border);margin-bottom:1.5rem}
+    .posts-section h2{font-family:'DM Sans',sans-serif;font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin:1.5rem 0 .75rem}
+    .country-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);text-align:center;font-size:.8125rem;color:var(--text-muted)}
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="../" class="back-link">&larr; Travel Notes</a>
+    <div class="top-actions">
+      <button class="toggle-btn view-btn" onclick="window.location='../'" >List</button>
+      <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
+      <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
+    </div>
+  </div>
+  <div class="country-page">
+    <div class="country-header">
+      <div class="country-title-row">
+        <h1>Spain</h1>
+        <span class="flag">🇪🇸</span>
+      </div>
+      <div class="country-stats">
+        <span><span class="cs-num">1</span> posts</span>
+        <span><span class="cs-num">1</span> cities</span>
+        <span><span class="cs-num">7.0</span> avg rating</span>
+      </div>
+    </div>
+    <div id="countryMap"></div>
+    <div class="posts-section"><h2>All Posts</h2><a href="../posts/ribera-del-duero.html" style="display:flex;align-items:center;gap:.75rem;padding:.65rem .85rem;border-radius:8px;background:var(--card-bg);border-left:3px solid var(--accent);text-decoration:none;color:inherit;margin-bottom:.5rem;transition:background .2s"><div style="flex:1"><div style="font-weight:500;font-size:.9375rem;color:var(--text)">Ribera del Duero<span style="font-size:.7rem;padding:.1rem .3rem;border-radius:3px;background:#c2410c;color:#fff;font-weight:600;margin-left:.35rem">7/10</span></div><div style="font-size:.75rem;color:var(--text-muted)">Food Wine · Oct 20, 2025 · 1 min</div></div></a>
+</div>
+    <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    var postData=[{"lat": 41.6167, "lng": -3.5833, "title": "Ribera del Duero", "slug": "ribera-del-duero"}];
+    var revData=[{"lat": 41.594665, "lng": -4.087887, "name": "Pago de Carraovejas", "rating": 5, "text": "Thank you so much for your rating and review, Ozgur!\n\nWe hope to see you again soon!", "address": "Camino de Carraovejas, s/n, 47300 Pe\u00f1afiel, Valladolid, Valladolid, Spain", "color": "#16a34a"}, {"lat": 41.595229, "lng": -4.118301, "name": "Anagora Wine Zone", "rating": 5, "text": "They have some premium wines which you can taste with coravin, including Flor de Pingus and Vega Sicilia. Definitely worth visiting.", "address": "Calle de, C. Derecha Al Coso, 31, 47300 Pe\u00f1afiel, Valladolid, Spain", "color": "#16a34a"}, {"lat": 41.601345, "lng": -4.116217, "name": "\u00c1gora de Protos", "rating": 5, "text": "Reservation can make sense as it was nearly fully booked when we were there.\nFood is good. You can also drink every wine Protos have as a glass, including grand reservas.", "address": "Av. Escalona, 12, 47300 Pe\u00f1afiel, Valladolid, Spain", "color": "#16a34a"}, {"lat": 41.598801, "lng": -4.118791, "name": "Restaurante \u201cMolino de Palacios\u201d", "rating": 5, "text": "They have really good old wines in the menu and good for the price.\nThe food was really great. Especially white beans and the meat was awesome. Really helpful staff.", "address": "Av. de la Constitucion, 16, 47300 Pe\u00f1afiel, Valladolid, Spain", "color": "#16a34a"}, {"lat": 41.603005, "lng": -4.115221, "name": "Hotel Pesquera AF", "rating": 5, "text": "", "address": "P.\u00ba Estaci\u00f3n, 1, 47300 Pe\u00f1afiel, Valladolid, Spain", "color": "#16a34a"}, {"lat": 41.623296, "lng": -4.256854, "name": "Entrada-Camino Aalto Bodegas y Vi\u00f1edos", "rating": 5, "text": "Tasting is for free, but need to make reservation as it is nearly fully booked.\nThey have 3 wines, 2 red and 1 white. Reds are good but they are too young to drink as the tour guide also told that. White was really good.", "address": "Paraje Vallejo de Carril, s/n, 47360 Quintanilla de Arriba, Valladolid, Spain", "color": "#16a34a"}];
+    var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+    var tile=isDark?'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png':'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+    var map=L.map('countryMap',{scrollWheelZoom:true});
+    L.tileLayer(tile,{subdomains:'abcd',maxZoom:19}).addTo(map);
+    map.fitBounds([[36, -9],[44, 4]]);
+
+    var icon=L.divIcon({className:'custom-marker',
+      html:'<div style="width:12px;height:12px;background:#c2410c;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.3)"></div>',
+      iconSize:[12,12],iconAnchor:[6,6],popupAnchor:[0,-8]});
+
+    postData.forEach(function(p){
+      if(p.lat) L.marker([p.lat,p.lng],{icon:icon}).bindPopup(
+        '<div class="popup-title">'+p.title+'</div><a class="popup-link" href="../posts/'+p.slug+'.html">Read &rarr;</a>',
+        {maxWidth:280}).addTo(map);
+    });
+
+    // Reviews overlay - EXACT same as app.js loadGMapsReviews
+    var gmapsLayer=L.layerGroup();
+    var gmapsVisible=false;
+    var ratingColors={5:'#16a34a',4:'#65a30d',3:'#ca8a04',2:'#ea580c',1:'#dc2626'};
+
+    revData.forEach(function(rev){
+      if(!rev.lat||!rev.lng) return;
+      var color=ratingColors[rev.rating]||'#9ca3af';
+      var rIcon=L.divIcon({className:'gmaps-dot',
+        html:'<div style="width:8px;height:8px;background:'+color+';border:1.5px solid #fff;border-radius:50%;opacity:.7"></div>',
+        iconSize:[8,8],iconAnchor:[4,4],popupAnchor:[0,-6]});
+      var stars='★'.repeat(rev.rating)+'☆'.repeat(5-rev.rating);
+      var text=rev.text?'<div style="margin:.35rem 0;font-size:.75rem;color:#444;line-height:1.4;max-height:160px;overflow-y:auto">'+rev.text+'</div>':'';
+      var addr=rev.address?rev.address.split(',').slice(-2).join(',').trim():'';
+      var popup='<div style="font-family:\'DM Sans\',sans-serif;font-size:.8125rem;max-width:260px">'
+        +'<div style="font-weight:600">'+rev.name+'</div>'
+        +'<div style="color:#ca8a04">'+stars+'</div>'
+        +text
+        +'<div style="color:#666;font-size:.7rem;margin-top:.25rem">'+addr+'</div>'
+        +'</div>';
+      L.marker([rev.lat,rev.lng],{icon:rIcon}).bindPopup(popup,{maxWidth:250}).addTo(gmapsLayer);
+    });
+
+    // Toggle button on map - EXACT same style as app.js
+    var toggleCtrl=L.control({position:'topright'});
+    toggleCtrl.onAdd=function(){
+      var div=L.DomUtil.create('div','gmaps-toggle');
+      div.innerHTML='<button onclick="toggleGMaps()" id="gmapsBtn" style="background:var(--card-bg,#f5f5f4);border:1px solid var(--border,#e7e5e4);border-radius:6px;padding:4px 10px;font-family:\'DM Sans\',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--text-muted,#57534e);white-space:nowrap">📍 Show Place Reviews (6)</button>';
+      L.DomEvent.disableClickPropagation(div);
+      return div;
+    };
+    toggleCtrl.addTo(map);
+
+    function toggleGMaps(){
+      gmapsVisible=!gmapsVisible;
+      if(gmapsVisible){gmapsLayer.addTo(map);document.getElementById('gmapsBtn').style.borderColor='#c2410c';document.getElementById('gmapsBtn').style.color='#c2410c';}
+      else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
+    }
+  </script>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+</body>
+</html>

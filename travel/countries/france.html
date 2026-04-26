@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM8CQZCG3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-JM8CQZCG3L');</script>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>France — Travel Notes by Özgür Alp</title>
+  <link rel="canonical" href="https://ozguralp.com/travel/countries/france.html"/>
+  <meta name="description" content="Travel notes from France: 1 posts covering 1 cities."/>
+  <meta property="og:title" content="France — Travel Notes"/><meta property="og:description" content="Travel notes from France."/>
+  <meta property="og:type" content="website"/><meta property="og:url" content="https://ozguralp.com/travel/countries/france.html"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@ozgur_bbh"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .country-page{max-width:var(--max-width);margin:0 auto;padding:0 1.5rem 4rem}
+    .country-header{padding:1.5rem 2rem;margin-bottom:1.5rem}
+    .country-title-row{display:flex;align-items:baseline;gap:1rem}
+    .country-title-row h1{font-family:'DM Serif Display',Georgia,serif;font-size:2.25rem;font-weight:400;margin:0}
+    .country-title-row .flag{font-size:1.75rem}
+    .country-stats{display:flex;gap:2rem;margin-top:.75rem;font-size:.875rem;color:var(--text-muted)}
+    .country-stats .cs-num{font-weight:700;color:var(--accent)}
+    #countryMap{width:100%;height:400px;border-radius:12px;border:1px solid var(--border);margin-bottom:1.5rem}
+    .posts-section h2{font-family:'DM Sans',sans-serif;font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin:1.5rem 0 .75rem}
+    .country-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);text-align:center;font-size:.8125rem;color:var(--text-muted)}
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="../" class="back-link">&larr; Travel Notes</a>
+    <div class="top-actions">
+      <button class="toggle-btn view-btn" onclick="window.location='../'" >List</button>
+      <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
+      <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
+    </div>
+  </div>
+  <div class="country-page">
+    <div class="country-header">
+      <div class="country-title-row">
+        <h1>France</h1>
+        <span class="flag">🇫🇷</span>
+      </div>
+      <div class="country-stats">
+        <span><span class="cs-num">1</span> posts</span>
+        <span><span class="cs-num">1</span> cities</span>
+        <span><span class="cs-num">8.0</span> avg rating</span>
+      </div>
+    </div>
+    <div id="countryMap"></div>
+    <div class="posts-section"><h2>All Posts</h2><a href="../posts/paris.html" style="display:flex;align-items:center;gap:.75rem;padding:.65rem .85rem;border-radius:8px;background:var(--card-bg);border-left:3px solid var(--accent);text-decoration:none;color:inherit;margin-bottom:.5rem;transition:background .2s"><div style="flex:1"><div style="font-weight:500;font-size:.9375rem;color:var(--text)">Paris<span style="font-size:.7rem;padding:.1rem .3rem;border-radius:3px;background:#c2410c;color:#fff;font-weight:600;margin-left:.35rem">8/10</span></div><div style="font-size:.75rem;color:var(--text-muted)">City Guide · Jul 2, 2023 · 3 min</div></div></a>
+</div>
+    <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    var postData=[{"lat": 48.8566, "lng": 2.3522, "title": "Paris", "slug": "paris"}];
+    var revData=[{"lat": 48.886705, "lng": 2.343104, "name": "Basilique du Sacr\u00e9-C\u0153ur de Montmartre", "rating": 5, "text": "Perfect panoramic view. 7 eur each person, but 290 steps. Really tiring but definitely worth it", "address": "35 Rue du Chevalier de la Barre, 75018 Paris, France", "color": "#16a34a"}, {"lat": 48.85837, "lng": 2.294481, "name": "Eiffel Tower", "rating": 5, "text": "", "address": "Av. Gustave Eiffel, 75007 Paris, France", "color": "#16a34a"}, {"lat": 48.861688, "lng": 2.28928, "name": "Jardins du Trocad\u00e9ro", "rating": 5, "text": "Best place to view Eiffel Tower", "address": "Pl. du Trocad\u00e9ro et du 11 Novembre, 75016 Paris, France", "color": "#16a34a"}, {"lat": 48.870839, "lng": 2.30319, "name": "Ladur\u00e9e", "rating": 5, "text": "Good desserts :)", "address": "75 Av. des Champs-\u00c9lys\u00e9es, 75008 Paris, France", "color": "#16a34a"}, {"lat": 48.873516, "lng": 2.309373, "name": "Librairie Auguste Blaizot", "rating": 5, "text": "A library to be in love. Just wonderful ancient old books. Employees were really helpful too.", "address": "164 Rue du Faubourg Saint-Honor\u00e9, 75008 Paris, France", "color": "#16a34a"}, {"lat": 48.875475, "lng": 2.306441, "name": "BOWL UP healthy food", "rating": 5, "text": "Nice food! They only have menu in French which is a problem. Rather than that, staff is helpful, delicious and healthy.", "address": "7bis Rue de Monceau, 75008 Paris, France", "color": "#16a34a"}, {"lat": 48.873792, "lng": 2.295028, "name": "Arc de Triomphe", "rating": 5, "text": "", "address": "Pl. Charles de Gaulle, 75008 Paris, France", "color": "#16a34a"}, {"lat": 48.881509, "lng": 2.299084, "name": "Il \u00e9tait une oie dans le Sud Ouest", "rating": 5, "text": "Traditional French restaurant. Duck leg was awesome. Other duck appetizers were ok", "address": "8 Rue Gustave Flaubert, 75017 Paris, France", "color": "#16a34a"}, {"lat": 48.881279, "lng": 2.298746, "name": "Perotti Franck", "rating": 5, "text": "Good quiche and creme de brulee", "address": "11 Rue Gustave Flaubert, 75017 Paris, France", "color": "#16a34a"}, {"lat": 48.878504, "lng": 2.291404, "name": "Librairie Saint Ferdinand", "rating": 1, "text": "Only religious books", "address": "26 Rue d'Armaill\u00e9, 75017 Paris, France", "color": "#dc2626"}, {"lat": 48.877228, "lng": 2.292727, "name": "WINESS", "rating": 5, "text": "Nice store! After we asked what is pastis liquor like, owner let us taste a little bit! :)", "address": "42 Rue des Acacias, 75017 Paris, France", "color": "#16a34a"}, {"lat": 48.879886, "lng": 2.295159, "name": "Le Lutin", "rating": 5, "text": "Really friendly staff", "address": "2bis Rue Fourcroy, 75017 Paris, France", "color": "#16a34a"}, {"lat": 48.881852, "lng": 2.294637, "name": "L'Entre deux Vins", "rating": 5, "text": "Nice wine store. You can have 3 different reds and whites per glass per day. We also had chance to try of cassis liquor. Owner is really helpful.", "address": "39 Rue Laugier, 75017 Paris, France", "color": "#16a34a"}, {"lat": 48.871506, "lng": 2.306402, "name": "Le Sens Unique", "rating": 5, "text": "Good ambiance, glass wines are good. Awesome food, duck leg was perfect.", "address": "47 Rue de Ponthieu, 75008 Paris, France", "color": "#16a34a"}, {"lat": 48.881178, "lng": 2.298459, "name": "MAM par St\u00e9phanie Le Quellec - Fourcroy", "rating": 5, "text": "Awesome pecan cookies!", "address": "22 Rue Fourcroy, 75017 Paris, France", "color": "#16a34a"}, {"lat": 48.874459, "lng": 2.308063, "name": "Truffes Folies", "rating": 5, "text": "Awesome place to eat! A little bit expensive but all worth it. Soup and ravioli was our favorite.", "address": "48 Rue de Berri, 75008 Paris, France", "color": "#16a34a"}, {"lat": 48.877215, "lng": 2.299733, "name": "Le XXV", "rating": 3, "text": "Too long lines. Employee was really quick but not enough for this crowd. Quiches were good but a little bit expensive.", "address": "225 Rue du Faubourg Saint-Honor\u00e9, 75008 Paris, France", "color": "#ca8a04"}, {"lat": 48.877222, "lng": 2.297222, "name": "Le P'tit Wagram", "rating": 4, "text": "Crispy pesto gouda was just awesome. Onion soup was ok. Selection of wines are good but served a little bit more warm.", "address": "45 Av. de Wagram, 75017 Paris, France", "color": "#65a30d"}, {"lat": 48.879703, "lng": 2.345518, "name": "Jolis M\u00f4mes", "rating": 4, "text": "Nice bar, good selection of white wines, nice appetizers such as truffle gouda", "address": "5 Rue Turgot, 75009 Paris, France", "color": "#65a30d"}, {"lat": 48.884604, "lng": 2.333717, "name": "Boulangerie P\u00e2tisserie Sylvain Marie", "rating": 4, "text": "Awesome quiches! Best in town. Cake with pistachio was not good. Staff is a little bit slow.", "address": "12 Rue Coustou, 75018 Paris, France", "color": "#65a30d"}, {"lat": 48.881495, "lng": 2.298188, "name": "Hotel Elysees Flaubert Paris", "rating": 2, "text": "Location is good but anything than that is not good. Old hotel, all facilities are old and neglected. Rooms are little. Sound isolation is 0.\n\nNot worth for the price.", "address": "19 Rue Rennequin, 75017 Paris, France", "color": "#ea580c"}];
+    var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+    var tile=isDark?'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png':'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+    var map=L.map('countryMap',{scrollWheelZoom:true});
+    L.tileLayer(tile,{subdomains:'abcd',maxZoom:19}).addTo(map);
+    map.fitBounds([[41.3, -5.2],[51.1, 9.6]]);
+
+    var icon=L.divIcon({className:'custom-marker',
+      html:'<div style="width:12px;height:12px;background:#c2410c;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.3)"></div>',
+      iconSize:[12,12],iconAnchor:[6,6],popupAnchor:[0,-8]});
+
+    postData.forEach(function(p){
+      if(p.lat) L.marker([p.lat,p.lng],{icon:icon}).bindPopup(
+        '<div class="popup-title">'+p.title+'</div><a class="popup-link" href="../posts/'+p.slug+'.html">Read &rarr;</a>',
+        {maxWidth:280}).addTo(map);
+    });
+
+    // Reviews overlay - EXACT same as app.js loadGMapsReviews
+    var gmapsLayer=L.layerGroup();
+    var gmapsVisible=false;
+    var ratingColors={5:'#16a34a',4:'#65a30d',3:'#ca8a04',2:'#ea580c',1:'#dc2626'};
+
+    revData.forEach(function(rev){
+      if(!rev.lat||!rev.lng) return;
+      var color=ratingColors[rev.rating]||'#9ca3af';
+      var rIcon=L.divIcon({className:'gmaps-dot',
+        html:'<div style="width:8px;height:8px;background:'+color+';border:1.5px solid #fff;border-radius:50%;opacity:.7"></div>',
+        iconSize:[8,8],iconAnchor:[4,4],popupAnchor:[0,-6]});
+      var stars='★'.repeat(rev.rating)+'☆'.repeat(5-rev.rating);
+      var text=rev.text?'<div style="margin:.35rem 0;font-size:.75rem;color:#444;line-height:1.4;max-height:160px;overflow-y:auto">'+rev.text+'</div>':'';
+      var addr=rev.address?rev.address.split(',').slice(-2).join(',').trim():'';
+      var popup='<div style="font-family:\'DM Sans\',sans-serif;font-size:.8125rem;max-width:260px">'
+        +'<div style="font-weight:600">'+rev.name+'</div>'
+        +'<div style="color:#ca8a04">'+stars+'</div>'
+        +text
+        +'<div style="color:#666;font-size:.7rem;margin-top:.25rem">'+addr+'</div>'
+        +'</div>';
+      L.marker([rev.lat,rev.lng],{icon:rIcon}).bindPopup(popup,{maxWidth:250}).addTo(gmapsLayer);
+    });
+
+    // Toggle button on map - EXACT same style as app.js
+    var toggleCtrl=L.control({position:'topright'});
+    toggleCtrl.onAdd=function(){
+      var div=L.DomUtil.create('div','gmaps-toggle');
+      div.innerHTML='<button onclick="toggleGMaps()" id="gmapsBtn" style="background:var(--card-bg,#f5f5f4);border:1px solid var(--border,#e7e5e4);border-radius:6px;padding:4px 10px;font-family:\'DM Sans\',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--text-muted,#57534e);white-space:nowrap">📍 Show Place Reviews (21)</button>';
+      L.DomEvent.disableClickPropagation(div);
+      return div;
+    };
+    toggleCtrl.addTo(map);
+
+    function toggleGMaps(){
+      gmapsVisible=!gmapsVisible;
+      if(gmapsVisible){gmapsLayer.addTo(map);document.getElementById('gmapsBtn').style.borderColor='#c2410c';document.getElementById('gmapsBtn').style.color='#c2410c';}
+      else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
+    }
+  </script>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+</body>
+</html>

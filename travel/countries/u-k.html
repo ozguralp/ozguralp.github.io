@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM8CQZCG3L"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-JM8CQZCG3L');</script>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>U.K. — Travel Notes by Özgür Alp</title>
+  <link rel="canonical" href="https://ozguralp.com/travel/countries/u-k.html"/>
+  <meta name="description" content="Travel notes from U.K.: 2 posts covering 2 cities."/>
+  <meta property="og:title" content="U.K. — Travel Notes"/><meta property="og:description" content="Travel notes from U.K.."/>
+  <meta property="og:type" content="website"/><meta property="og:url" content="https://ozguralp.com/travel/countries/u-k.html"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@ozgur_bbh"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .country-page{max-width:var(--max-width);margin:0 auto;padding:0 1.5rem 4rem}
+    .country-header{padding:1.5rem 2rem;margin-bottom:1.5rem}
+    .country-title-row{display:flex;align-items:baseline;gap:1rem}
+    .country-title-row h1{font-family:'DM Serif Display',Georgia,serif;font-size:2.25rem;font-weight:400;margin:0}
+    .country-title-row .flag{font-size:1.75rem}
+    .country-stats{display:flex;gap:2rem;margin-top:.75rem;font-size:.875rem;color:var(--text-muted)}
+    .country-stats .cs-num{font-weight:700;color:var(--accent)}
+    #countryMap{width:100%;height:400px;border-radius:12px;border:1px solid var(--border);margin-bottom:1.5rem}
+    .posts-section h2{font-family:'DM Sans',sans-serif;font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin:1.5rem 0 .75rem}
+    .country-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);text-align:center;font-size:.8125rem;color:var(--text-muted)}
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="../" class="back-link">&larr; Travel Notes</a>
+    <div class="top-actions">
+      <button class="toggle-btn view-btn" onclick="window.location='../'" >List</button>
+      <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
+      <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
+    </div>
+  </div>
+  <div class="country-page">
+    <div class="country-header">
+      <div class="country-title-row">
+        <h1>U.K.</h1>
+        <span class="flag">🇬🇧</span>
+      </div>
+      <div class="country-stats">
+        <span><span class="cs-num">2</span> posts</span>
+        <span><span class="cs-num">2</span> cities</span>
+        <span><span class="cs-num">6.0</span> avg rating</span>
+      </div>
+    </div>
+    <div id="countryMap"></div>
+    <div class="posts-section"><h2>All Posts</h2><a href="../posts/london.html" style="display:flex;align-items:center;gap:.75rem;padding:.65rem .85rem;border-radius:8px;background:var(--card-bg);border-left:3px solid var(--accent);text-decoration:none;color:inherit;margin-bottom:.5rem;transition:background .2s"><div style="flex:1"><div style="font-weight:500;font-size:.9375rem;color:var(--text)">London<span style="font-size:.7rem;padding:.1rem .3rem;border-radius:3px;background:#c2410c;color:#fff;font-weight:600;margin-left:.35rem">8/10</span></div><div style="font-size:.75rem;color:var(--text-muted)">City Guide · Jan 22, 2024 · 1 min</div></div></a>
+<a href="../posts/oxford.html" style="display:flex;align-items:center;gap:.75rem;padding:.65rem .85rem;border-radius:8px;background:var(--card-bg);border-left:3px solid var(--accent);text-decoration:none;color:inherit;margin-bottom:.5rem;transition:background .2s"><div style="flex:1"><div style="font-weight:500;font-size:.9375rem;color:var(--text)">Oxford<span style="font-size:.7rem;padding:.1rem .3rem;border-radius:3px;background:#c2410c;color:#fff;font-weight:600;margin-left:.35rem">4/10</span></div><div style="font-size:.75rem;color:var(--text-muted)">City Guide · Jan 25, 2024 · 1 min</div></div></a>
+</div>
+    <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    var postData=[{"lat": 51.752, "lng": -1.2577, "title": "Oxford", "slug": "oxford"}, {"lat": 51.5074, "lng": -0.1278, "title": "London", "slug": "london"}];
+    var revData=[{"lat": 51.505438, "lng": -0.090239, "name": "Bedales of Borough Market", "rating": 5, "text": "Great atmosphere, appetizers and selection of glass of wines.\n\nArancini and octopus was great!", "address": "5 Bedale St, London SE1 9AL, United Kingdom", "color": "#16a34a"}, {"lat": 51.498539, "lng": -0.081195, "name": "Baccal\u00e0 Seafood & Wine - Restaurant London Bridge", "rating": 5, "text": "Delicious fried squid and seafood pasta. All the food we eat was just great. They also have a good selection of wines.\n\nOne problem was the inside of the restaurant was a little bit unventilated. Food smell will be all on your clothes.", "address": "Unit B3, 194 Bermondsey St, London SE1 3TQ, United Kingdom", "color": "#16a34a"}, {"lat": 51.502247, "lng": -0.084697, "name": "Trivet", "rating": 3, "text": "They have really good options in terms of wine menu. You can drink any wine all around the world. You can just go to drink a glass of wine.\n\nAbout food, they have some good options, but some of the appetizers were just ok. Expectations from a two star chef restaurant is more from that.", "address": "36 Snowsfields, London SE1 3SU, United Kingdom", "color": "#ca8a04"}, {"lat": 51.500798, "lng": -0.08184, "name": "Farmer J London Bridge", "rating": 5, "text": "Healthy and super delicious bowls. They have quite options, which all of them were nice. Cookies are also best :)", "address": "Unit SU49, Bermondsey St, London SE1 2TF, United Kingdom", "color": "#16a34a"}, {"lat": 51.498716, "lng": -0.084136, "name": "Residence Inn by Marriott London Bridge", "rating": 4, "text": "Rooms were enough big, kitchens are also nice for long stays. But rooms were a little bit dirty when we got it. There were leftover towels from previous guests.\n\nBreakfast was quite nice. Location is great, just 5-10 minutes to the London Bridge.", "address": "201, 211 Long Ln, London SE1 4PN, United Kingdom", "color": "#65a30d"}, {"lat": 51.506823, "lng": -0.070194, "name": "The Dickens Inn", "rating": 4, "text": "It has a good atmosphere and building. Food is just bar food, it was ok but not too complex.", "address": "50 St Katharine's Way, London E1W 1LA, United Kingdom", "color": "#65a30d"}, {"lat": 51.511021, "lng": -0.08551, "name": "Vagabond Wines Monument", "rating": 5, "text": "Just a great place to taste different wines. Good food, really good atmosphere, great selection of wines!", "address": "51 Gracechurch St, London EC3V 0EH, United Kingdom", "color": "#16a34a"}, {"lat": 51.518674, "lng": -0.135167, "name": "Vagabond Wines Charlotte Street, Fitzrovia", "rating": 3, "text": "Comparing to the other Vagabond's, this one is a little bit small. It was airless when visited on a cold winter evening. Maybe it could be good in the spring/summer, but you can look into others in cold weather.", "address": "25 Charlotte St., London W1T 1RW, United Kingdom", "color": "#ca8a04"}, {"lat": 51.542222, "lng": -0.147535, "name": "Cyberdog", "rating": 5, "text": "Just an amazing place! :) If you are into cyberpunk, definitely worth to visit, they have amazing stuff.", "address": "45 Chalk Farm Rd, Chalk Farm, London NW1 8AH, United Kingdom", "color": "#16a34a"}, {"lat": 51.754701, "lng": -1.252952, "name": "Turf Tavern", "rating": 2, "text": "The Turf Tavern food looked really appealing but came out mediocre. The seafood risotto was basically just cooked rice :)) The squid was way too oily, really burned my stomach.", "address": "4 Bath Pl, Oxford OX1 3SU, United Kingdom", "color": "#ea580c"}, {"lat": 51.749873, "lng": -1.255845, "name": "Christ Church", "rating": 3, "text": "Good to see, but the price is high comparing to what to have inside.", "address": "St Aldate's, Oxford OX1 1DP, United Kingdom", "color": "#ca8a04"}, {"lat": 51.748996, "lng": -1.261382, "name": "The Alchemist Oxford", "rating": 5, "text": "Nice atmosphere, good service, really nice desserts.", "address": "Westgate, Bonn Square, Oxford OX1 1TR, United Kingdom", "color": "#16a34a"}];
+    var isDark=document.documentElement.getAttribute('data-theme')==='dark';
+    var tile=isDark?'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png':'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+    var map=L.map('countryMap',{scrollWheelZoom:true});
+    L.tileLayer(tile,{subdomains:'abcd',maxZoom:19}).addTo(map);
+    map.fitBounds([[49.9, -8.2],[60.9, 1.8]]);
+
+    var icon=L.divIcon({className:'custom-marker',
+      html:'<div style="width:12px;height:12px;background:#c2410c;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.3)"></div>',
+      iconSize:[12,12],iconAnchor:[6,6],popupAnchor:[0,-8]});
+
+    postData.forEach(function(p){
+      if(p.lat) L.marker([p.lat,p.lng],{icon:icon}).bindPopup(
+        '<div class="popup-title">'+p.title+'</div><a class="popup-link" href="../posts/'+p.slug+'.html">Read &rarr;</a>',
+        {maxWidth:280}).addTo(map);
+    });
+
+    // Reviews overlay - EXACT same as app.js loadGMapsReviews
+    var gmapsLayer=L.layerGroup();
+    var gmapsVisible=false;
+    var ratingColors={5:'#16a34a',4:'#65a30d',3:'#ca8a04',2:'#ea580c',1:'#dc2626'};
+
+    revData.forEach(function(rev){
+      if(!rev.lat||!rev.lng) return;
+      var color=ratingColors[rev.rating]||'#9ca3af';
+      var rIcon=L.divIcon({className:'gmaps-dot',
+        html:'<div style="width:8px;height:8px;background:'+color+';border:1.5px solid #fff;border-radius:50%;opacity:.7"></div>',
+        iconSize:[8,8],iconAnchor:[4,4],popupAnchor:[0,-6]});
+      var stars='★'.repeat(rev.rating)+'☆'.repeat(5-rev.rating);
+      var text=rev.text?'<div style="margin:.35rem 0;font-size:.75rem;color:#444;line-height:1.4;max-height:160px;overflow-y:auto">'+rev.text+'</div>':'';
+      var addr=rev.address?rev.address.split(',').slice(-2).join(',').trim():'';
+      var popup='<div style="font-family:\'DM Sans\',sans-serif;font-size:.8125rem;max-width:260px">'
+        +'<div style="font-weight:600">'+rev.name+'</div>'
+        +'<div style="color:#ca8a04">'+stars+'</div>'
+        +text
+        +'<div style="color:#666;font-size:.7rem;margin-top:.25rem">'+addr+'</div>'
+        +'</div>';
+      L.marker([rev.lat,rev.lng],{icon:rIcon}).bindPopup(popup,{maxWidth:250}).addTo(gmapsLayer);
+    });
+
+    // Toggle button on map - EXACT same style as app.js
+    var toggleCtrl=L.control({position:'topright'});
+    toggleCtrl.onAdd=function(){
+      var div=L.DomUtil.create('div','gmaps-toggle');
+      div.innerHTML='<button onclick="toggleGMaps()" id="gmapsBtn" style="background:var(--card-bg,#f5f5f4);border:1px solid var(--border,#e7e5e4);border-radius:6px;padding:4px 10px;font-family:\'DM Sans\',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;color:var(--text-muted,#57534e);white-space:nowrap">📍 Show Place Reviews (12)</button>';
+      L.DomEvent.disableClickPropagation(div);
+      return div;
+    };
+    toggleCtrl.addTo(map);
+
+    function toggleGMaps(){
+      gmapsVisible=!gmapsVisible;
+      if(gmapsVisible){gmapsLayer.addTo(map);document.getElementById('gmapsBtn').style.borderColor='#c2410c';document.getElementById('gmapsBtn').style.color='#c2410c';}
+      else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
+    }
+  </script>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+</body>
+</html>

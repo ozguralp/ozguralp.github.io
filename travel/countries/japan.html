@@ -58,6 +58,7 @@
 </div>
     <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
   </div>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     var postData=[{"lat": 34.3853, "lng": 132.4553, "title": "Hiroshima", "slug": "hiroshima"}, {"lat": 35.6762, "lng": 139.6503, "title": "Japan", "slug": "japan"}, {"lat": 35.0116, "lng": 135.7681, "title": "Kyoto", "slug": "kyoto"}, {"lat": 34.6851, "lng": 135.8048, "title": "Nara", "slug": "nara"}, {"lat": 35.6762, "lng": 139.6503, "title": "Tokyo", "slug": "tokyo"}];
@@ -117,6 +118,6 @@
       else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
     }
   </script>
-  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+  
 </body>
 </html>

@@ -62,6 +62,7 @@
 </div>
     <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
   </div>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     var postData=[{"lat": -12.5933, "lng": -69.1897, "title": "Amazon Rainforest", "slug": "amazon-rainforest"}, {"lat": -13.7333, "lng": -76.2333, "title": "Ballestas Islands", "slug": "ballestas"}, {"lat": -13.532, "lng": -71.9675, "title": "Cusco", "slug": "cusco"}, {"lat": -14.0875, "lng": -75.7633, "title": "Huacachina", "slug": "huacachina"}, {"lat": -12.0464, "lng": -77.0428, "title": "Lima", "slug": "lima"}, {"lat": -13.1631, "lng": -72.545, "title": "Machu Picchu", "slug": "machu-picchu"}, {"lat": -12.0464, "lng": -77.0428, "title": "Peru", "slug": "peru"}, {"lat": -13.71, "lng": -76.2, "title": "Pisco", "slug": "pisco"}, {"lat": -15.8402, "lng": -69.3342, "title": "Lake Titicaca", "slug": "titicaca"}];
@@ -121,6 +122,6 @@
       else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
     }
   </script>
-  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+  
 </body>
 </html>

@@ -59,6 +59,7 @@
 </div>
     <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
   </div>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     var postData=[{"lat": 52.3676, "lng": 4.9041, "title": "Amsterdam", "slug": "amsterdam"}, {"lat": 52.0116, "lng": 4.3571, "title": "Delft", "slug": "delft"}, {"lat": 52.2697, "lng": 4.5462, "title": "Keukenhof", "slug": "keukenhof"}, {"lat": 52.3676, "lng": 4.9041, "title": "Netherlands", "slug": "netherlands"}, {"lat": 52.495, "lng": 5.0711, "title": "Volendam", "slug": "volendam"}, {"lat": 52.4739, "lng": 4.7711, "title": "Zaanse Schans", "slug": "zaanse-schans"}];
@@ -118,6 +119,6 @@
       else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
     }
   </script>
-  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+  
 </body>
 </html>

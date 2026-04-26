@@ -58,6 +58,7 @@
 </div>
     <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
   </div>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     var postData=[{"lat": -33.9249, "lng": 18.4241, "title": "Cape Town", "slug": "cape-town"}, {"lat": -25.2839, "lng": 27.085, "title": "Pilanesberg", "slug": "pilanesberg"}, {"lat": -26.2041, "lng": 28.0473, "title": "South Africa", "slug": "south-africa"}, {"lat": -25.3361, "lng": 27.0928, "title": "Sun City", "slug": "sun-city"}, {"lat": -26.2041, "lng": 28.0473, "title": "Johannesburg", "slug": "johannesburg"}];
@@ -117,6 +118,6 @@
       else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
     }
   </script>
-  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+  
 </body>
 </html>

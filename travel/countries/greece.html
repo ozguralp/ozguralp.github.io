@@ -63,6 +63,7 @@
 </div>
     <div class="country-footer"><p>&copy; 2026 Özgür Alp</p></div>
   </div>
+  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     var postData=[{"lat": 37.9838, "lng": 23.7275, "title": "Athens", "slug": "athens"}, {"lat": 37.5, "lng": 25.0, "title": "Greek Island Cruise", "slug": "greek-island-cruise"}, {"lat": 35.2401, "lng": 24.4709, "title": "Crete", "slug": "crete"}, {"lat": 36.7167, "lng": 24.4333, "title": "Milos", "slug": "milos"}, {"lat": 37.4467, "lng": 25.3289, "title": "Mykonos", "slug": "mykonos"}, {"lat": 36.4341, "lng": 28.2176, "title": "Rhodes", "slug": "rhodes"}, {"lat": 38.3667, "lng": 26.1333, "title": "Chios", "slug": "chios"}, {"lat": 37.7575, "lng": 26.9758, "title": "Samos", "slug": "samos"}, {"lat": 36.3932, "lng": 25.4615, "title": "Santorini", "slug": "santorini"}, {"lat": 40.6401, "lng": 22.9444, "title": "Thessaloniki", "slug": "thessaloniki"}];
@@ -122,6 +123,6 @@
       else{map.removeLayer(gmapsLayer);document.getElementById('gmapsBtn').style.borderColor='';document.getElementById('gmapsBtn').style.color='';}
     }
   </script>
-  <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
+  
 </body>
 </html>

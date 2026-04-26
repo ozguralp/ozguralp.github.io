@@ -595,9 +595,12 @@
 <body>
 
   <div class="wrap">
-    <div class="top-bar">
-      <button class="toggle-btn" id="lang-toggle" onclick="toggleLang()" aria-label="Switch language">TR</button>
-      <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">☽</button>
+    <div class="top-bar" style="justify-content:space-between">
+      <a href="/travel/" style="color:var(--text-muted);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'"><span data-lang="en">Travel Notes &rarr;</span><span data-lang="tr">Gezi Notları &rarr;</span></a>
+      <div style="display:flex;gap:0.5rem">
+        <button class="toggle-btn" id="lang-toggle" onclick="toggleLang()" aria-label="Switch language">TR</button>
+        <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">☽</button>
+      </div>
     </div>
 
     <header>
@@ -722,6 +725,10 @@
       <h2><span data-lang="en">latest newspaper articles</span><span data-lang="tr">son gazete yazıları</span></h2>
       <div class="blog-posts">
         <div class="blog-post">
+          <a href="https://www.finansalteknoloji.com/haber/makineler-uyudugunda-ne-gorur-openclaw-ve-yapay-zekanin-ruyalari" target="_blank" rel="noopener">Makineler Uyuduğunda Ne Görür? OpenClaw ve Yapay Zekanın Rüyaları</a>
+          <div class="blog-date">Finansal Teknoloji</div>
+        </div>
+        <div class="blog-post">
           <a href="https://finansalteknoloji.com/haber/yeni-bilgisayar-cagi-ve-kusursuz-asistanlarimizin-yukselisi" target="_blank" rel="noopener">"Yeni Bilgisayar" Çağı ve Kusursuz Asistanlarımızın Yükselişi</a>
           <div class="blog-date">Finansal Teknoloji</div>
         </div>
@@ -834,8 +841,8 @@
     <section>
       <h2><span data-lang="en">beyond work</span><span data-lang="tr">iş dışında</span></h2>
       <ul class="hobby-list">
-        <li data-lang="en">&#x2708;&#xFE0F; Full-time family traveler: exploring the world one city at a time</li>
-        <li data-lang="tr">&#x2708;&#xFE0F; Ailesiyle tam zamanlı gezgin: dünyayı şehir şehir keşfediyor</li>
+        <li data-lang="en">&#x2708;&#xFE0F; Full-time family traveler: exploring the world one city at a time — <a href="/travel/">read my travel notes</a></li>
+        <li data-lang="tr">&#x2708;&#xFE0F; Ailesiyle tam zamanlı gezgin: dünyayı şehir şehir keşfediyor — <a href="/travel/">gezi notlarımı oku</a></li>
         <li data-lang="en">&#x1F377; WSET Level 3 certified wine tasting professional</li>
         <li data-lang="tr">&#x1F377; WSET Seviye 3 sertifikalı şarap tadım uzmanı</li>
         <li data-lang="en">&#x1F347; House winemaker</li>

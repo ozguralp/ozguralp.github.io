@@ -1,8 +1,9 @@
-const CACHE_NAME = 'travel-notes-v1';
+const CACHE_NAME = 'travel-notes-v6';
 const STATIC_ASSETS = [
   './',
   './style.css',
   './app.js',
+  './analytics.js',
   './data.json',
 ];
 

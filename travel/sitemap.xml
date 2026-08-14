@@ -3,7 +3,7 @@
   <url>
     <loc>https://ozguralp.com/travel/</loc>
     <lastmod>2026-04-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
@@ -33,6 +33,12 @@
   <url>
     <loc>https://ozguralp.com/travel/countries/bulgaria.html</loc>
     <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/countries/cambodia.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -175,6 +181,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ozguralp.com/travel/countries/singapore.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ozguralp.com/travel/countries/south-africa.html</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -193,6 +205,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ozguralp.com/travel/countries/thailand.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ozguralp.com/travel/countries/turkey.html</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -207,6 +225,12 @@
   <url>
     <loc>https://ozguralp.com/travel/countries/u-s-a.html</loc>
     <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/countries/vietnam.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -764,7 +788,7 @@
   </url>
   <url>
     <loc>https://ozguralp.com/travel/posts/bergama.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -999,6 +1023,150 @@
   <url>
     <loc>https://ozguralp.com/travel/posts/tiwanaku.html</loc>
     <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/vietnam.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/hanoi.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/ha-long-bay.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/da-nang.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/hoi-an.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/cambodia.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/siem-reap.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/angkor-wat.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/angkor-thom.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/preah-khan.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/neak-pean.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/singapore.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/thailand.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/koh-samui.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/bangkok.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/teos.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/isikli-lake.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/sapanca.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/grab-southeast-asia.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/turkish-airlines-infant-seat.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/vietnam-airlines.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/air-cambodia.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/singapore-airlines.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ozguralp.com/travel/posts/bangkok-airways.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

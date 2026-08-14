@@ -27,7 +27,9 @@ const FLAGS = {
   'Zimbabwe':'\u{1F1FF}\u{1F1FC}',
   'Japan':'\u{1F1EF}\u{1F1F5}','Hong Kong':'\u{1F1ED}\u{1F1F0}',
   'Macau':'\u{1F1F2}\u{1F1F4}','Nepal':'\u{1F1F3}\u{1F1F5}',
-  'Georgia':'\u{1F1EC}\u{1F1EA}',
+  'Georgia':'\u{1F1EC}\u{1F1EA}','Vietnam':'\u{1F1FB}\u{1F1F3}',
+  'Cambodia':'\u{1F1F0}\u{1F1ED}','Singapore':'\u{1F1F8}\u{1F1EC}',
+  'Thailand':'\u{1F1F9}\u{1F1ED}',
 };
 
 function formatDate(d){if(!d)return'';const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];const p=d.split('-');return p.length===3?`${months[+p[1]-1]} ${+p[2]}, ${p[0]}`:d;}
@@ -153,10 +155,10 @@ function postCard(p){
   let t=p.title;
   if(p.review_num>0)t+=` (Review ${p.review_num})`;
   const type=p.post_type||'';
-  const date=formatDate(p.date);
+  const date=p.visit_date_label||formatDate(p.date);
   const wine=p.has_wine?'<span class="wine-badge" title="Wine content">\u{1F377}</span>':'';
   const rating=p.rating?`<span class="rating-badge" title="Rating: ${p.rating}/10">${p.rating}/10</span>`:'';
-  return`<a class="post-card" href="posts/${p.slug}.html?from=${currentView}" onclick="saveScrollState()">
+  return`<a class="post-card" href="posts/${p.slug}.html" onclick="saveScrollState()">
     <span class="post-dot"></span>
     <div class="post-info">
       <div class="post-title">${t} ${wine}${rating}</div>
@@ -181,7 +183,7 @@ function initMap(){
     iconSize:[12,12],iconAnchor:[6,6],popupAnchor:[0,-8]});
 
   const locMap={};
-  posts.forEach(p=>{if(!p.lat&&!p.lng)return;const k=`${p.lat.toFixed(1)},${p.lng.toFixed(1)}`;if(!locMap[k])locMap[k]=[];locMap[k].push(p);});
+  posts.forEach(p=>{if(p.show_on_map===false||(!p.lat&&!p.lng))return;const k=`${p.lat.toFixed(1)},${p.lng.toFixed(1)}`;if(!locMap[k])locMap[k]=[];locMap[k].push(p);});
 
   Object.values(locMap).forEach(group=>{
     const p0=group[0];
@@ -189,7 +191,7 @@ function initMap(){
     if(group.length===1){
       const subtitle=p0.title!==p0.country_display?p0.country_display:'';
       popup=`<div class="popup-title">${p0.title}</div>${subtitle?'<div class="popup-meta">'+subtitle+'</div>':''}
-        <a class="popup-link" href="posts/${p0.slug}.html?from=map" onclick="saveScrollState()">Read &rarr;</a>`;
+        <a class="popup-link" href="posts/${p0.slug}.html" onclick="saveScrollState()">Read &rarr;</a>`;
     }else{
       const loc=group[0].city&&group[0].city!=='General'?group[0].city:group[0].country_display;
       const metaCountry=loc!==group[0].country_display?group[0].country_display:'';
@@ -197,7 +199,7 @@ function initMap(){
       const allSame=group.every(g=>g.title===group[0].title);
       group.forEach((p,i)=>{
         const label=allSame&&group.length>1?`Read (${i+1})`:(p.review_num>0?`${p.title} (Review ${p.review_num})`:p.title);
-        popup+=`<a class="popup-link" href="posts/${p.slug}.html?from=map" onclick="saveScrollState()" style="display:block">${label} &rarr;</a>`;
+        popup+=`<a class="popup-link" href="posts/${p.slug}.html" onclick="saveScrollState()" style="display:block">${label} &rarr;</a>`;
       });
     }
     L.marker([p0.lat,p0.lng],{icon}).bindPopup(popup,{maxWidth:280}).addTo(map);
@@ -291,7 +293,7 @@ function renderTimeline(){
       // Show city under country name for context
       const tc=p.turkey_city||p.state||'';
       const subtitle=tc&&tc!==p.title?tc:'';
-      html+=`<a class="timeline-stop" href="posts/${p.slug}.html?from=timeline" onclick="saveScrollState()">
+      html+=`<a class="timeline-stop" href="posts/${p.slug}.html" onclick="saveScrollState()">
         <span class="timeline-dot"></span>
         <span class="timeline-stop-info">
           <span class="timeline-stop-title">${flag} ${p.title}</span>

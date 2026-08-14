@@ -8,7 +8,9 @@
     "text": "The food was magnificent, the staff was very attentive, and the rooms were beautiful. The only downside, which I wish we had known beforehand, was having to leave the cruise for 7 hours during the 2-day tour. It makes more sense to book a single-day tour. While the 2-day option is enjoyable, you really need to check the itinerary details and ask questions; being transferred to a different boat for 7-8 hours is quite ridiculous because it ruins the comfort of the main cruise.",
     "date": "Apr 2026",
     "category": "tour",
-    "blog_slugs": []
+    "blog_slugs": [
+      "ha-long-bay"
+    ]
   },
   {
     "lat": 38.321808,
@@ -5560,9 +5562,7 @@
     "text": "Their cakes are good, nice atmosphere. The plain lemonade was a bit too sweet (despite them calling it sugar-free) but the strawberry lemonade was good.",
     "date": "2024",
     "category": "cafe",
-    "blog_slugs": [
-      "bergama"
-    ]
+    "blog_slugs": []
   },
   {
     "lat": 38.933872,
@@ -5573,9 +5573,7 @@
     "text": "Looks nice from the outside. It was closed for the holiday so we couldn't see inside.",
     "date": "2024",
     "category": "attraction",
-    "blog_slugs": [
-      "bergama"
-    ]
+    "blog_slugs": []
   },
   {
     "lat": 38.413698,
@@ -12001,5 +11999,1016 @@
     "date": "2018",
     "category": "hotel",
     "blog_slugs": []
+  },
+  {
+    "lat": 38.4338069,
+    "lng": 27.1422221,
+    "name": "By Melly",
+    "address": "Kültür, Nevvar Salih İşgören Sk No:6, 35220 Konak/İzmir",
+    "rating": 5,
+    "text": "The portions are quite filling, there are plenty of options, and the quality of the ingredients is good. The staff are attentive. Service is a little slow because there's only one employee, but since it's a more European-style place, it didn't bother us. It might not be suitable for those in a hurry, but it's a very nice place for those who want to have a pleasant breakfast. The Hunger dish was superb.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": []
+  },
+  {
+    "lat": 37.0302332,
+    "lng": 27.4402156,
+    "name": "Orfoz Restaurant Bodrum",
+    "address": "Kumbahçe, Zeki Müren Cd. No: 13/1, 48400 Bodrum/Muğla",
+    "rating": 5,
+    "text": "The tasting menu was the best seafood tasting menu I've ever had. Although the portions were small, the amount of food was quite generous, making it very filling. Two of us ordered one tasting menu plus 3-4 hot appetizers to try everything. Their own wine is also excellent; it's a must-try if you're visiting Neferiye.\n\nIt's a restaurant of such high quality that I'll definitely return to.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.032233,
+    "lng": 27.43762,
+    "name": "Red Pan Pizzeria",
+    "address": "Kumbahçe, Cumhuriyet Cd. No:139, 48400 Bodrum/Muğla",
+    "rating": 4,
+    "text": "The location is quite beautiful, especially the views are amazing. The only downside is that the wine selection is quite limited for a pizza-focused place.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.020502,
+    "lng": 27.343871,
+    "name": "Khai Hotel Bodrum",
+    "address": "Yahşi Mahallesi, Müskebi, Yalı Cd. no 26, 48400 Bodrum/Muğla",
+    "rating": 5,
+    "text": "Overall, we were satisfied with the hotel. The breakfast and rooms were good, and the staff were very helpful, if a little forgetful. The biggest problem was the sun loungers: guests reserved them with towels at 8 a.m. and often did not return for hours. The number of loungers was not enough for the number of guests, and without a system to manage reservations the setup became uncomfortable. It is otherwise quite suitable for families with children.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.0636173,
+    "lng": 27.3371671,
+    "name": "İZ Bodrum",
+    "address": "Müskebi, Badrum Cad No:93 D:3, 48400 Bodrum/Muğla",
+    "rating": 4,
+    "text": "We enjoyed the food. The drinks menu was a bit limited; especially considering its Italian concept, I would have expected a wider selection of wines (by the glass). The atmosphere was lovely.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.0630386,
+    "lng": 27.6008837,
+    "name": "Garova Vineyards",
+    "address": "Pınarlıbelen, Karanlık Sok No: 55, 48440 Bodrum/Muğla",
+    "rating": 5,
+    "text": "The atmosphere is lovely, and the owner is genuinely very attentive; it's a must-visit if you're passing through the area.",
+    "date": "Aug 2026",
+    "category": "attraction",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.1557014,
+    "lng": 27.6484648,
+    "name": "Mor Salkım Bağları - Mor Salkım Vineyards",
+    "address": "Çömlekçi, Çömlekçi Sok No 408, 48670 Bodrum/Muğla",
+    "rating": 4,
+    "text": "The atmosphere is really lovely, the staff are very attentive, and while tasting and bottled wines are available, it would be even better if all the wines were accessible on-site; the lack of premium wine tasting was a disappointment.",
+    "date": "Aug 2026",
+    "category": "attraction",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.1557465,
+    "lng": 27.6557432,
+    "name": "Karnas Vineyards",
+    "address": "Çömlekçi Sokak No:400, 48400 Bodrum/Muğla",
+    "rating": 5,
+    "text": "The food and wine are superb, and the atmosphere is very nice and well-designed. It's a must-visit especially for the food.",
+    "date": "Aug 2026",
+    "category": "attraction",
+    "blog_slugs": [
+      "bodrum"
+    ]
+  },
+  {
+    "lat": 37.2012346,
+    "lng": 27.5862456,
+    "name": "Yalıçapkını Boutique Hotel",
+    "address": "Boğaziçi Köyü Village Center, D:18-1, 48200 Milas/Muğla",
+    "rating": 5,
+    "text": "The most beautiful hotel in the area, the view is fantastic, and the self-catering concept is excellent. The automatic kingfisher bird sound that plays when you enter the rooms is particularly amazing; a very well-thought-out detail.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": []
+  },
+  {
+    "lat": 37.2836694,
+    "lng": 27.5840601,
+    "name": "Kumkat Hotel",
+    "address": "Kıyıkışlacık, Merkez 62. Sokak No:127, 48200 Milas/Muğla",
+    "rating": 5,
+    "text": "This might be the nicest hotel in Iasos, based on the \"slow city\" concept. The breakfast was quite good. The staff were very attentive and friendly. The hotel is very nice, but the rooms are a bit dated and have minor maintenance issues, but it's still acceptable.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": []
+  },
+  {
+    "lat": 37.4761805,
+    "lng": 27.4861755,
+    "name": "Bafa Gölü Ada Restaurant",
+    "address": "Pınarcık mahallesi Çerinin yeri Sokak N0:13/A, 48230 Milas/Muğla",
+    "rating": 5,
+    "text": "We went for breakfast. The setting is lovely, the atmosphere is wonderful. The gözleme (Turkish flatbread) was fantastic. The staff were also very attentive and the service was fast.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": []
+  },
+  {
+    "lat": 38.163567,
+    "lng": 26.814609,
+    "name": "Lavantalı Konak Otel & Restoran",
+    "address": "Akarca, 2124/1. Sk. No:3/1, 35460 Seferihisar/İzmir",
+    "rating": 4,
+    "text": "The view is very beautiful, the appetizers are okay, the fish and seafood are good, but the wine menu is mediocre.",
+    "date": "Jul 2026",
+    "category": "restaurant",
+    "blog_slugs": []
+  },
+  {
+    "lat": 38.1946584,
+    "lng": 26.7856447,
+    "name": "The Ruva Coffee & Bistro",
+    "address": "Sığacık, 127. Sk. no37, 35000 Seferihisar/İzmir",
+    "rating": 4,
+    "text": "Their coffee is good, the owners are friendly, it's a pleasant coffee experience.",
+    "date": "Jul 2026",
+    "category": "cafe",
+    "blog_slugs": []
+  },
+  {
+    "lat": 40.7119481,
+    "lng": 30.1636374,
+    "name": "Dedeman Village Sapanca",
+    "address": "Yanık, Orta Sokak No:28, 54600 Sapanca/Sakarya",
+    "rating": 3,
+    "text": "The rooms were aesthetically pleasing, but cleanliness was inadequate and the floors were quite dirty. The lakeside location is a nice plus; however, tears and cigarette burns were noticeable on the pillows and other textiles. The restaurant was average: the food was not bad, but nothing special. The music and the overall crowd were not to our taste and hurt the atmosphere. The setting is genuinely pleasant, but the management falls short of its potential. Breakfast is definitely not up to Dedeman standards. The staff were polite but not very skilled; a broader management problem is evident.",
+    "date": "Jul 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "sapanca"
+    ]
+  },
+  {
+    "lat": 40.9044906,
+    "lng": 29.3066491,
+    "name": "Everyday Rent a Car Sabiha Gökçen Havalimanı (SAW)",
+    "address": "Sanayi, Sabiha Gökçen Havaalanı, 34906 Pendik/İstanbul",
+    "rating": 2,
+    "text": "We chose this place because of its high rating, but we were disappointed. It took us about 1-1.5 hours to get our car after arriving at the counter. Moreover, they brought the car from a different parking lot, which cost us an extra 10-15 minutes. A baby seat wasn't available; we had to borrow one from another company. The service was both slow and careless.",
+    "date": "Jul 2026",
+    "category": "transport",
+    "blog_slugs": []
+  },
+  {
+    "lat": 38.4268821,
+    "lng": 27.1387338,
+    "name": "Jün Taiwanese Kitchen",
+    "address": "İsmet Kaptan, Sezer Doğan Sokağı No:20/A, 35360 Konak/İzmir",
+    "rating": 4,
+    "text": "The food was good. Their sour and spicy soups were quite different from classic soups, but they were good. The best dish we had was edamame; they made the sauce very well. The dumplings and noodles weren't bad either, but the dumpling dough was thicker than classic Asian cuisine, and the noodles were more like pasta than noodles. Still, we were satisfied with what we ate, but we can say it's a slightly softer version of Turkish cuisine compared to classic Asian cuisine.",
+    "date": "Jun 2026",
+    "category": "restaurant",
+    "blog_slugs": []
+  },
+  {
+    "lat": 37.7919365,
+    "lng": 29.0223524,
+    "name": "Knox Coffee",
+    "address": "Selçuk Bey, 646. Sk. no:30, 20030 Denizli Merkezefendi/Denizli",
+    "rating": 5,
+    "text": "The desserts are fresh, and the coffee is quite good. The design is nice. The service is fast. The only downside is that their matcha doesn't quite resemble real matcha, but they are particularly good at coffee and desserts.",
+    "date": "Jun 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "denizli"
+    ]
+  },
+  {
+    "lat": 1.3619293,
+    "lng": 103.991865,
+    "name": "Harry's Changi Airport T1",
+    "address": "80 Airport Boulevard, #02-65, Changi Airport, Terminal 1 Departure Hall, Singapore 819642",
+    "rating": 5,
+    "text": "Good breakfast. It is also included if you have a pass such as LoungeKey.",
+    "date": "Apr 2026",
+    "category": "transport",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2823845,
+    "lng": 103.868645,
+    "name": "DumPrince Dumpling House @ Satay by the Bay",
+    "address": "Stall #3, 18 Marina Gardens Dr, #01-19, Singapore 018953",
+    "rating": 4,
+    "text": "We had a mix - chicken, mushroom, prawn - liked all of them, mushroom was my favorite. Good dumplings.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2854557,
+    "lng": 103.8466198,
+    "name": "Lime Restaurant",
+    "address": "3 Upper Pickering St, Singapore 058289",
+    "rating": 5,
+    "text": "Very crowded, we only had drinks, the atmosphere was enjoyable.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 13.3754543,
+    "lng": 104.2203966,
+    "name": "CIP Angkor Lounge",
+    "address": "96GC+55J, Cambodia",
+    "rating": 4,
+    "text": "Nice lounge, after the perfect one from Da Nang this felt more ordinary, but still good overall.",
+    "date": "Apr 2026",
+    "category": "transport",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.7373633,
+    "lng": 100.5431568,
+    "name": "KURA Premium Yakiniku and Sushi 蔵",
+    "address": "Room no VELAA AT SINDHORN VILLAGE B104, 87 105 Soi Langsuan, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+    "rating": 4,
+    "text": "The sushi was good, liked the eel and salad sushi the most. The salads were also good. The chicken thigh and edamame were good too. We liked it overall. The staff are very attentive.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bangkok"
+    ]
+  },
+  {
+    "lat": 13.7447256,
+    "lng": 100.5295802,
+    "name": "Sizzler MBK",
+    "address": "SIam Tower ชั้น 7 444 Phaya Thai Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",
+    "rating": 5,
+    "text": "Same level as Centralworld, this one is good too.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bangkok"
+    ]
+  },
+  {
+    "lat": 13.7455928,
+    "lng": 100.5298477,
+    "name": "DON DON DONKI MBK Center",
+    "address": "444 Phaya Thai Rd, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",
+    "rating": 3,
+    "text": "Didn't see what all the fuss was about, on the contrary it was very chaotic inside.",
+    "date": "Apr 2026",
+    "category": "shop",
+    "blog_slugs": [
+      "bangkok"
+    ]
+  },
+  {
+    "lat": 13.7465176,
+    "lng": 100.539691,
+    "name": "Kyo Roll En",
+    "address": "CentralWorld, 3F Pathum Wan, Bangkok 10330, Thailand",
+    "rating": 4,
+    "text": "We tried the organic chocolate, kinako, and yuzu miso mochi. Apart from the chocolate, the rest were bad.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bangkok"
+    ]
+  },
+  {
+    "lat": 13.7468278,
+    "lng": 100.5398846,
+    "name": "Sizzler centralwOrld",
+    "address": "4/1-2 ศูนย์การค้าเซ็นทรัลเวิลด์ Ratchadamri Rd, Pathum Wan, Bangkok 10330, Thailand",
+    "rating": 5,
+    "text": "Edamame, Japanese pumpkin, pickles, and baby corn were my favorites. An unlimited salad bar for 200 baht is truly incredible. Their toast also tastes amazing. The dynamite prawn is the same as the Crazy Shrimp at Hard Rock Bangkok, and that is no coincidence.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bangkok"
+    ]
+  },
+  {
+    "lat": 13.7433304,
+    "lng": 100.5406026,
+    "name": "Grand Hyatt Erawan Bangkok",
+    "address": "494 Ratchadamri Rd, Khwaeng Lumphini, Pathum Wan, Krung Thep Maha Nakhon 10330, Thailand",
+    "rating": 5,
+    "text": "A noisy hotel, the rooms have a slightly odd style. The breakfast is incredibly detailed: döner, sushi, cheese, hummus and many options. Desserts, salad bar, everything was excellent. There was even pastel de nata. The hotel is freezing cold, the room was also cold even though the AC wasn't running.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "bangkok"
+    ]
+  },
+  {
+    "lat": 9.5617181,
+    "lng": 100.0258194,
+    "name": "H Bistro",
+    "address": "H26G+M8P, Tambon Bo Put, Ko Samui District, Surat Thani 84320, Thailand",
+    "rating": 4,
+    "text": "This place and its neighbors have live music right next to Fisherman's Village. It is a good option for a calmer atmosphere.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5591769,
+    "lng": 100.0315569,
+    "name": "The Thai Tapas",
+    "address": "29, Bo Put, Amphoe Ko Samui, Surat Thani 84320, Thailand",
+    "rating": 4,
+    "text": "It seems to be run as a foreign and Thai partnership. All the dishes were good. None was a masterpiece, but each had a different touch. The shrimp cake and duck à l'orange were our favorites.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5610677,
+    "lng": 100.0276704,
+    "name": "Coco Tam’s",
+    "address": "62 Thesaban Nakhon Ko Samui, Ko Samui District, Surat Thani 84320, Thailand",
+    "rating": 5,
+    "text": "Great ambiance and a buzzing atmosphere. There is no direct beach access from here, but the two neighboring venues, Coco Tam's Beach and Summer, are extensions of it and have nearly identical menus. We sat at Summer and liked it. There is a fire show every evening, and it is quite good. If you have not seen one elsewhere, you can watch it here.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5599615,
+    "lng": 100.0304629,
+    "name": "Bacaba Samui บาคาบา สมุย",
+    "address": "65, 51/8 fisherman village หมู่ 1 ต.บ่อผุด 1 บ่อผุด Ko Samui District, Surat Thani 84320, Thailand",
+    "rating": 4,
+    "text": "Good wine by the glass selection, nice ambiance.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5605841,
+    "lng": 100.0283669,
+    "name": "Salt & Oak",
+    "address": "24/36, Bo Put, Amphoe Koh samui, koh samui, Surat Thani 84320, Thailand",
+    "rating": 5,
+    "text": "The lobster and shark were great. Nice venue.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5613279,
+    "lng": 100.0231918,
+    "name": "Bo Phut Resort",
+    "address": "หมู่ที่ 1 12/12 ตำบล บ่อผุด Ko Samui District, Surat Thani 84320, Thailand",
+    "rating": 5,
+    "text": "A great hotel, definitely worth splurging and staying somewhere of this level. The difference amplifies the quality by 10x. The rooms are very large, the beach is great, the staff are very attentive. They gave a free room upgrade from garden to pool. They gave Nil a free teddy bear. The breakfast is also excellent, the content is very good.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 45.4389815,
+    "lng": 10.9873116,
+    "name": "Bar Pasticceria Castelvecchio",
+    "address": "C.so Castelvècchio, 21, 37121 Verona VR, Italy",
+    "rating": 3,
+    "text": "Expensive for the quality.",
+    "date": "May 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "verona"
+    ]
+  },
+  {
+    "lat": 9.4678542,
+    "lng": 100.0474225,
+    "name": "ANNIE eatery & sweetery - Lamai",
+    "address": "124 Had Lamai Rd, Tambon Maret, Ko Samui District, Surat Thani 84310, Thailand",
+    "rating": 5,
+    "text": "A nice restaurant, especially if you want something healthy such as a bowl, although there is less reason to choose that when the island has so many good seafood options. The desserts are amazing: we tried the chocolate truffle and Snickers desserts, and both were excellent.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.4808845,
+    "lng": 100.0666644,
+    "name": "The Cliff Bar and Grill",
+    "address": "124/2 Maret, Suratthani, Surat Thani 84310, Thailand",
+    "rating": 4,
+    "text": "A very nice restaurant. Most of the food is organic, the menu leans Western, and the wine list is extensive. It was, however, expensive compared with the other restaurants we visited. Prices exclude VAT and there is also a 10% service charge. We paid 3,400 baht here, compared with 1,700 baht at a Michelin-recommended Thai restaurant.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5117149,
+    "lng": 100.0549702,
+    "name": "Phensiri Thai Restaurant",
+    "address": "80/30 ถนน เลียบหาดเฉวง, Ko Samui District, Surat Thani 84320, Thailand",
+    "rating": 5,
+    "text": "Definitely make a reservation. It was very crowded; we arrived early and could only get a table for one hour. Every dish we tried was very good, and you can safely ask the staff for recommendations.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.5108134,
+    "lng": 100.0517424,
+    "name": "Chill Inn Co Working",
+    "address": "147, 23 Moo3, Bo Put, Amphoe Ko Samui, Surat Thani 84320, Thailand",
+    "rating": 4,
+    "text": "A nice space for working, the teas are also very good.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.4659285,
+    "lng": 100.0447953,
+    "name": "Seventy Fahrenheit",
+    "address": "124, 314 Had Lamai Rd, Maret, Ko Samui District, Surat Thani 84310, Thailand",
+    "rating": 5,
+    "text": "A great place to eat. We were happy with everything we had. The tom yum talay and steam seabass were great.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 9.4680159,
+    "lng": 100.0480056,
+    "name": "Pavilion Samui Villas & Resort",
+    "address": "124 Had Lamai Rd, Tambon Maret, Amphoe Ko Samui, Surat Thani 84310, Thailand",
+    "rating": 1,
+    "text": "For the price, I didn't like it at all. The hotel is old, not worth this price in my opinion. The fire show was good. The beach isn't bad, the sandy area is enjoyable. Cheap hotel vibes. We took the baby to breakfast and when we went a second time for coffee they made a fuss, apparently it's their policy. Typical cheap hotel behavior. The hotel smells completely of cigarettes and weed. You can smell what the person in the next room is smoking in your room. Zero insulation, we slept with cigarette smoke in the room. We complained but they didn't intervene, said they couldn't smell anything. Bad hotel.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 1.2979041,
+    "lng": 103.845453,
+    "name": "Estuary Restaurant & Bar - 9 Penang Road",
+    "address": "9 Penang Rd, #01-08/09, Singapore 238459",
+    "rating": 3,
+    "text": "Fried food heavy menu, the beers are good but the food is meh.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2870399,
+    "lng": 103.8514715,
+    "name": "CHAGEE Asian Civilisations Museum (ACM)",
+    "address": "1 Empress Pl, #01-02 Asian Civilisations Museum, Singapore 179555",
+    "rating": 4,
+    "text": "There are many different teas. The peach tea was not bad, and the serving was huge.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.3001138,
+    "lng": 103.8577754,
+    "name": "ATLAS",
+    "address": "600 N Bridge Rd, Parkview Square, Singapore 188778",
+    "rating": 4,
+    "text": "Good champagne selection, snacks are meh, the gnocchi on the kids menu was the best.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2825271,
+    "lng": 103.8685857,
+    "name": "Marina BBQ Seafood",
+    "address": "Satay by the Bay, Singapore",
+    "rating": 1,
+    "text": "Terrible, the spring roll was completely empty.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2863612,
+    "lng": 103.8592767,
+    "name": "Miracle Coffee",
+    "address": "6 Bayfront Ave, art science museum, Singapore 018974",
+    "rating": 4,
+    "text": "The cappuccino was good.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2831711,
+    "lng": 103.858173,
+    "name": "Läderach MBS",
+    "address": "10 Bayfront Ave, B2-K3 Marina Bay Sands, Singapore 018956",
+    "rating": 3,
+    "text": "It was a shame that they did not have the truffles we wanted.",
+    "date": "Apr 2026",
+    "category": "shop",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 13.3741805,
+    "lng": 103.8449346,
+    "name": "Amazon Angkor Restaurant",
+    "address": "National RoadN6, Krong Siem Reap, Cambodia",
+    "rating": 5,
+    "text": "The food was very good, quite varied and fresh dishes. The show could have been better.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.3538567,
+    "lng": 103.8596412,
+    "name": "Kulen Elephant Forest",
+    "address": "52 Street 26, Krong Siem Reap, Cambodia",
+    "rating": 4,
+    "text": "The place shown on Google Maps is the office in the center. The actual site is about an hour away, near the airport area, and transport is by bus. The price is 110 USD per person, which is quite expensive for Cambodia.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.3531544,
+    "lng": 103.8568106,
+    "name": "Hard Rock Cafe Angkor",
+    "address": "King's Road Angkor, Street 7 Makara, Old Market Bridge, Krong Siem Reap 17252, Cambodia",
+    "rating": 3,
+    "text": "Prices are expensive compared to the Siem Reap market. We sat there out of our Hard Rock tradition but the prices were way above the usual, unnecessary for this location. The Bangkok shrimp was much spicier and hotter than in other places.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.3495994,
+    "lng": 103.8607204,
+    "name": "HAVEN",
+    "address": "Chocolate Rd, Krong Siem Reap, Cambodia",
+    "rating": 5,
+    "text": "An excellent restaurant. 2 main dishes, a salad, a starter, 2 drinks, we paid 30 dollars and the food was very high quality. Banana salad, spring roll and khmer curry were great, especially the khmer curry was amazing.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.3543681,
+    "lng": 103.8516064,
+    "name": "Golden Temple Residence",
+    "address": "Sok San Rd, Krong Siem Reap 17252, Cambodia",
+    "rating": 5,
+    "text": "A nice hotel, sound insulation is a bit weak, design is very good, staff are attentive. 20 dollar massage and one lunch is free. Even though we went to breakfast at 10:25 they didn't turn us away at all, you can order whatever you want from the menu at breakfast for free.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.3540215,
+    "lng": 103.8534364,
+    "name": "Jomka ចំការសាខា សៀមរាប",
+    "address": "Street 08, Krong Siem Reap, Cambodia",
+    "rating": 5,
+    "text": "Nice fruits.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 13.3543212,
+    "lng": 103.8527312,
+    "name": "Damnak Mahob Khmer Restaurant",
+    "address": "Sok San Rd, Krong Siem Reap 17252, Cambodia",
+    "rating": 4,
+    "text": "We had a beer. It was good and cost only 0.50 USD.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "siem-reap"
+    ]
+  },
+  {
+    "lat": 15.998695,
+    "lng": 107.987647,
+    "name": "Bana Brew House",
+    "address": "XXXQ+F3C, Bà Nà, Đà Nẵng, Vietnam",
+    "rating": 5,
+    "text": "The beers are great, the atmosphere is amazing. They give you a free beer voucher anyway, unlimited, what more could you ask for.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "da-nang"
+    ]
+  },
+  {
+    "lat": 21.0302225,
+    "lng": 105.8505374,
+    "name": "Hanoi Local Craft Beer",
+    "address": "2a P. Báo Khánh, Hoàn Kiếm, Hà Nội 10000, Vietnam",
+    "rating": 4,
+    "text": "The beers were good, quality. The pilsner was not quite like a pilsner, more towards an IPA. The autumn rice beer had a bad corn/puffed rice feel.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 15.8771312,
+    "lng": 108.3343775,
+    "name": "Lantern eatery hoian",
+    "address": "22 Đ. Phan Bội Châu, Hội An, Đà Nẵng, Vietnam",
+    "rating": 2,
+    "text": "A very traditional place, but it served the worst spring roll I had on the trip. The so-called beef soup had no beef, and the pumpkin soup was too small. It was the first time we left a restaurant still hungry. The owners are sweet, but then again, so is the dog.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.877025,
+    "lng": 108.3300219,
+    "name": "Cỏ Smoothies - FoodBar",
+    "address": "5 Hoàng Văn Thụ, Old Town, Hội An, Đà Nẵng 51306, Vietnam",
+    "rating": 5,
+    "text": "There was live music in the evening, enjoyable atmosphere.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.8770818,
+    "lng": 108.3371254,
+    "name": "Traders Waterfront Restaurant",
+    "address": "09 Đ. Phan Bội Châu, Hội An, Đà Nẵng 53100, Vietnam",
+    "rating": 5,
+    "text": "The pumpkin soup, mango seafood roll and vegetarian roll were quite good.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.8761525,
+    "lng": 108.3287187,
+    "name": "The Hoianian",
+    "address": "88 Đ. Bạch Đằng, Old Town, Hội An, Đà Nẵng, Vietnam",
+    "rating": 4,
+    "text": "The wines are average but a nice spot for Vietnam where wine is hard to find, the venue is great, service is good.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.8773064,
+    "lng": 108.3348085,
+    "name": "Thirty3 Eatery",
+    "address": "12 Đ. Phan Bội Châu, Hội An, Đà Nẵng 51319, Vietnam",
+    "rating": 4,
+    "text": "A nice Western restaurant as an alternative to classic Vietnamese cuisine.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.9130818,
+    "lng": 108.3411572,
+    "name": "The Beach House & Bar An Bang beach - 호이안 해산물 맛집 - Hoi An Seafood Restaurant & Vietnamese Cuisine",
+    "address": "An Bang beach, Hội An Tây, Đà Nẵng 51300, Vietnam",
+    "rating": 3,
+    "text": "Ask exactly what is in the sugar-cane shrimp before ordering it.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.8794297,
+    "lng": 108.3293344,
+    "name": "Vincognito Wine Bar & Italian Trattoria",
+    "address": "City, Trần Hưng Đạo, St, Hội An, Đà Nẵng 51300, Vietnam",
+    "rating": 4,
+    "text": "The food wasn't bad, good selection of wines by the glass, service was a bit slow.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.877477,
+    "lng": 108.3309523,
+    "name": "7 Bridges Hoi An Craft Beer Taproom",
+    "address": "36 Trần Phú, Old Town, Hội An, Đà Nẵng 560000, Vietnam",
+    "rating": 5,
+    "text": "The beers are great.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.8776307,
+    "lng": 108.3370572,
+    "name": "Coconut Coffee Hội An",
+    "address": "Đ. Phan Bội Châu, Hội An, Đà Nẵng, Vietnam",
+    "rating": 5,
+    "text": "Great coconut coffee and coconut water.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 15.8771853,
+    "lng": 108.3370988,
+    "name": "Little Riverside Hoi An - Little Luxury Hotel & Spa",
+    "address": "09 Đ. Phan Bội Châu, Hội An, Đà Nẵng 53100, Vietnam",
+    "rating": 5,
+    "text": "A great hotel, quite enjoyable, top notch. The food is also good, the breakfasts are adequate.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "hoi-an"
+    ]
+  },
+  {
+    "lat": 16.054987,
+    "lng": 108.2024936,
+    "name": "VANDA Lounge",
+    "address": "3633+54Q, Hòa Cường, Đà Nẵng 550000, Vietnam",
+    "rating": 5,
+    "text": "The best airport lounge I have visited so far. The food is excellent. It rivals our Istanbul Airport lounge despite being much smaller and less crowded.",
+    "date": "Apr 2026",
+    "category": "transport",
+    "blog_slugs": [
+      "da-nang"
+    ]
+  },
+  {
+    "lat": 16.0507892,
+    "lng": 108.2463792,
+    "name": "The Nomad Kitchen",
+    "address": "21-23 An Thượng 32, Ngũ Hành Sơn, Đà Nẵng 550000, Vietnam",
+    "rating": 4,
+    "text": "The salads were good, the seasonal salad in particular was very good. A nice option for Western cuisine.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "da-nang"
+    ]
+  },
+  {
+    "lat": 16.0675591,
+    "lng": 108.2459994,
+    "name": "East West Brewing - Da Nang",
+    "address": "1A Võ Nguyên Giáp, An Hải, Đà Nẵng 550000, Vietnam",
+    "rating": 5,
+    "text": "Some of the best-quality beer I have had. I especially loved the coffee vanilla porter.",
+    "date": "Apr 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "da-nang"
+    ]
+  },
+  {
+    "lat": 21.0299552,
+    "lng": 105.8435808,
+    "name": "Bao An Coffee",
+    "address": "5 Trần Phú, Hoàn Kiếm, Hà Nội, Vietnam",
+    "rating": 3,
+    "text": "Beer is ok, coffee was mediocre.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 21.0314416,
+    "lng": 105.8491895,
+    "name": "MẸT Vietnamese restaurant & Vegetarian Food 5",
+    "address": "110 P. Hàng Gai, Phố cổ Hà Nội, Hoàn Kiếm, Hà Nội 100000, Vietnam",
+    "rating": 5,
+    "text": "An excellent restaurant, we were happy with everything we ate. The pho was good, the sweet sour chicken, stir fried shrimp squid vegetables, and sauteed rice noodles were truly amazing. There's usually a long queue but definitely book a reservation.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 21.044952,
+    "lng": 105.8413428,
+    "name": "Này Café",
+    "address": "Ngõ 57b P. Nguyễn Khắc Hiếu, Ba Đình, Hà Nội, Vietnam",
+    "rating": 4,
+    "text": "They have egg coffee, the riverside setting is enjoyable.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 21.0341268,
+    "lng": 105.8335113,
+    "name": "Trung Nguyên Legend Café",
+    "address": "27-29 P. Lê Hồng Phong, Ba Đình, Hà Nội 100000, Vietnam",
+    "rating": 4,
+    "text": "The almond and coconut coffee were good.",
+    "date": "Apr 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 21.031054,
+    "lng": 105.8501487,
+    "name": "Pizza 4P’s Bao Khanh",
+    "address": "11B P. Báo Khánh, Alley, Hoàn Kiếm, Hà Nội 100000, Vietnam",
+    "rating": 5,
+    "text": "A great restaurant. Lager beer, ginger and passion fruit kombucha, the soy beef pizza was excellent, the honey wines were great too, all their drinks were very good.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 21.0320599,
+    "lng": 105.8520709,
+    "name": "Cau Go Vietnamese Cuisine",
+    "address": "9 Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội, Vietnam",
+    "rating": 3,
+    "text": "It was on the Michelin recommended list. The pumpkin soup and chả cá were good. The lemongrass in the tofu tasted like dish soap to me, and the rice noodles felt pointless. Overall the food was mediocre. The onions in the chả cá were very hot and upset my stomach.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 21.0336807,
+    "lng": 105.844617,
+    "name": "HOTEL de LAGOM",
+    "address": "30B-C-D, P. Lý Nam Đế, Hoàn Kiếm, Hà Nội 100000, Vietnam",
+    "rating": 5,
+    "text": "Generally a nice hotel, well-maintained, central, good breakfast, rooms are good, staff very attentive.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "hanoi"
+    ]
+  },
+  {
+    "lat": 9.5607441,
+    "lng": 100.0223241,
+    "name": "The Jane",
+    "address": "H26C+9R9, Bo Put, Ko Samui District, Surat Thani 84320, Thailand",
+    "rating": 4,
+    "text": "They gave a good foot massage, and the setting was casual.",
+    "date": "Apr 2026",
+    "category": "attraction",
+    "blog_slugs": [
+      "koh-samui"
+    ]
+  },
+  {
+    "lat": 1.2902913,
+    "lng": 103.8457586,
+    "name": "BBQ Box Prime (Clarke Quay) 串烧工坊旗舰店 (克拉码头)",
+    "address": "3C River Valley Rd, Blk C #01-10 CQ @ Clarke Quay, Singapore 179022",
+    "rating": 4,
+    "text": "I thought it was Japanese barbecue, but it is Chinese. It was quite good. The cumin lamb was very good, the salad was quite spicy, and prices were reasonable compared with similar places.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 1.2857588,
+    "lng": 103.8460409,
+    "name": "PARKROYAL COLLECTION Pickering",
+    "address": "3 Upper Pickering St, Singapore 058289",
+    "rating": 5,
+    "text": "The rooms are a bit small but high-quality. The open corridors across 15 floors make you wonder whether you might fall. They left a baby shampoo set in the room, which was very sweet. Breakfast was excellent, the room had a nice view, and the first minibar round was included at check-in, which I thought was a great perk. Everything in the rooms felt high-quality; even the hair dryer was a Dyson. I loved everything about the hotel.",
+    "date": "Apr 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "singapore"
+    ]
+  },
+  {
+    "lat": 21.0288127,
+    "lng": 105.8440031,
+    "name": "Nét Huế Restaurant",
+    "address": "198 P. Hàng Bông, Hoàn Kiếm, Hà Nội, Vietnam",
+    "rating": 3,
+    "text": "A very traditional restaurant with a distinctive style.",
+    "date": "Apr 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "hanoi"
+    ]
   }
 ]

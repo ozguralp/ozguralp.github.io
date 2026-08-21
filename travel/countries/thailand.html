@@ -18,12 +18,14 @@
 <body>
   <div class="top-bar">
     <a href="../" class="back-link">&larr; Travel Notes</a>
-    <div class="top-actions">
-      <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-      <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-      <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+    <nav class="top-actions" aria-label="Travel sections">
+      <a class="toggle-btn" href="../">List</a>
+      <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+        <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+      </div></details>
+      <a class="toggle-btn" href="../timeline.html">Timeline</a>
       <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-    </div>
+    </nav>
   </div>
   <div class="country-page">
     <div class="country-header">

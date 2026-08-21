@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -49,7 +51,7 @@
 <h2>Food &amp; Drink</h2>
 <p>Seafood and fish are superb. We had swordfish at a restaurant called <a href="https://www.google.com/maps/search/?api=1&amp;query=Taverna+Costas+Rhodes+Greece" target="_blank" rel="noopener">Taverna Costas</a> and it was really enjoyable.</p>
 <h2>Tips &amp; Advice</h2>
-<p>The number of planes landing on the island is genuinely staggering. One lands every five minutes. I doubt <a href="https://www.google.com/maps/search/?api=1&amp;query=Izmir+Turkey" target="_blank" rel="noopener">Izmir</a> gets this much air traffic. It really shows the level of tourism these guys have achieved. Quite sad from our perspective. If only we could properly leverage the opportunities we have.</p></div>
+<p>The number of planes landing on the island is genuinely staggering. One lands every five minutes. I doubt <a href="https://www.google.com/maps/search/?api=1&amp;query=Izmir+Türkiye" target="_blank" rel="noopener">Izmir</a> gets this much air traffic. It really shows the level of tourism these guys have achieved. Quite sad from our perspective. If only we could properly leverage the opportunities we have.</p></div>
       <div class="place-reviews" style="margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--accent)">
         <h2 style="font-family:DM Sans,sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 1rem;border:none;padding:0">My Place Reviews</h2>
         <h3 style="font-size:.8125rem;color:var(--accent);margin:1rem 0 .5rem;text-transform:uppercase;letter-spacing:.05em">Restaurants</h3>

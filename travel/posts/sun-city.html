@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -49,7 +51,7 @@
 <h2>Nightlife</h2>
 <p>There's a <a href="https://www.google.com/maps/search/?api=1&amp;query=Hard+Rock+Cafe+Sun+City+South+Africa" target="_blank" rel="noopener">Hard Rock Cafe</a> and casinos inside. The locals at the casino are serious gamblers, I don't think I've ever seen a gambling atmosphere quite like it anywhere else.</p>
 <h2>Tips &amp; Advice</h2>
-<p>If you're planning your own itinerary, I'd say skip Sun City entirely. Add an extra day of safari at <a href="https://www.google.com/maps/search/?api=1&amp;query=Pilanesberg+National+Park+South+Africa" target="_blank" rel="noopener">Pilanesberg</a> instead, much better value. And coming all the way from Turkey to swim in Sun City's fake pools is frankly absurd. But if your tour already includes a stop here, I definitely recommend doing the zipline.</p></div>
+<p>If you're planning your own itinerary, I'd say skip Sun City entirely. Add an extra day of safari at <a href="https://www.google.com/maps/search/?api=1&amp;query=Pilanesberg+National+Park+South+Africa" target="_blank" rel="noopener">Pilanesberg</a> instead, much better value. And coming all the way from Türkiye to swim in Sun City's fake pools is frankly absurd. But if your tour already includes a stop here, I definitely recommend doing the zipline.</p></div>
 
       <div class="related-posts"><h3>You might also like</h3><a href="pilanesberg.html" class="related-link">Pilanesberg</a><a href="south-africa.html" class="related-link">South Africa</a><a href="johannesburg.html" class="related-link">Johannesburg</a><a href="botswana.html" class="related-link">Chobe National Park</a><a href="victoria-falls.html" class="related-link">Victoria Falls</a></div>
     </article>

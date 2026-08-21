@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -37,7 +39,7 @@
           <span class="post-type">City Guide</span>
           <span>1 min read</span>
           <span class="rating-badge">6/10</span>
-          <span class="trip-badge">Part of: Turkey Black Sea & Georgia</span>
+          <span class="trip-badge">Part of: Türkiye Black Sea & Georgia</span>
         </div>
       </div>
       <div class="post-body"><h2>Overview</h2>
@@ -45,7 +47,7 @@
 <h2>What to See</h2>
 <p>As you move from the city center toward the countryside, you start seeing scattered isolated houses across the mountains. How they've managed the infrastructure for these places is genuinely remarkable. Every single house has electricity, water, and road access. It really makes you wonder whether it was necessary to bring all this infrastructure to people living this far up in the mountains.</p>
 <p>Some of the villages reportedly don't have cemeteries since flat land is scarce and used for farming. In these villages, they bury their dead in their own home gardens.</p>
-<p>The <a href="https://www.google.com/maps/search/?api=1&amp;query=Ataturk+Kosku+Trabzon+Turkey" target="_blank" rel="noopener">Ataturk Pavilion</a> is worth seeing; a well-preserved, nicely restored building. But I found it unnecessary that it's dedicated solely to Ataturk, who only visited Trabzon 3 times over 13 years. Is it really worth dedicating an entire place to a single person for 3 visits? Didn't sit right with me.</p></div>
+<p>The <a href="https://www.google.com/maps/search/?api=1&amp;query=Ataturk+Kosku+Trabzon+Türkiye" target="_blank" rel="noopener">Ataturk Pavilion</a> is worth seeing; a well-preserved, nicely restored building. But I found it unnecessary that it's dedicated solely to Ataturk, who only visited Trabzon 3 times over 13 years. Is it really worth dedicating an entire place to a single person for 3 visits? Didn't sit right with me.</p></div>
       <div class="place-reviews" style="margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--accent)">
         <h2 style="font-family:DM Sans,sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 1rem;border:none;padding:0">My Place Reviews</h2>
         <h3 style="font-size:.8125rem;color:var(--accent);margin:1rem 0 .5rem;text-transform:uppercase;letter-spacing:.05em">Restaurants</h3>

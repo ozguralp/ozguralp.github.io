@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -46,7 +48,7 @@
 <h2>Where to Stay</h2>
 <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Pythagoreion+Samos+Greece" target="_blank" rel="noopener">Pythagoreion</a> struck me as the most sensible place to stay. <a href="https://www.google.com/maps/search/?api=1&amp;query=Kokkari+Samos+Greece" target="_blank" rel="noopener">Kokkari</a> isn't bad either but it's smaller. You can do day trips to the beaches from either.</p>
 <h2>Food &amp; Drink</h2>
-<p>Portions have shrunk noticeably compared to classic Greek standards, which was a bit of a letdown. Probably picked up bad habits from being so close to Turkey.</p>
+<p>Portions have shrunk noticeably compared to classic Greek standards, which was a bit of a letdown. Probably picked up bad habits from being so close to Türkiye.</p>
 <h2>Tips &amp; Advice</h2>
 <p>The island is practically under Turkish occupation. You'll hear Turkish far more than Greek or English. But overall they like Turks here, the negativity you encounter in some other parts of Greece is completely absent on Samos.</p></div>
       <div class="place-reviews" style="margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--accent)">

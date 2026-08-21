@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -46,28 +48,28 @@
 <p>Many people have already made great recommendations, so let me just note the extra highlights we found:</p>
 <ul>
 <li>
-<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Castelo+de+S.+Jorge+Lisbon+Portugal" target="_blank" rel="noopener">Castelo de S. Jorge</a> - We watched the sunset here and absolutely loved it. We were lucky enough to catch an incredibly long sunset. Since the castle is close to the sea, the Bosphorus-like view was stunning. Highly recommended.</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Castelo+de+S.+Jorge+Lisbon+Portugal" target="_blank" rel="noopener">Castelo de S. Jorge</a>: We watched the sunset here and absolutely loved it. We were lucky enough to catch an incredibly long sunset. Since the castle is close to the sea, the Bosphorus-like view was stunning. Highly recommended.</p>
 </li>
 <li>
-<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Arco+da+Rua+Augusta+Lisbon+Portugal" target="_blank" rel="noopener">Arco da Rua Augusta</a> - Hands down the most impressive historical structure we saw in the city. Mesmerizing architecture.</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Arco+da+Rua+Augusta+Lisbon+Portugal" target="_blank" rel="noopener">Arco da Rua Augusta</a>: Hands down the most impressive historical structure we saw in the city. Mesmerizing architecture.</p>
 </li>
 <li>
-<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Igreja+de+Sao+Vicente+de+Fora+Lisbon+Portugal" target="_blank" rel="noopener">Igreja de Sao Vicente de Fora</a> and <a href="https://www.google.com/maps/search/?api=1&amp;query=Panteao+Nacional+Lisbon+Portugal" target="_blank" rel="noopener">Panteao Nacional</a> - Two places we forgot to add to our itinerary. We only noticed them while admiring the view from the castle and could only see them from the outside at night. Photos suggest the interiors are beautiful too; worth a visit.</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Igreja+de+Sao+Vicente+de+Fora+Lisbon+Portugal" target="_blank" rel="noopener">Igreja de Sao Vicente de Fora</a> and <a href="https://www.google.com/maps/search/?api=1&amp;query=Panteao+Nacional+Lisbon+Portugal" target="_blank" rel="noopener">Panteao Nacional</a>: Two places we forgot to add to our itinerary. We only noticed them while admiring the view from the castle and could only see them from the outside at night. Photos suggest the interiors are beautiful too; worth a visit.</p>
 </li>
 <li>
-<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Sintra+Portugal" target="_blank" rel="noopener">Sintra</a> - Absolutely phenomenal. We did a day trip but in hindsight I'd stay at least one night and spend two full days there. There's so much to see, and spending an evening in that mystical historic atmosphere would be something special. <a href="https://www.google.com/maps/search/?api=1&amp;query=Quinta+da+Regaleira+Sintra+Portugal" target="_blank" rel="noopener">Quinta da Regaleira</a> (especially the <a href="https://www.google.com/maps/search/?api=1&amp;query=Poco+Iniciatico+Quinta+da+Regaleira+Sintra+Portugal" target="_blank" rel="noopener">Poco Iniciatico</a> inside) and <a href="https://www.google.com/maps/search/?api=1&amp;query=Palacio+da+Pena+Sintra+Portugal" target="_blank" rel="noopener">Parque e Palacio Nacional da Pena</a> are the two must-sees. We also managed to visit <a href="https://www.google.com/maps/search/?api=1&amp;query=Palacio+de+Monserrate+Sintra+Portugal" target="_blank" rel="noopener">Parque e Palacio de Monserrate</a> - the building itself isn't extraordinary, but the gardens are absolutely worth it, with enormous and gorgeous plants and trees. Uber is widely used and genuinely cheap, so you can comfortably ride between these spots.</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Sintra+Portugal" target="_blank" rel="noopener">Sintra</a>: Absolutely phenomenal. We did a day trip but in hindsight I'd stay at least one night and spend two full days there. There's so much to see, and spending an evening in that mystical historic atmosphere would be something special. <a href="https://www.google.com/maps/search/?api=1&amp;query=Quinta+da+Regaleira+Sintra+Portugal" target="_blank" rel="noopener">Quinta da Regaleira</a> (especially the <a href="https://www.google.com/maps/search/?api=1&amp;query=Poco+Iniciatico+Quinta+da+Regaleira+Sintra+Portugal" target="_blank" rel="noopener">Poco Iniciatico</a> inside) and <a href="https://www.google.com/maps/search/?api=1&amp;query=Palacio+da+Pena+Sintra+Portugal" target="_blank" rel="noopener">Parque e Palacio Nacional da Pena</a> are the two must-sees. We also managed to visit <a href="https://www.google.com/maps/search/?api=1&amp;query=Palacio+de+Monserrate+Sintra+Portugal" target="_blank" rel="noopener">Parque e Palacio de Monserrate</a>: the building itself isn't extraordinary, but the gardens are absolutely worth it, with enormous and gorgeous plants and trees. Uber is widely used and genuinely cheap, so you can comfortably ride between these spots.</p>
 </li>
 </ul>
 <h2>Food &amp; Drink</h2>
 <ul>
 <li>
-<p><strong>Nata pastries</strong> - Over our 8-day Portugal trip, we probably tried nata from about 10 different places. It's a truly original flavor that never gets old. The best one by far was at <a href="https://www.google.com/maps/search/?api=1&amp;query=Pasteis+de+Belem+Lisbon+Portugal" target="_blank" rel="noopener">Pasteis de Belem</a>. The place is famous for a reason, don't skip it.</p>
+<p><strong>Nata pastries</strong>: Over our 8-day Portugal trip, we probably tried nata from about 10 different places. It's a truly original flavor that never gets old. The best one by far was at <a href="https://www.google.com/maps/search/?api=1&amp;query=Pasteis+de+Belem+Lisbon+Portugal" target="_blank" rel="noopener">Pasteis de Belem</a>. The place is famous for a reason, don't skip it.</p>
 </li>
 <li>
 <p>We stumbled into a wine shop at a market-like spot. So glad we did. They occasionally open incredibly aged Port wines and sell them by the glass. We tasted a Port wine from 1878, normally a 1,000-euro bottle that you'd probably never get to try, for 70 euros a glass. Seventy euros for a single glass is still steep, but being able to do this at all is priceless. If you're a wine lover, tasting something from the 1800s that has survived to the present day is truly a once-in-a-lifetime experience.</p>
 </li>
 <li>
-<p><strong>Ginginha</strong> - A local sour cherry liqueur unique to the area. The flavor is decent, but one place had an amazing presentation: first they pour it into bitter chocolate shot glasses, you do a shot, then another round with a slightly different version, and then you eat the chocolate glasses themselves. They also offer you cherries that have been soaking in ginginha. A unique experience. The place was <a href="https://www.google.com/maps/search/?api=1&amp;query=Ginginha+do+Carmo+Lisbon+Portugal" target="_blank" rel="noopener">Ginginha do Carmo</a>.</p>
+<p><strong>Ginginha</strong>: A local sour cherry liqueur unique to the area. The flavor is decent, but one place had an amazing presentation: first they pour it into bitter chocolate shot glasses, you do a shot, then another round with a slightly different version, and then you eat the chocolate glasses themselves. They also offer you cherries that have been soaking in ginginha. A unique experience. The place was <a href="https://www.google.com/maps/search/?api=1&amp;query=Ginginha+do+Carmo+Lisbon+Portugal" target="_blank" rel="noopener">Ginginha do Carmo</a>.</p>
 </li>
 </ul>
 <h2>Tips &amp; Advice</h2>

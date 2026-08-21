@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -41,7 +43,7 @@
         </div>
       </div>
       <div class="post-body"><h2>Overview</h2>
-<p>According to one legend, the town got its name like this: A group of Yoruk nomads was looking for a place to settle when they arrived at the area where <a href="https://www.google.com/maps/search/?api=1&amp;query=Baklan+Denizli+Turkey" target="_blank" rel="noopener">Baklan</a> now stands. One of the elderly women, looking down from the mountaintop at the Baklan plain, said to her grandchild: "Look at the field, dear, isn't it beautiful?" In Turkish, "look at the field" is "bak alana." As everyone kept telling each other "bak alana, bak alana" to show off the scenery, the name stuck. Some of the Yoruks decided to settle down in this area. Over time, "bak alana" was shortened to Baklan.</p></div>
+<p>According to one legend, the town got its name like this: A group of Yoruk nomads was looking for a place to settle when they arrived at the area where <a href="https://www.google.com/maps/search/?api=1&amp;query=Baklan+Denizli+Türkiye" target="_blank" rel="noopener">Baklan</a> now stands. One of the elderly women, looking down from the mountaintop at the Baklan plain, said to her grandchild: "Look at the field, dear, isn't it beautiful?" In Turkish, "look at the field" is "bak alana." As everyone kept telling each other "bak alana, bak alana" to show off the scenery, the name stuck. Some of the Yoruks decided to settle down in this area. Over time, "bak alana" was shortened to Baklan.</p></div>
 
       <div class="related-posts"><h3>You might also like</h3><a href="denizli.html" class="related-link">Denizli</a><a href="tripolis.html" class="related-link">Tripolis</a><a href="buldan.html" class="related-link">Buldan</a><a href="aphrodisias.html" class="related-link">Aphrodisias</a><a href="dalyan.html" class="related-link">Dalyan</a></div>
     </article>

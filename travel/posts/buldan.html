@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -41,7 +43,7 @@
         </div>
       </div>
       <div class="post-body"><h2>Overview</h2>
-<p>The city center was hyped up as beautiful, but honestly it was a bit of a letdown. They've painted maybe 5-6 houses on the main street and that's about it, there aren't really any old, gorgeous buildings to speak of. It's not worth making a trip just for Buldan itself. <a href="https://www.google.com/maps/search/?api=1&amp;query=Han+Buldan+Denizli+Turkey" target="_blank" rel="noopener">Han Buldan</a> is a nice spot to hang out, and you could use visiting <a href="https://www.google.com/maps/search/?api=1&amp;query=Tripolis+Ancient+City+Buldan+Denizli+Turkey" target="_blank" rel="noopener">Tripolis</a> as an excuse to swing by and do some shopping on the way.</p></div>
+<p>The city center was hyped up as beautiful, but honestly it was a bit of a letdown. They've painted maybe 5-6 houses on the main street and that's about it, there aren't really any old, gorgeous buildings to speak of. It's not worth making a trip just for Buldan itself. <a href="https://www.google.com/maps/search/?api=1&amp;query=Han+Buldan+Denizli+Türkiye" target="_blank" rel="noopener">Han Buldan</a> is a nice spot to hang out, and you could use visiting <a href="https://www.google.com/maps/search/?api=1&amp;query=Tripolis+Ancient+City+Buldan+Denizli+Türkiye" target="_blank" rel="noopener">Tripolis</a> as an excuse to swing by and do some shopping on the way.</p></div>
       <div class="place-reviews" style="margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--accent)">
         <h2 style="font-family:DM Sans,sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 1rem;border:none;padding:0">My Place Reviews</h2>
         <h3 style="font-size:.8125rem;color:var(--accent);margin:1rem 0 .5rem;text-transform:uppercase;letter-spacing:.05em">Restaurants</h3>

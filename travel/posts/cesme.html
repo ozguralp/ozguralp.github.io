@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -41,8 +43,8 @@
         </div>
       </div>
       <div class="post-body"><h2>Overview</h2>
-<p>A resort town with a really peculiar center. The castle is beautiful, the surrounding venues are decent, the bazaar is chaotic. But climb a bit toward the hills and the houses are old and neglected, with a rather colorful local population. Walk 10 minutes uphill from the marina with its million-dollar yachts and the contrast is genuinely shocking. Not quite as dramatic as the Konak-to-<a href="https://www.google.com/maps/search/?api=1&amp;query=Kadifekale+Izmir+Turkey" target="_blank" rel="noopener">Kadifekale</a> transition in <a href="https://www.google.com/maps/search/?api=1&amp;query=Izmir+Turkey" target="_blank" rel="noopener">Izmir</a>, but a similar phenomenon. No safety concerns at all, the area is fine. It's just surprising that such rundown buildings remain right in the center of <a href="https://www.google.com/maps/search/?api=1&amp;query=Cesme+Izmir+Turkey" target="_blank" rel="noopener">Cesme</a>.</p>
-<p>The visitor profile leans heavily toward the expat crowd. Prices are about 1.5x <a href="https://www.google.com/maps/search/?api=1&amp;query=Urla+Izmir+Turkey" target="_blank" rel="noopener">Urla</a>. There are nice spots, but in terms of tourist appeal, what Cesme actually delivers is limited. Quite overrated, I'd say.</p></div>
+<p>A resort town with a really peculiar center. The castle is beautiful, the surrounding venues are decent, the bazaar is chaotic. But climb a bit toward the hills and the houses are old and neglected, with a rather colorful local population. Walk 10 minutes uphill from the marina with its million-dollar yachts and the contrast is genuinely shocking. Not quite as dramatic as the Konak-to-<a href="https://www.google.com/maps/search/?api=1&amp;query=Kadifekale+Izmir+Türkiye" target="_blank" rel="noopener">Kadifekale</a> transition in <a href="https://www.google.com/maps/search/?api=1&amp;query=Izmir+Türkiye" target="_blank" rel="noopener">Izmir</a>, but a similar phenomenon. No safety concerns at all, the area is fine. It's just surprising that such rundown buildings remain right in the center of <a href="https://www.google.com/maps/search/?api=1&amp;query=Cesme+Izmir+Türkiye" target="_blank" rel="noopener">Cesme</a>.</p>
+<p>The visitor profile leans heavily toward the expat crowd. Prices are about 1.5x <a href="https://www.google.com/maps/search/?api=1&amp;query=Urla+Izmir+Türkiye" target="_blank" rel="noopener">Urla</a>. There are nice spots, but in terms of tourist appeal, what Cesme actually delivers is limited. Quite overrated, I'd say.</p></div>
       <div class="place-reviews" style="margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--accent)">
         <h2 style="font-family:DM Sans,sans-serif;font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 1rem;border:none;padding:0">My Place Reviews</h2>
         <h3 style="font-size:.8125rem;color:var(--accent);margin:1rem 0 .5rem;text-transform:uppercase;letter-spacing:.05em">Restaurants</h3>

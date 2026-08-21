@@ -21,12 +21,14 @@
   <div class="post-page">
     <div class="top-bar">
       <a href="../" class="back-link">&larr; Travel Notes</a>
-      <div class="top-actions">
-        <button class="toggle-btn view-btn" onclick="window.location='../'">List</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=map'">Map</button>
-        <button class="toggle-btn view-btn" onclick="window.location='../?view=timeline'">Timeline</button>
+      <nav class="top-actions" aria-label="Travel sections">
+        <a class="toggle-btn" href="../">List</a>
+        <details class="nav-menu"><summary class="toggle-btn">Maps</summary><div class="nav-menu-content">
+          <a href="../map.html">Travel Map</a><a href="../places.html">Place Reviews</a><a href="../ozgur-stars.html">Ozgur Stars</a>
+        </div></details>
+        <a class="toggle-btn" href="../timeline.html">Timeline</a>
         <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">Dark</button>
-      </div>
+      </nav>
     </div>
     <article>
       <div class="post-header">
@@ -42,7 +44,7 @@
       </div>
       <div class="post-body"><h2>Overview</h2>
 <p>A pleasant little Dutch city. Worth a tourist stop if you're passing through the area, though it might be too small to fill an entire day. Best combined with other nearby destinations.</p>
-<p>It has a real university-town vibe. It reminded us of <a href="https://www.google.com/maps/search/?api=1&amp;query=Eskisehir+Turkey" target="_blank" rel="noopener">Eskisehir</a> in Turkey. From our brief observations, <a href="https://www.google.com/maps/search/?api=1&amp;query=Delft+Netherlands" target="_blank" rel="noopener">Delft</a> would easily be a place we'd consider living.</p></div>
+<p>It has a real university-town vibe. It reminded us of <a href="https://www.google.com/maps/search/?api=1&amp;query=Eskisehir+Türkiye" target="_blank" rel="noopener">Eskisehir</a> in Türkiye. From our brief observations, <a href="https://www.google.com/maps/search/?api=1&amp;query=Delft+Netherlands" target="_blank" rel="noopener">Delft</a> would easily be a place we'd consider living.</p></div>
 
       <div class="related-posts"><h3>You might also like</h3><a href="keukenhof.html" class="related-link">Keukenhof</a><a href="amsterdam.html" class="related-link">Amsterdam</a><a href="netherlands.html" class="related-link">Netherlands</a><a href="zaanse-schans.html" class="related-link">Zaanse Schans</a><a href="volendam.html" class="related-link">Volendam</a></div>
     </article>

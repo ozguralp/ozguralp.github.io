@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="analytics.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Reviews Map — Restaurants, Hotels &amp; Cafes by Özgür Alp</title>
+  <link rel="canonical" href="https://ozguralp.com/travel/places.html" />
+  <meta name="description" content="Filter 1,000+ first-hand restaurant, hotel, cafe, bar, attraction, shop and tour reviews by category, country and rating." />
+  <meta name="author" content="Özgür Alp" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Place Reviews Map — Özgür Alp" />
+  <meta property="og:description" content="Restaurants, hotels, cafes, bars and other first-hand place reviews on a filterable world map." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ozguralp.com/travel/places.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="places">
+  <div class="top-bar">
+    <a href="https://ozguralp.com" class="back-link">&larr; ozguralp.com</a>
+    <nav class="top-actions" aria-label="Travel sections">
+      <a class="toggle-btn" href="./">List</a>
+      <details class="nav-menu">
+        <summary class="toggle-btn active" aria-current="page">Maps</summary>
+        <div class="nav-menu-content">
+          <a href="map.html">Travel Map</a>
+          <a href="places.html" aria-current="page">Place Reviews</a>
+          <a href="ozgur-stars.html">Ozgur Stars</a>
+        </div>
+      </details>
+      <a class="toggle-btn" href="timeline.html">Timeline</a>
+      <button class="toggle-btn" id="themeToggle" type="button" onclick="toggleTheme()">Dark</button>
+    </nav>
+  </div>
+
+  <header>
+    <h1>Place Reviews</h1>
+    <p class="tagline">Restaurants, hotels, cafes, bars and sights I reviewed along the way</p>
+    <p class="tagline-sub">by <a href="https://ozguralp.com">Özgür Alp</a></p>
+    <hr class="header-divider" />
+  </header>
+
+  <main class="map-page">
+    <div class="place-summary" id="placeSummary" aria-live="polite"></div>
+    <div class="category-shortcuts" id="categoryShortcuts" aria-label="Popular place categories">
+      <button type="button" data-category="all" class="active">All <span data-category-count="all"></span></button>
+      <button type="button" data-category="restaurant">Restaurants <span data-category-count="restaurant"></span></button>
+      <button type="button" data-category="hotel">Hotels <span data-category-count="hotel"></span></button>
+      <button type="button" data-category="cafe">Cafes <span data-category-count="cafe"></span></button>
+      <button type="button" data-category="bar">Bars <span data-category-count="bar"></span></button>
+      <button type="button" data-rating="5">5-Star <span data-rating-count="5"></span></button>
+    </div>
+    <form class="place-filters" id="placeFilters" onsubmit="return false">
+      <label>Search
+        <input type="search" id="placeSearch" placeholder="Place, review text or address" />
+      </label>
+      <label>Category
+        <select id="placeCategory">
+          <option value="all">All categories</option>
+          <option value="restaurant">Restaurants</option>
+          <option value="cafe">Cafes</option>
+          <option value="bar">Bars</option>
+          <option value="hotel">Hotels</option>
+          <option value="attraction">Attractions</option>
+          <option value="shop">Shops</option>
+          <option value="tour">Tours</option>
+          <option value="transport">Transport</option>
+        </select>
+      </label>
+      <label>Rating
+        <select id="placeRating">
+          <option value="all">All ratings</option>
+          <option value="5">5 stars only</option>
+          <option value="4">4 stars and up</option>
+          <option value="3">3 stars and up</option>
+        </select>
+      </label>
+      <label>Country
+        <select id="placeCountry"><option value="all">All countries</option></select>
+      </label>
+      <button type="button" class="filter-reset" id="resetPlaceFilters">Reset</button>
+    </form>
+    <div id="placesMap" aria-label="Map of place reviews"></div>
+  </main>
+
+  <footer><p>&copy; 2026 Özgür Alp</p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+  <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="analytics.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Map — First-Hand Travel Notes by Özgür Alp</title>
+  <link rel="canonical" href="https://ozguralp.com/travel/map.html" />
+  <meta name="description" content="Explore Özgür Alp's first-hand city guides, historic sites, border crossings and nature trips on a world travel map." />
+  <meta name="author" content="Özgür Alp" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Travel Map — Özgür Alp" />
+  <meta property="og:description" content="A world map of first-hand travel notes from 50+ countries." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ozguralp.com/travel/map.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="map">
+  <div class="top-bar">
+    <a href="https://ozguralp.com" class="back-link">&larr; ozguralp.com</a>
+    <nav class="top-actions" aria-label="Travel sections">
+      <a class="toggle-btn" href="./">List</a>
+      <details class="nav-menu">
+        <summary class="toggle-btn active" aria-current="page">Maps</summary>
+        <div class="nav-menu-content">
+          <a href="map.html" aria-current="page">Travel Map</a>
+          <a href="places.html">Place Reviews</a>
+          <a href="ozgur-stars.html">Ozgur Stars</a>
+        </div>
+      </details>
+      <a class="toggle-btn" href="timeline.html">Timeline</a>
+      <button class="toggle-btn" id="themeToggle" type="button" onclick="toggleTheme()">Dark</button>
+    </nav>
+  </div>
+
+  <header>
+    <h1>Travel Map</h1>
+    <p class="tagline">Every published destination, city and travel note on one world map</p>
+    <p class="tagline-sub">by <a href="https://ozguralp.com">Özgür Alp</a></p>
+    <hr class="header-divider" />
+  </header>
+
+  <main class="map-page">
+    <p class="page-intro">Select a marker to open the related first-hand note. Restaurants, hotels, cafes and other reviewed places have their own filtered map.</p>
+    <div id="map" aria-label="World map of travel notes"></div>
+    <p class="map-link-row"><a href="places.html">Open the Place Reviews map &rarr;</a></p>
+  </main>
+
+  <footer><p>&copy; 2026 Özgür Alp</p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>

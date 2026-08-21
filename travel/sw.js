@@ -1,10 +1,16 @@
-const CACHE_NAME = 'travel-notes-v6';
+const CACHE_NAME = 'travel-notes-v12';
 const STATIC_ASSETS = [
   './',
+  './map.html',
+  './places.html',
+  './timeline.html',
+  './ozgur-stars.html',
   './style.css',
   './app.js',
   './analytics.js',
   './data.json',
+  './places.json',
+  './stars.json',
 ];
 
 self.addEventListener('install', e => {
@@ -24,8 +30,11 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Network-first for HTML, cache-first for static assets
-  if (e.request.url.includes('/posts/') || e.request.mode === 'navigate') {
+  const requestUrl = new URL(e.request.url);
+  const isLocalAsset = requestUrl.origin === self.location.origin;
+  // Keep deploys fresh: all local HTML, JSON, JS and CSS are network-first.
+  // External fonts and map libraries remain cache-first.
+  if (isLocalAsset || e.request.mode === 'navigate') {
     e.respondWith(
       fetch(e.request).then(r => {
         const clone = r.clone();

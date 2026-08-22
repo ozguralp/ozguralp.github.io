@@ -46,7 +46,7 @@
   <script>function toggleTheme(){var b=document.getElementById('themeToggle'),d=document.documentElement.getAttribute('data-theme')==='dark';if(d){document.documentElement.removeAttribute('data-theme');b.textContent='Dark';localStorage.setItem('theme','light')}else{document.documentElement.setAttribute('data-theme','dark');b.textContent='Light';localStorage.setItem('theme','dark')}}if(localStorage.getItem('theme')==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('themeToggle').textContent='Light'})}</script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-    var postData=[{"lat":-24.6282,"lng":25.9231,"title":"Chobe National Park","slug":"botswana"}];
+    var postData=[{"lat":-18.6667,"lng":24.5,"title":"Chobe National Park","slug":"botswana"}];
     var revData=[{"lat":-17.79287,"lng":25.155827,"name":"Kalahari Tours","address":"President Ave, Kasane, Botswana","rating":5,"text":"We had a one day tour including safari in forest and river which was great and I highly recommend it!","date":"2024","category":"tour","blog_slugs":["botswana"],"color":"#16a34a"},{"lat":-17.789005,"lng":25.159669,"name":"The Coffee Buzz","address":"plot 721, 6544+W5X, President Ave, Kasane, Botswana","rating":5,"text":"Good food as open buffet! Hake fish and salads were really great.","date":"2024","category":"cafe","blog_slugs":["botswana"],"color":"#16a34a"}];
     var isDark=document.documentElement.getAttribute('data-theme')==='dark';
     var tile=isDark?'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png':'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';

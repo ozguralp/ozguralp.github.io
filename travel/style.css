@@ -724,6 +724,13 @@ a.toggle-btn:hover {
   background: var(--accent);
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
 }
+.travel-marker-dot.unlinked { background: #78716c; }
+.popup-place-name {
+  display: block;
+  padding: 0.22rem 0;
+  color: #44403c;
+  font-weight: 600;
+}
 .popup-link-block { display: block; }
 
 .place-summary {
@@ -776,6 +783,9 @@ a.toggle-btn:hover {
 .stars-filter-shortcuts { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .stars-filters {
   grid-template-columns: minmax(14rem, 2fr) repeat(2, minmax(9rem, 1fr)) auto;
+}
+.travel-filters {
+  grid-template-columns: minmax(14rem, 2fr) minmax(11rem, 1fr) auto;
 }
 .place-filters label {
   display: flex;
@@ -870,6 +880,17 @@ a.toggle-btn:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.38);
 }
 .stars-list {
+  display: block;
+}
+.star-category-group { margin: 0 0 1.5rem; }
+.star-category-group h2 {
+  margin: 0 0 0.65rem;
+  color: var(--text);
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+.star-category-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 0.65rem;
@@ -895,11 +916,15 @@ a.toggle-btn:hover {
 }
 .ozgur-star-card-icon { color: #d97706; }
 
-.timeline-page { max-width: var(--max-width); }
+.timeline-page {
+  max-width: var(--max-width);
+  padding-top: 1.1rem;
+}
 .timeline-trip {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   padding: 0;
 }
+.timeline-trip-header { margin-bottom: 0.65rem; }
 .timeline-trip-header h2 {
   margin: 0 0 0.25rem;
   color: var(--text);
@@ -929,6 +954,7 @@ a.toggle-btn:hover {
   .continent-header-main { align-items: flex-start; flex-direction: column; gap: 0.2rem; }
   .map-page,
   .timeline-page { padding: 0 0.85rem; }
+  .timeline-page { padding-top: 1rem; }
   #map,
   #placesMap,
   #starsMap { min-height: 390px; height: 62vh; }

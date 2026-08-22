@@ -1,4 +1,4 @@
-const CACHE_NAME = 'travel-notes-v12';
+const CACHE_NAME = 'travel-notes-v13';
 const STATIC_ASSETS = [
   './',
   './map.html',
@@ -11,6 +11,7 @@ const STATIC_ASSETS = [
   './data.json',
   './places.json',
   './stars.json',
+  './travel_history.json',
 ];
 
 self.addEventListener('install', e => {

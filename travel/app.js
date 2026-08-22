@@ -7,6 +7,10 @@ let placeLayer = null;
 let placeSearchTimer = null;
 let starLayer = null;
 let starSearchTimer = null;
+let travelHistory = {profile_stats: {}, locations: []};
+let travelLayer = null;
+let travelMapItems = [];
+let travelSearchTimer = null;
 
 const CONTINENT_ORDER = ['turkey', 'europe', 'asia', 'south-america', 'north-america', 'africa', 'global'];
 const CONTINENT_LABELS = {
@@ -30,6 +34,10 @@ const FLAGS = {
 const CATEGORY_LABELS = {
   restaurant: 'Restaurant', cafe: 'Cafe', bar: 'Bar', hotel: 'Hotel', attraction: 'Attraction',
   shop: 'Shop', tour: 'Tour', transport: 'Transport'
+};
+const CATEGORY_PLURAL_LABELS = {
+  attraction: 'Attractions', tour: 'Tours', restaurant: 'Restaurants', cafe: 'Cafes',
+  bar: 'Bars', hotel: 'Hotels', transport: 'Transport', shop: 'Shops'
 };
 const RATING_COLORS = {5: '#16a34a', 4: '#65a30d', 3: '#ca8a04', 2: '#ea580c', 1: '#dc2626'};
 
@@ -111,7 +119,7 @@ async function init() {
       window.location.replace(legacyView === 'map' ? 'map.html' : 'timeline.html');
       return;
     }
-    posts = await fetchJson('data.json');
+    [posts, travelHistory] = await Promise.all([fetchJson('data.json'), fetchJson('travel_history.json')]);
     renderStats();
     renderList();
     renderFeaturedPosts();
@@ -121,7 +129,7 @@ async function init() {
     return;
   }
   if (page === 'map') {
-    posts = await fetchJson('data.json');
+    [posts, travelHistory] = await Promise.all([fetchJson('data.json'), fetchJson('travel_history.json')]);
     initTravelMap();
     return;
   }
@@ -142,13 +150,12 @@ async function init() {
 }
 
 function renderStats() {
-  const countries = new Set(posts.filter(post => post.country && post.country !== 'global').map(post => post.country)).size;
-  const cities = new Set(posts.filter(post => post.city && post.city !== 'General').map(post => `${post.country}:${post.city}`)).size;
+  const stats = travelHistory.profile_stats || {};
   const bar = document.getElementById('statsBar');
   bar.innerHTML = `
-    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Continents</span></div>
-    <div class="stat"><span class="stat-num">${countries}</span><span class="stat-label">Countries</span></div>
-    <div class="stat"><span class="stat-num">${cities}</span><span class="stat-label">Cities</span></div>
+    <div class="stat"><span class="stat-num">${stats.continents}</span><span class="stat-label">Continents</span></div>
+    <div class="stat"><span class="stat-num">${stats.countries}</span><span class="stat-label">Countries</span></div>
+    <div class="stat"><span class="stat-num">${stats.cities}</span><span class="stat-label">Cities</span></div>
     <div class="stat"><span class="stat-num">${posts.length}</span><span class="stat-label">Posts</span></div>
     <div class="stat"><span class="stat-num" id="reviewCountStat">—</span><span class="stat-label">Place Reviews</span></div>`;
   loadPlacesData().then(reviews => {
@@ -315,25 +322,92 @@ function restoreListState() {
 
 function initTravelMap() {
   makeMap('map');
-  const icon = L.divIcon({
-    className: 'custom-marker',
-    html: '<div class="travel-marker-dot"></div>',
-    iconSize: [14, 14], iconAnchor: [7, 7], popupAnchor: [0, -8]
-  });
-  const locations = {};
+  travelLayer = L.layerGroup().addTo(map);
+  travelMapItems = [];
   posts.forEach(post => {
     if (post.show_on_map === false || post.lat == null || post.lng == null) return;
-    const key = `${Number(post.lat).toFixed(1)},${Number(post.lng).toFixed(1)}`;
-    if (!locations[key]) locations[key] = [];
-    locations[key].push(post);
+    travelMapItems.push({
+      id: `post:${post.slug}`,
+      name: post.title,
+      lat: Number(post.lat),
+      lng: Number(post.lng),
+      country_slug: canonicalCountrySlug(post),
+      country_display: post.country_display || '',
+      href: `posts/${encodeURIComponent(post.slug)}.html`,
+      linked: true
+    });
   });
-  Object.values(locations).forEach(group => {
+  (travelHistory.locations || []).forEach(location => {
+    travelMapItems.push({...location, lat: Number(location.lat), lng: Number(location.lng), linked: false});
+  });
+  populateTravelFilters();
+  bindTravelFilters();
+  applyTravelFilters(false);
+}
+
+function populateTravelFilters() {
+  const countrySelect = document.getElementById('travelCountry');
+  const countries = [...new Map(travelMapItems
+    .filter(item => item.country_slug && item.country_display)
+    .map(item => [item.country_slug, item.country_display])).entries()]
+    .sort((left, right) => left[1].localeCompare(right[1], 'en'));
+  countrySelect.insertAdjacentHTML('beforeend', countries.map(([slug, label]) =>
+    `<option value="${escapeHtml(slug)}">${escapeHtml(label)}</option>`
+  ).join(''));
+}
+
+function bindTravelFilters() {
+  document.getElementById('travelCountry').addEventListener('change', () => applyTravelFilters(true));
+  document.getElementById('travelSearch').addEventListener('input', () => {
+    clearTimeout(travelSearchTimer);
+    travelSearchTimer = setTimeout(() => applyTravelFilters(true), 160);
+  });
+  document.getElementById('resetTravelFilters').addEventListener('click', () => {
+    document.getElementById('travelSearch').value = '';
+    document.getElementById('travelCountry').value = 'all';
+    applyTravelFilters(false);
+    map.setView([25, 20], 2);
+  });
+}
+
+function travelMarkerIcon(linked) {
+  return L.divIcon({
+    className: 'custom-marker',
+    html: `<div class="travel-marker-dot${linked ? '' : ' unlinked'}"></div>`,
+    iconSize: [14, 14], iconAnchor: [7, 7], popupAnchor: [0, -8]
+  });
+}
+
+function applyTravelFilters(fitMap) {
+  const search = document.getElementById('travelSearch').value.trim().toLocaleLowerCase('en');
+  const country = document.getElementById('travelCountry').value;
+  const filtered = travelMapItems.filter(item => {
+    if (country !== 'all' && item.country_slug !== country) return false;
+    if (!search) return true;
+    return [item.name, item.country_display].join(' ').toLocaleLowerCase('en').includes(search);
+  });
+
+  const groups = {};
+  filtered.forEach(item => {
+    const key = `${item.lat.toFixed(3)},${item.lng.toFixed(3)}`;
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(item);
+  });
+  travelLayer.clearLayers();
+  Object.values(groups).forEach(group => {
     const first = group[0];
-    const popup = group.map(post =>
-      `<a class="popup-link popup-link-block" href="posts/${encodeURIComponent(post.slug)}.html">${escapeHtml(post.title)} &rarr;</a>`
+    const popup = group.map(item => item.linked
+      ? `<a class="popup-link popup-link-block" href="${item.href}">${escapeHtml(item.name)} &rarr;</a>`
+      : `<span class="popup-place-name">${escapeHtml(item.name)}</span>`
     ).join('');
-    L.marker([first.lat, first.lng], {icon}).bindPopup(popup, {maxWidth: 290}).addTo(map);
+    const linked = group.some(item => item.linked);
+    L.marker([first.lat, first.lng], {icon: travelMarkerIcon(linked)})
+      .bindPopup(popup, {maxWidth: 290}).addTo(travelLayer);
   });
+  document.getElementById('travelSummary').innerHTML = `<strong>${filtered.length}</strong> of ${travelMapItems.length} visited places shown`;
+  if (fitMap && filtered.length) {
+    map.fitBounds(L.latLngBounds(filtered.map(item => [item.lat, item.lng])), {padding: [30, 30], maxZoom: 10});
+  }
 }
 
 function reviewPopup(review, starred = false) {
@@ -573,11 +647,24 @@ function applyStarFilters(fitMap) {
   }
 
   const list = document.getElementById('starsList');
-  list.innerHTML = filtered.length ? filtered.map(review => `<article class="star-card">
-    <div><span class="ozgur-star-card-icon">★</span><strong>${escapeHtml(review.name)}</strong></div>
-    <span>${escapeHtml(review.country_display || '')} &middot; ${escapeHtml(CATEGORY_LABELS[review.category] || review.category)}</span>
-    <p class="star-card-note">${escapeHtml(review.ozgur_star_note || '')}</p>
-  </article>`).join('') : '<p class="empty-state">No Ozgur Stars match these filters.</p>';
+  const categoryOrder = ['attraction', 'tour', 'restaurant', 'cafe', 'bar', 'hotel', 'transport', 'shop'];
+  const grouped = filtered.reduce((result, review) => {
+    const key = review.category || 'other';
+    if (!result[key]) result[key] = [];
+    result[key].push(review);
+    return result;
+  }, {});
+  const orderedCategories = [...categoryOrder, ...Object.keys(grouped).filter(key => !categoryOrder.includes(key)).sort()];
+  list.innerHTML = filtered.length ? orderedCategories.filter(key => grouped[key]).map(key => {
+    const categoryReviews = grouped[key].sort((left, right) => left.name.localeCompare(right.name, 'en'));
+    const label = CATEGORY_PLURAL_LABELS[key] || key.replaceAll('_', ' ');
+    const cards = categoryReviews.map(review => `<article class="star-card">
+      <div><span class="ozgur-star-card-icon">★</span><strong>${escapeHtml(review.name)}</strong></div>
+      <span>${escapeHtml(review.country_display || '')}</span>
+      <p class="star-card-note">${escapeHtml(review.ozgur_star_note || '')}</p>
+    </article>`).join('');
+    return `<section class="star-category-group"><h2>${escapeHtml(label)}</h2><div class="star-category-cards">${cards}</div></section>`;
+  }).join('') : '<p class="empty-state">No Ozgur Stars match these filters.</p>';
 
   const params = new URLSearchParams();
   if (category !== 'all') params.set('category', category);

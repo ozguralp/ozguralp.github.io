@@ -1,0 +1,969 @@
+{
+  "profile_stats": {
+    "continents": 6,
+    "countries": 43,
+    "cities": 103
+  },
+  "locations": [
+    {
+      "id": "history-001",
+      "name": "Binghamton",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 42.098698,
+      "lng": -75.912519
+    },
+    {
+      "id": "history-002",
+      "name": "Philadelphia",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 39.952724,
+      "lng": -75.163526
+    },
+    {
+      "id": "history-003",
+      "name": "Boston",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 42.358834,
+      "lng": -71.05783
+    },
+    {
+      "id": "history-004",
+      "name": "Atlantic City",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 39.364285,
+      "lng": -74.422935
+    },
+    {
+      "id": "history-005",
+      "name": "Miami",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 25.774157,
+      "lng": -80.193597
+    },
+    {
+      "id": "history-006",
+      "name": "Washington, D.C.",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 38.895098,
+      "lng": -77.036385
+    },
+    {
+      "id": "history-007",
+      "name": "Panama City Beach",
+      "country_display": "U.S.A.",
+      "country_slug": "u-s-a",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 30.176591,
+      "lng": -85.805386
+    },
+    {
+      "id": "history-008",
+      "name": "Como",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 45.939586,
+      "lng": 9.149361
+    },
+    {
+      "id": "history-009",
+      "name": "Rome",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.89332,
+      "lng": 12.482932
+    },
+    {
+      "id": "history-010",
+      "name": "Nice",
+      "country_display": "France",
+      "country_slug": "france",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.700936,
+      "lng": 7.268391
+    },
+    {
+      "id": "history-011",
+      "name": "Cannes",
+      "country_display": "France",
+      "country_slug": "france",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.55152,
+      "lng": 7.013442
+    },
+    {
+      "id": "history-012",
+      "name": "Monaco",
+      "country_display": "Monaco",
+      "country_slug": "monaco",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.732349,
+      "lng": 7.427683
+    },
+    {
+      "id": "history-013",
+      "name": "Genoa",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 44.40726,
+      "lng": 8.933862
+    },
+    {
+      "id": "history-014",
+      "name": "Florence",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.769796,
+      "lng": 11.25564
+    },
+    {
+      "id": "history-015",
+      "name": "Siena",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.167206,
+      "lng": 11.467561
+    },
+    {
+      "id": "history-016",
+      "name": "Bologna",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 44.49382,
+      "lng": 11.342633
+    },
+    {
+      "id": "history-017",
+      "name": "Ravenna",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 44.364061,
+      "lng": 12.05901
+    },
+    {
+      "id": "history-018",
+      "name": "Rimini",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.946543,
+      "lng": 12.630749
+    },
+    {
+      "id": "history-019",
+      "name": "San Marino",
+      "country_display": "San Marino",
+      "country_slug": "san-marino",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.9364,
+      "lng": 12.446699
+    },
+    {
+      "id": "history-020",
+      "name": "Turin",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 45.067755,
+      "lng": 7.682489
+    },
+    {
+      "id": "history-021",
+      "name": "Lake Garda",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "region",
+      "lat": 45.662431,
+      "lng": 10.686157
+    },
+    {
+      "id": "history-022",
+      "name": "Düsseldorf",
+      "country_display": "Germany",
+      "country_slug": "germany",
+      "continent": "europe",
+      "type": "city",
+      "lat": 51.225402,
+      "lng": 6.776314
+    },
+    {
+      "id": "history-023",
+      "name": "Bochum",
+      "country_display": "Germany",
+      "country_slug": "germany",
+      "continent": "europe",
+      "type": "city",
+      "lat": 51.481811,
+      "lng": 7.219664
+    },
+    {
+      "id": "history-024",
+      "name": "Skopje",
+      "country_display": "North Macedonia",
+      "country_slug": "north-macedonia",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.996216,
+      "lng": 21.431894
+    },
+    {
+      "id": "history-025",
+      "name": "Moscow",
+      "country_display": "Russia",
+      "country_slug": "russia",
+      "continent": "europe",
+      "type": "city",
+      "lat": 55.625578,
+      "lng": 37.606392
+    },
+    {
+      "id": "history-026",
+      "name": "Maldives / Kani",
+      "country_display": "Maldives",
+      "country_slug": "maldives",
+      "continent": "asia",
+      "type": "resort",
+      "lat": 4.6167,
+      "lng": 73.4889
+    },
+    {
+      "id": "history-027",
+      "name": "Berlin",
+      "country_display": "Germany",
+      "country_slug": "germany",
+      "continent": "europe",
+      "type": "city",
+      "lat": 52.517389,
+      "lng": 13.395131
+    },
+    {
+      "id": "history-028",
+      "name": "Cabo San Lucas",
+      "country_display": "Mexico",
+      "country_slug": "mexico",
+      "continent": "north-america",
+      "type": "city",
+      "lat": 22.893888,
+      "lng": -109.92006
+    },
+    {
+      "id": "history-029",
+      "name": "Phuket",
+      "country_display": "Thailand",
+      "country_slug": "thailand",
+      "continent": "asia",
+      "type": "island",
+      "lat": 7.936602,
+      "lng": 98.352929
+    },
+    {
+      "id": "history-030",
+      "name": "Sarajevo",
+      "country_display": "Bosnia and Herzegovina",
+      "country_slug": "bosnia-herzegovina",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.857071,
+      "lng": 18.412615
+    },
+    {
+      "id": "history-107",
+      "name": "Mostar",
+      "country_display": "Bosnia and Herzegovina",
+      "country_slug": "bosnia-herzegovina",
+      "continent": "europe",
+      "type": "city",
+      "lat": 43.3438,
+      "lng": 17.8078
+    },
+    {
+      "id": "history-031",
+      "name": "Kavala",
+      "country_display": "Greece",
+      "country_slug": "greece",
+      "continent": "europe",
+      "type": "city",
+      "lat": 40.936922,
+      "lng": 24.412277
+    },
+    {
+      "id": "history-032",
+      "name": "Drama",
+      "country_display": "Greece",
+      "country_slug": "greece",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.149944,
+      "lng": 24.146829
+    },
+    {
+      "id": "history-033",
+      "name": "Blatska",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "village",
+      "lat": 41.534403,
+      "lng": 23.864722
+    },
+    {
+      "id": "history-034",
+      "name": "Rila Monastery",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "attraction",
+      "lat": 42.133299,
+      "lng": 23.340187
+    },
+    {
+      "id": "history-035",
+      "name": "Sandanski",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.565416,
+      "lng": 23.278643
+    },
+    {
+      "id": "history-036",
+      "name": "Prague",
+      "country_display": "Czechia",
+      "country_slug": "czechia",
+      "continent": "europe",
+      "type": "city",
+      "lat": 50.087465,
+      "lng": 14.421254
+    },
+    {
+      "id": "history-037",
+      "name": "Munich",
+      "country_display": "Germany",
+      "country_slug": "germany",
+      "continent": "europe",
+      "type": "city",
+      "lat": 48.137108,
+      "lng": 11.575382
+    },
+    {
+      "id": "history-038",
+      "name": "Vienna",
+      "country_display": "Austria",
+      "country_slug": "austria",
+      "continent": "europe",
+      "type": "city",
+      "lat": 48.208354,
+      "lng": 16.372504
+    },
+    {
+      "id": "history-039",
+      "name": "Bali",
+      "country_display": "Indonesia",
+      "country_slug": "indonesia",
+      "continent": "asia",
+      "type": "island",
+      "lat": -8.22713,
+      "lng": 115.19192
+    },
+    {
+      "id": "history-040",
+      "name": "Copenhagen",
+      "country_display": "Denmark",
+      "country_slug": "denmark",
+      "continent": "europe",
+      "type": "city",
+      "lat": 55.686724,
+      "lng": 12.570072
+    },
+    {
+      "id": "history-041",
+      "name": "Sofia",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "city",
+      "lat": 42.697703,
+      "lng": 23.321736
+    },
+    {
+      "id": "history-042",
+      "name": "Madrid",
+      "country_display": "Spain",
+      "country_slug": "spain",
+      "continent": "europe",
+      "type": "city",
+      "lat": 40.416782,
+      "lng": -3.703507
+    },
+    {
+      "id": "history-045",
+      "name": "Barcelona",
+      "country_display": "Spain",
+      "country_slug": "spain",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.38258,
+      "lng": 2.177073
+    },
+    {
+      "id": "history-046",
+      "name": "Lausanne",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.521827,
+      "lng": 6.632702
+    },
+    {
+      "id": "history-047",
+      "name": "Montreux",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.431083,
+      "lng": 6.912992
+    },
+    {
+      "id": "history-048",
+      "name": "Bern",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.948474,
+      "lng": 7.452175
+    },
+    {
+      "id": "history-049",
+      "name": "Blagoevgrad",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.750287,
+      "lng": 23.487341
+    },
+    {
+      "id": "history-050",
+      "name": "Leshten",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "village",
+      "lat": 41.636909,
+      "lng": 23.827829
+    },
+    {
+      "id": "history-051",
+      "name": "Petrich",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.395295,
+      "lng": 23.206783
+    },
+    {
+      "id": "history-052",
+      "name": "Kovachevitsa",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "village",
+      "lat": 41.684702,
+      "lng": 23.826412
+    },
+    {
+      "id": "history-058",
+      "name": "Alexandroupoli",
+      "country_display": "Greece",
+      "country_slug": "greece",
+      "continent": "europe",
+      "type": "city",
+      "lat": 40.845666,
+      "lng": 25.877881
+    },
+    {
+      "id": "history-059",
+      "name": "Namibia",
+      "country_display": "Namibia",
+      "country_slug": "namibia",
+      "continent": "africa",
+      "type": "country",
+      "lat": -17.733453,
+      "lng": 25.118758
+    },
+    {
+      "id": "history-060",
+      "name": "Livingstone",
+      "country_display": "Zambia",
+      "country_slug": "zambia",
+      "continent": "africa",
+      "type": "city",
+      "lat": -17.853135,
+      "lng": 25.861429
+    },
+    {
+      "id": "history-062",
+      "name": "Sussex",
+      "country_display": "U.K.",
+      "country_slug": "u-k",
+      "continent": "europe",
+      "type": "region",
+      "lat": 50.940427,
+      "lng": 0.369998
+    },
+    {
+      "id": "history-063",
+      "name": "Eindhoven",
+      "country_display": "Netherlands",
+      "country_slug": "netherlands",
+      "continent": "europe",
+      "type": "city",
+      "lat": 51.439265,
+      "lng": 5.478633
+    },
+    {
+      "id": "history-064",
+      "name": "De Zilk",
+      "country_display": "Netherlands",
+      "country_slug": "netherlands",
+      "continent": "europe",
+      "type": "village",
+      "lat": 52.302371,
+      "lng": 4.543193
+    },
+    {
+      "id": "history-065",
+      "name": "Dolen",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "village",
+      "lat": 41.623956,
+      "lng": 23.931797
+    },
+    {
+      "id": "history-066",
+      "name": "Batumi",
+      "country_display": "Georgia",
+      "country_slug": "georgia",
+      "continent": "asia",
+      "type": "city",
+      "lat": 41.65095,
+      "lng": 41.636009
+    },
+    {
+      "id": "history-067",
+      "name": "Delchevo",
+      "country_display": "Bulgaria",
+      "country_slug": "bulgaria",
+      "continent": "europe",
+      "type": "village",
+      "lat": 41.555134,
+      "lng": 23.695703
+    },
+    {
+      "id": "history-068",
+      "name": "Serres",
+      "country_display": "Greece",
+      "country_slug": "greece",
+      "continent": "europe",
+      "type": "city",
+      "lat": 41.091071,
+      "lng": 23.549803
+    },
+    {
+      "id": "history-069",
+      "name": "Lavaux",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "region",
+      "lat": 46.522992,
+      "lng": 6.751972
+    },
+    {
+      "id": "history-071",
+      "name": "Zagreb",
+      "country_display": "Croatia",
+      "country_slug": "croatia",
+      "continent": "europe",
+      "type": "city",
+      "lat": 45.813097,
+      "lng": 15.977279
+    },
+    {
+      "id": "history-072",
+      "name": "Ljubljana",
+      "country_display": "Slovenia",
+      "country_slug": "slovenia",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.050027,
+      "lng": 14.506929
+    },
+    {
+      "id": "history-073",
+      "name": "Valdobbiadene",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 45.916316,
+      "lng": 12.027373
+    },
+    {
+      "id": "history-074",
+      "name": "Trento",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.102954,
+      "lng": 11.129743
+    },
+    {
+      "id": "history-075",
+      "name": "Bolzano",
+      "country_display": "Italy",
+      "country_slug": "italy",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.65593,
+      "lng": 11.230183
+    },
+    {
+      "id": "history-076",
+      "name": "Davos",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "city",
+      "lat": 46.796198,
+      "lng": 9.823689
+    },
+    {
+      "id": "history-077",
+      "name": "Heididorf",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "attraction",
+      "lat": 47.013237,
+      "lng": 9.545107
+    },
+    {
+      "id": "history-078",
+      "name": "Vaduz",
+      "country_display": "Liechtenstein",
+      "country_slug": "liechtenstein",
+      "continent": "europe",
+      "type": "city",
+      "lat": 47.139286,
+      "lng": 9.522796
+    },
+    {
+      "id": "history-079",
+      "name": "Feldkirch",
+      "country_display": "Austria",
+      "country_slug": "austria",
+      "continent": "europe",
+      "type": "city",
+      "lat": 47.252392,
+      "lng": 9.591748
+    },
+    {
+      "id": "history-080",
+      "name": "St. Gallen",
+      "country_display": "Switzerland",
+      "country_slug": "switzerland",
+      "continent": "europe",
+      "type": "city",
+      "lat": 47.425618,
+      "lng": 9.37624
+    },
+    {
+      "id": "history-081",
+      "name": "Konstanz",
+      "country_display": "Germany",
+      "country_slug": "germany",
+      "continent": "europe",
+      "type": "city",
+      "lat": 47.659216,
+      "lng": 9.175072
+    },
+    {
+      "id": "history-082",
+      "name": "Freiburg",
+      "country_display": "Germany",
+      "country_slug": "germany",
+      "continent": "europe",
+      "type": "city",
+      "lat": 47.99609,
+      "lng": 7.8494
+    },
+    {
+      "id": "history-083",
+      "name": "Colmar",
+      "country_display": "France",
+      "country_slug": "france",
+      "continent": "europe",
+      "type": "city",
+      "lat": 48.077752,
+      "lng": 7.357964
+    },
+    {
+      "id": "history-084",
+      "name": "Strasbourg",
+      "country_display": "France",
+      "country_slug": "france",
+      "continent": "europe",
+      "type": "city",
+      "lat": 48.584614,
+      "lng": 7.750713
+    },
+    {
+      "id": "history-085",
+      "name": "Reims",
+      "country_display": "France",
+      "country_slug": "france",
+      "continent": "europe",
+      "type": "city",
+      "lat": 49.257789,
+      "lng": 4.031926
+    },
+    {
+      "id": "history-086",
+      "name": "St. Petersburg",
+      "country_display": "Russia",
+      "country_slug": "russia",
+      "continent": "europe",
+      "type": "city",
+      "lat": 59.960674,
+      "lng": 30.158655
+    },
+    {
+      "id": "history-087",
+      "name": "Valletta",
+      "country_display": "Malta",
+      "country_slug": "malta",
+      "continent": "europe",
+      "type": "city",
+      "lat": 35.898998,
+      "lng": 14.513661
+    },
+    {
+      "id": "history-088",
+      "name": "Antalya",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 36.886573,
+      "lng": 30.703024
+    },
+    {
+      "id": "history-089",
+      "name": "Gallipoli",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 40.405406,
+      "lng": 26.672254
+    },
+    {
+      "id": "history-091",
+      "name": "Kartalkaya",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "resort",
+      "lat": 40.590253,
+      "lng": 31.808035
+    },
+    {
+      "id": "history-092",
+      "name": "Göcek",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 36.753714,
+      "lng": 28.942288
+    },
+    {
+      "id": "history-093",
+      "name": "Fethiye",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 36.622115,
+      "lng": 29.115338
+    },
+    {
+      "id": "history-094",
+      "name": "Ankara",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 39.920776,
+      "lng": 32.85405
+    },
+    {
+      "id": "history-095",
+      "name": "İstanbul",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 41.006381,
+      "lng": 28.975872
+    },
+    {
+      "id": "history-096",
+      "name": "Dikili",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 39.074971,
+      "lng": 26.889249
+    },
+    {
+      "id": "history-097",
+      "name": "Ordu",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 40.829257,
+      "lng": 37.408276
+    },
+    {
+      "id": "history-098",
+      "name": "Çal",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 38.081351,
+      "lng": 29.397294
+    },
+    {
+      "id": "history-099",
+      "name": "Çanakkale",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 40.054989,
+      "lng": 26.927829
+    },
+    {
+      "id": "history-100",
+      "name": "Turgutköy",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "village",
+      "lat": 36.747434,
+      "lng": 28.118898
+    },
+    {
+      "id": "history-101",
+      "name": "Aydın",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 37.74058,
+      "lng": 28.06764
+    },
+    {
+      "id": "history-102",
+      "name": "Pamukkale",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "attraction",
+      "lat": 37.920038,
+      "lng": 29.121753
+    },
+    {
+      "id": "history-103",
+      "name": "Lake Bafa",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "region",
+      "lat": 37.515256,
+      "lng": 27.424543
+    },
+    {
+      "id": "history-105",
+      "name": "Özdere",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 38.015307,
+      "lng": 27.127461
+    },
+    {
+      "id": "history-106",
+      "name": "Sığacık",
+      "country_display": "Türkiye",
+      "country_slug": "turkey",
+      "continent": "turkey",
+      "type": "city",
+      "lat": 38.193186,
+      "lng": 26.786015
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travel Map — First-Hand Travel Notes by Özgür Alp</title>
   <link rel="canonical" href="https://ozguralp.com/travel/map.html" />
-  <meta name="description" content="Explore Özgür Alp's first-hand city guides, historic sites, border crossings and nature trips on a world travel map." />
+  <meta name="description" content="Explore Özgür Alp's first-hand city guides, food and wine notes, historic sites and nature trips on a world travel map." />
   <meta name="author" content="Özgür Alp" />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Travel Map — Özgür Alp" />
@@ -39,13 +39,23 @@
 
   <header>
     <h1>Travel Map</h1>
-    <p class="tagline">Every published destination, city and travel note on one world map</p>
+    <p class="tagline">Every visited destination and published travel note on one world map</p>
     <p class="tagline-sub">by <a href="https://ozguralp.com">Özgür Alp</a></p>
     <hr class="header-divider" />
   </header>
 
   <main class="map-page">
-    <p class="page-intro">Select a marker to open the related first-hand note. Restaurants, hotels, cafes and other reviewed places have their own filtered map.</p>
+    <p class="page-intro">Published notes open from their marker. Places from the complete travel history remain visible by name even when they do not have a post yet.</p>
+    <div class="place-summary" id="travelSummary" aria-live="polite"></div>
+    <form class="place-filters travel-filters" id="travelFilters" onsubmit="return false">
+      <label>Search
+        <input type="search" id="travelSearch" placeholder="City, destination or country" />
+      </label>
+      <label>Country
+        <select id="travelCountry"><option value="all">All countries</option></select>
+      </label>
+      <button type="button" class="filter-reset" id="resetTravelFilters">Reset</button>
+    </form>
     <div id="map" aria-label="World map of travel notes"></div>
     <p class="map-link-row"><a href="places.html">Open the Place Reviews map &rarr;</a></p>
   </main>

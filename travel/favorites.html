@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="analytics.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorite Destinations &amp; Experiences — Özgür Alp</title>
+  <link rel="canonical" href="https://ozguralp.com/travel/favorites.html" />
+  <meta name="description" content="A personal map and directory of Özgür Alp's favorite historic sites, natural landscapes, scenic areas and travel experiences." />
+  <meta name="author" content="Özgür Alp" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Favorite Destinations &amp; Experiences — Özgür Alp" />
+  <meta property="og:description" content="Specific places and experiences worth returning to, selected from years of personal travel." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ozguralp.com/travel/favorites.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="favorites">
+  <div class="top-bar">
+    <a href="https://ozguralp.com" class="back-link">&larr; ozguralp.com</a>
+    <nav class="top-actions" aria-label="Travel sections">
+      <a class="toggle-btn" href="./">List</a>
+      <details class="nav-menu">
+        <summary class="toggle-btn active" aria-current="page">Maps</summary>
+        <div class="nav-menu-content">
+          <a href="map.html">Travel Map</a>
+          <a href="places.html">Place Reviews</a>
+          <a href="favorites.html" aria-current="page">Favorite Destinations</a>
+          <a href="ozgur-stars.html">Ozgur Stars</a>
+        </div>
+      </details>
+      <a class="toggle-btn" href="timeline.html">Timeline</a>
+      <button class="toggle-btn" id="themeToggle" type="button" onclick="toggleTheme()">Dark</button>
+    </nav>
+  </div>
+
+  <header>
+    <h1>Favorite Destinations &amp; Experiences</h1>
+    <p class="tagline">Specific places, landscapes and experiences I would happily return to</p>
+    <p class="tagline-sub">a personal shortlist by <a href="https://ozguralp.com">Özgür Alp</a></p>
+    <hr class="header-divider" />
+  </header>
+
+  <main class="map-page">
+    <p class="page-intro">This map focuses on individual sites and experiences. Countries and major cities remain on the main Travel Map.</p>
+    <div class="place-summary" id="favoriteSummary" aria-live="polite"></div>
+    <div class="category-shortcuts favorites-filter-shortcuts" id="favoriteCategoryShortcuts" aria-label="Favorite destination categories">
+      <button type="button" data-category="all" class="active">All <span data-favorite-count="all"></span></button>
+      <button type="button" data-category="historic_site">Historic Sites <span data-favorite-count="historic_site"></span></button>
+      <button type="button" data-category="nature">Nature <span data-favorite-count="nature"></span></button>
+      <button type="button" data-category="scenic_area">Scenic Areas <span data-favorite-count="scenic_area"></span></button>
+      <button type="button" data-category="beach_island">Beaches &amp; Islands <span data-favorite-count="beach_island"></span></button>
+      <button type="button" data-category="experience">Experiences <span data-favorite-count="experience"></span></button>
+    </div>
+    <form class="place-filters favorites-filters" id="favoriteFilters" onsubmit="return false">
+      <label>Search
+        <input type="search" id="favoriteSearch" placeholder="Site, experience or country" />
+      </label>
+      <label>Category
+        <select id="favoriteCategory">
+          <option value="all">All categories</option>
+          <option value="historic_site">Historic sites</option>
+          <option value="nature">Nature &amp; wildlife</option>
+          <option value="scenic_area">Scenic areas</option>
+          <option value="beach_island">Beaches &amp; islands</option>
+          <option value="experience">Experiences</option>
+        </select>
+      </label>
+      <label>Country
+        <select id="favoriteCountry"><option value="all">All countries</option></select>
+      </label>
+      <button type="button" class="filter-reset" id="resetFavoriteFilters">Reset</button>
+    </form>
+    <div id="favoritesMap" aria-label="Map of favorite destinations and experiences"></div>
+    <div class="stars-list favorites-list" id="favoritesList" aria-label="Favorite destinations grouped by category"></div>
+  </main>
+
+  <footer><p>&copy; 2026 Özgür Alp</p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>

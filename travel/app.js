@@ -7,6 +7,9 @@ let placeLayer = null;
 let placeSearchTimer = null;
 let starLayer = null;
 let starSearchTimer = null;
+let favoriteDestinations = [];
+let favoriteLayer = null;
+let favoriteSearchTimer = null;
 let travelHistory = {profile_stats: {}, locations: []};
 let travelLayer = null;
 let travelMapItems = [];
@@ -40,6 +43,27 @@ const CATEGORY_PLURAL_LABELS = {
   bar: 'Bars', hotel: 'Hotels', transport: 'Transport', shop: 'Shops'
 };
 const RATING_COLORS = {5: '#16a34a', 4: '#65a30d', 3: '#ca8a04', 2: '#ea580c', 1: '#dc2626'};
+const FAVORITE_CATEGORY_LABELS = {
+  historic_site: 'Historic Sites',
+  nature: 'Nature & Wildlife',
+  scenic_area: 'Scenic Areas',
+  beach_island: 'Beaches & Islands',
+  experience: 'Experiences'
+};
+const FAVORITE_CATEGORY_COLORS = {
+  historic_site: '#9a3412',
+  nature: '#15803d',
+  scenic_area: '#0369a1',
+  beach_island: '#0891b2',
+  experience: '#7e22ce'
+};
+const PLACE_TAG_LABELS = {
+  airport: 'Airports & Airport Services',
+  airport_lounge: 'Airport Lounges',
+  airport_food: 'Airport Food',
+  car_rental: 'Car Rentals',
+  surface_transport: 'Ferries, Borders & Transfers'
+};
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, char => ({
@@ -141,6 +165,11 @@ async function init() {
   if (page === 'places') {
     placeReviews = await loadPlacesData();
     initPlacesMap();
+    return;
+  }
+  if (page === 'favorites') {
+    favoriteDestinations = await fetchJson('favorites.json');
+    initFavoritesMap();
     return;
   }
   if (page === 'stars') {
@@ -483,9 +512,13 @@ function populatePlaceFilters() {
   const category = params.get('category');
   const rating = params.get('rating');
   const country = params.get('country');
+  const tag = params.get('type');
   if (category && document.querySelector(`#placeCategory option[value="${CSS.escape(category)}"]`)) document.getElementById('placeCategory').value = category;
   if (rating && ['3', '4', '5'].includes(rating)) document.getElementById('placeRating').value = rating;
   if (country && document.querySelector(`#placeCountry option[value="${CSS.escape(country)}"]`)) countrySelect.value = country;
+  if (tag && document.querySelector(`#placeCategory option[value="${CSS.escape(`tag:${tag}`)}"]`)) {
+    document.getElementById('placeCategory').value = `tag:${tag}`;
+  }
 }
 
 function bindPlaceFilters() {
@@ -520,15 +553,21 @@ function bindPlaceFilters() {
 
 function applyPlaceFilters(fitMap) {
   const search = document.getElementById('placeSearch').value.trim().toLocaleLowerCase('en');
-  const category = document.getElementById('placeCategory').value;
+  const categoryChoice = document.getElementById('placeCategory').value;
+  const tag = categoryChoice.startsWith('tag:') ? categoryChoice.slice(4) : 'all';
+  const category = tag === 'all' ? categoryChoice : 'all';
   const rating = document.getElementById('placeRating').value;
   const country = document.getElementById('placeCountry').value;
   const filtered = placeReviews.filter(review => {
     if (category !== 'all' && review.category !== category) return false;
     if (rating !== 'all' && Number(review.rating) < Number(rating)) return false;
     if (country !== 'all' && review.country_slug !== country) return false;
+    const tags = Array.isArray(review.tags) ? review.tags : [];
+    if (tag === 'surface_transport' && !tags.some(value => ['ferry', 'border_crossing', 'transfer'].includes(value))) return false;
+    if (tag !== 'all' && tag !== 'surface_transport' && !tags.includes(tag)) return false;
     if (search) {
-      const haystack = [review.name, review.text, review.address, review.subcategory].join(' ').toLocaleLowerCase('en');
+      const tagLabels = tags.map(value => PLACE_TAG_LABELS[value] || value).join(' ');
+      const haystack = [review.name, review.text, review.address, review.subcategory, tagLabels].join(' ').toLocaleLowerCase('en');
       if (!haystack.includes(search)) return false;
     }
     return review.lat != null && review.lng != null;
@@ -549,6 +588,153 @@ function applyPlaceFilters(fitMap) {
   const params = new URLSearchParams();
   if (category !== 'all') params.set('category', category);
   if (rating !== 'all') params.set('rating', rating);
+  if (country !== 'all') params.set('country', country);
+  if (tag !== 'all') params.set('type', tag);
+  if (search) params.set('q', search);
+  history.replaceState(null, '', `${window.location.pathname}${params.size ? `?${params}` : ''}`);
+}
+
+function favoriteMarker(favorite) {
+  const color = FAVORITE_CATEGORY_COLORS[favorite.category] || '#78716c';
+  const icon = L.divIcon({
+    className: 'favorite-marker',
+    html: `<div class="favorite-marker-dot" style="--marker-color:${color}"></div>`,
+    iconSize: [16, 16], iconAnchor: [8, 8], popupAnchor: [0, -9]
+  });
+  const category = FAVORITE_CATEGORY_LABELS[favorite.category] || favorite.category;
+  const postLink = favorite.post_slug
+    ? `<a class="popup-link popup-link-block" href="posts/${encodeURIComponent(favorite.post_slug)}.html">Read the travel note &rarr;</a>`
+    : '';
+  const mapsLink = /^https:\/\//.test(favorite.maps_url || '')
+    ? `<a class="popup-coordinate-link" href="${escapeHtml(favorite.maps_url)}" target="_blank" rel="noopener">Open on Google Maps</a>`
+    : '';
+  const popup = `<div class="review-popup favorite-popup">
+    <div class="review-popup-heading">${escapeHtml(favorite.name)}</div>
+    <div class="review-popup-meta"><span class="favorite-category-badge">${escapeHtml(category)}</span></div>
+    <div class="favorite-country">${escapeHtml(favorite.country_display)}</div>
+    <p class="favorite-popup-description">${escapeHtml(favorite.description || '')}</p>${postLink}${mapsLink}</div>`;
+  return L.marker([favorite.lat, favorite.lng], {icon}).bindPopup(popup, {maxWidth: 310});
+}
+
+function initFavoritesMap() {
+  makeMap('favoritesMap');
+  favoriteLayer = L.layerGroup().addTo(map);
+  populateFavoriteFilters();
+  bindFavoriteFilters();
+  applyFavoriteFilters(true);
+}
+
+function populateFavoriteFilters() {
+  const countrySelect = document.getElementById('favoriteCountry');
+  const countries = [...new Map(favoriteDestinations
+    .filter(item => item.country_slug && item.country_display)
+    .map(item => [item.country_slug, item.country_display])).entries()]
+    .sort((left, right) => left[1].localeCompare(right[1], 'en'));
+  countries.forEach(([slug, name]) => {
+    const option = document.createElement('option');
+    option.value = slug;
+    option.textContent = name;
+    countrySelect.appendChild(option);
+  });
+
+  const counts = favoriteDestinations.reduce((result, item) => {
+    result[item.category] = (result[item.category] || 0) + 1;
+    return result;
+  }, {});
+  document.querySelector('[data-favorite-count="all"]').textContent = favoriteDestinations.length;
+  Object.keys(FAVORITE_CATEGORY_LABELS).forEach(category => {
+    const node = document.querySelector(`[data-favorite-count="${category}"]`);
+    if (node) node.textContent = counts[category] || 0;
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get('category');
+  const country = params.get('country');
+  const search = params.get('q');
+  if (category && document.querySelector(`#favoriteCategory option[value="${CSS.escape(category)}"]`)) {
+    document.getElementById('favoriteCategory').value = category;
+  }
+  if (country && document.querySelector(`#favoriteCountry option[value="${CSS.escape(country)}"]`)) {
+    countrySelect.value = country;
+  }
+  if (search) document.getElementById('favoriteSearch').value = search;
+}
+
+function bindFavoriteFilters() {
+  ['favoriteCategory', 'favoriteCountry'].forEach(id => {
+    document.getElementById(id).addEventListener('change', () => applyFavoriteFilters(true));
+  });
+  document.getElementById('favoriteSearch').addEventListener('input', () => {
+    clearTimeout(favoriteSearchTimer);
+    favoriteSearchTimer = setTimeout(() => applyFavoriteFilters(false), 160);
+  });
+  document.getElementById('favoriteCategoryShortcuts').addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button?.dataset.category) return;
+    document.getElementById('favoriteCategory').value = button.dataset.category;
+    applyFavoriteFilters(true);
+  });
+  document.getElementById('resetFavoriteFilters').addEventListener('click', () => {
+    document.getElementById('favoriteSearch').value = '';
+    document.getElementById('favoriteCategory').value = 'all';
+    document.getElementById('favoriteCountry').value = 'all';
+    applyFavoriteFilters(true);
+  });
+}
+
+function applyFavoriteFilters(fitMap) {
+  const search = document.getElementById('favoriteSearch').value.trim().toLocaleLowerCase('en');
+  const category = document.getElementById('favoriteCategory').value;
+  const country = document.getElementById('favoriteCountry').value;
+  const filtered = favoriteDestinations.filter(item => {
+    if (category !== 'all' && item.category !== category) return false;
+    if (country !== 'all' && item.country_slug !== country) return false;
+    if (search) {
+      const haystack = [item.name, item.description, item.country_display, FAVORITE_CATEGORY_LABELS[item.category] || item.category]
+        .join(' ').toLocaleLowerCase('en');
+      if (!haystack.includes(search)) return false;
+    }
+    return item.lat != null && item.lng != null;
+  });
+
+  favoriteLayer.clearLayers();
+  filtered.forEach(item => favoriteLayer.addLayer(favoriteMarker(item)));
+  document.getElementById('favoriteSummary').innerHTML = `<strong>${filtered.length}</strong> of ${favoriteDestinations.length} favorites shown`;
+  document.querySelectorAll('#favoriteCategoryShortcuts button').forEach(button => {
+    button.classList.toggle('active', button.dataset.category === category);
+  });
+  if (fitMap && filtered.length) {
+    map.fitBounds(L.latLngBounds(filtered.map(item => [item.lat, item.lng])), {padding: [30, 30], maxZoom: 12});
+  }
+
+  const list = document.getElementById('favoritesList');
+  const categoryOrder = ['historic_site', 'nature', 'scenic_area', 'beach_island', 'experience'];
+  const grouped = filtered.reduce((result, item) => {
+    if (!result[item.category]) result[item.category] = [];
+    result[item.category].push(item);
+    return result;
+  }, {});
+  list.innerHTML = filtered.length ? categoryOrder.filter(key => grouped[key]).map(key => {
+    const categoryFavorites = grouped[key].sort((left, right) => left.name.localeCompare(right.name, 'en'));
+    const cards = categoryFavorites.map(item => {
+      const postLink = item.post_slug
+        ? `<a href="posts/${encodeURIComponent(item.post_slug)}.html">Read the travel note</a>`
+        : '';
+      const mapsLink = /^https:\/\//.test(item.maps_url || '')
+        ? `<a href="${escapeHtml(item.maps_url)}" target="_blank" rel="noopener">Google Maps</a>`
+        : '';
+      return `<article class="star-card favorite-card">
+        <div><span class="favorite-card-icon" style="--favorite-color:${FAVORITE_CATEGORY_COLORS[key]}">●</span><strong>${escapeHtml(item.name)}</strong></div>
+        <span>${escapeHtml(item.country_display || '')}</span>
+        <p class="star-card-note">${escapeHtml(item.description || '')}</p>
+        <div class="favorite-card-links">${[postLink, mapsLink].filter(Boolean).join('')}</div>
+      </article>`;
+    }).join('');
+    return `<section class="star-category-group"><h2>${escapeHtml(FAVORITE_CATEGORY_LABELS[key] || key)}</h2><div class="star-category-cards">${cards}</div></section>`;
+  }).join('') : '<p class="empty-state">No favorite destinations match these filters.</p>';
+
+  const params = new URLSearchParams();
+  if (category !== 'all') params.set('category', category);
   if (country !== 'all') params.set('country', country);
   if (search) params.set('q', search);
   history.replaceState(null, '', `${window.location.pathname}${params.size ? `?${params}` : ''}`);

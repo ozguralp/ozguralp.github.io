@@ -1,8 +1,9 @@
-const CACHE_NAME = 'travel-notes-v13';
+const CACHE_NAME = 'travel-notes-v16';
 const STATIC_ASSETS = [
   './',
   './map.html',
   './places.html',
+  './favorites.html',
   './timeline.html',
   './ozgur-stars.html',
   './style.css',
@@ -10,6 +11,7 @@ const STATIC_ASSETS = [
   './analytics.js',
   './data.json',
   './places.json',
+  './favorites.json',
   './stars.json',
   './travel_history.json',
 ];

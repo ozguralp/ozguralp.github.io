@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <script src="../analytics.js" defer></script>
+  <script src="../navigation.js" defer></script>
+  <script src="../map-tiles.js"></script>
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Zimbabwe — Travel Notes by Özgür Alp</title>
   <link rel="canonical" href="https://ozguralp.com/travel/countries/zimbabwe.html"/>
@@ -12,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="../style.css?v=20"/>
   <style>.country-page{max-width:var(--max-width);margin:0 auto;padding:0 1.5rem 4rem}.country-header{padding:1.5rem 2rem;margin-bottom:1.5rem}.country-title-row{display:flex;align-items:baseline;gap:1rem}.country-title-row h1{font-family:'DM Serif Display',Georgia,serif;font-size:2.25rem;font-weight:400;margin:0}.country-title-row .flag{font-size:1.75rem}.country-stats{display:flex;gap:2rem;margin-top:.75rem;font-size:.875rem;color:var(--text-muted)}.country-stats .cs-num{font-weight:700;color:var(--accent)}#countryMap{width:100%;height:400px;border-radius:12px;border:1px solid var(--border);margin-bottom:1.5rem}.posts-section h2{font-family:'DM Sans',sans-serif;font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);margin:1.5rem 0 .75rem}.country-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);text-align:center;font-size:.8125rem;color:var(--text-muted)}</style>
 </head>
 <body>
@@ -48,10 +50,8 @@
   <script>
     var postData=[{"lat":-17.9243,"lng":25.8572,"title":"Victoria Falls","slug":"victoria-falls"},{"lat":-17.8252,"lng":31.0335,"title":"Zimbabwe","slug":"zimbabwe"}];
     var revData=[{"lat":-17.929123,"lng":25.846602,"name":"The Lookout Cafe - Wild Horizons","address":"Batoka Gorge, Victoria Falls, Zimbabwe","rating":5,"text":"Really great view! I mean, you can hangout there for a day.\n\nService is slow but it is usual at Africa, so you can get used to it. Good coffee.","date":"2024","category":"attraction","blog_slugs":["zimbabwe"],"color":"#16a34a"},{"lat":-17.928188,"lng":25.838078,"name":"Marula Cafe","address":"Shop 1 Centre, corner of Livingstone Way and Parkway Drive, Victoria Falls, Zimbabwe, Victoria Falls, Zimbabwe","rating":4,"text":"Good food. We really like ostrich fillets and crocodile crochet. Only we suffered is we asked wine which looks like Zambian on the menu to the employees. They respond as the wine is Zambian but it is actually made from a Zambian winemaker working and living in South Africa. So I do not enjoy that kind of misleading","date":"2024","category":"cafe","blog_slugs":["zimbabwe"],"color":"#65a30d"},{"lat":-17.930937,"lng":25.829459,"name":"Cresta Sprayview","address":"Reynard Rd, Victoria Falls, Zimbabwe","rating":4,"text":"Good location, rooms are old and entrances are really small, employees are great. Breakfast is nice, open buffet for evening is meh","date":"2024","category":"hotel","blog_slugs":["zimbabwe"],"color":"#65a30d"}];
-    var isDark=document.documentElement.getAttribute('data-theme')==='dark';
-    var tile=isDark?'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png':'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-    var map=L.map('countryMap',{scrollWheelZoom:true});
-    L.tileLayer(tile,{subdomains:'abcd',maxZoom:19}).addTo(map);
+    var map=L.map('countryMap',{scrollWheelZoom:true,maxBounds:TravelTiles.bounds,maxBoundsViscosity:1});
+    L.tileLayer(TravelTiles.url,TravelTiles.options()).addTo(map);
     map.fitBounds([[-22.5,25.2],[-15.6,33.1]]);
     var icon=L.divIcon({className:'custom-marker',html:'<div style="width:12px;height:12px;background:#c2410c;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.3)"></div>',iconSize:[12,12],iconAnchor:[6,6],popupAnchor:[0,-8]});
     postData.forEach(function(p){if(p.lat)L.marker([p.lat,p.lng],{icon:icon}).bindPopup('<div class="popup-title">'+p.title+'</div><a class="popup-link" href="../posts/'+p.slug+'.html">Read &rarr;</a>',{maxWidth:280}).addTo(map)});

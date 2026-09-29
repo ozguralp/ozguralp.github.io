@@ -27,6 +27,7 @@ const FLAGS = {
   Turkey: '🇹🇷', Türkiye: '🇹🇷', 'North Cyprus': '🇨🇾', Greece: '🇬🇷', Bulgaria: '🇧🇬',
   Belgium: '🇧🇪', Netherlands: '🇳🇱', Portugal: '🇵🇹', Spain: '🇪🇸', Italy: '🇮🇹',
   France: '🇫🇷', Germany: '🇩🇪', 'U.K.': '🇬🇧', Switzerland: '🇨🇭', Croatia: '🇭🇷',
+  Slovenia: '🇸🇮', Austria: '🇦🇹', Liechtenstein: '🇱🇮',
   Hungary: '🇭🇺', Poland: '🇵🇱', Iceland: '🇮🇸', Finland: '🇫🇮', 'U.S.A.': '🇺🇸',
   Mexico: '🇲🇽', Cuba: '🇨🇺', 'Costa Rica': '🇨🇷', Peru: '🇵🇪', Bolivia: '🇧🇴',
   Chile: '🇨🇱', Argentina: '🇦🇷', Colombia: '🇨🇴', 'Peru / Bolivia': '🇵🇪',
@@ -94,30 +95,26 @@ function toggleTheme() {
     localStorage.setItem('theme', 'dark');
   }
   applySavedTheme();
-  replaceMapTiles();
 }
 
 function tileUrl() {
-  return document.documentElement.getAttribute('data-theme') === 'dark'
-    ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+  return TravelTiles.url;
+}
+
+const WORLD_BOUNDS = TravelTiles.bounds;
+
+function mapTileOptions() {
+  return TravelTiles.options();
 }
 
 function makeMap(elementId, center = [25, 20], zoom = 2) {
-  map = L.map(elementId, {scrollWheelZoom: true}).setView(center, zoom);
-  tileLayer = L.tileLayer(tileUrl(), {
-    attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19
-  }).addTo(map);
+  map = L.map(elementId, {
+    scrollWheelZoom: true,
+    maxBounds: WORLD_BOUNDS,
+    maxBoundsViscosity: 1
+  }).setView(center, zoom);
+  tileLayer = L.tileLayer(tileUrl(), mapTileOptions()).addTo(map);
   return map;
-}
-
-function replaceMapTiles() {
-  if (!map || typeof L === 'undefined') return;
-  if (tileLayer) map.removeLayer(tileLayer);
-  tileLayer = L.tileLayer(tileUrl(), {
-    attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19
-  }).addTo(map);
-  tileLayer.bringToBack();
 }
 
 async function fetchJson(url) {
@@ -145,7 +142,7 @@ async function init() {
     }
     [posts, travelHistory] = await Promise.all([fetchJson('data.json'), fetchJson('travel_history.json')]);
     renderStats();
-    renderList();
+    renderList(document.getElementById('searchInput')?.value || '');
     renderFeaturedPosts();
     restoreListState();
     document.getElementById('searchInput')?.addEventListener('input', event => renderList(event.target.value));
@@ -334,7 +331,8 @@ function postCard(post) {
 function saveListState() {
   const continents = [...document.querySelectorAll('.continent-group.open')].map(node => node.dataset.continent);
   const countries = [...document.querySelectorAll('.country-group.open')].map(node => node.dataset.country);
-  sessionStorage.setItem('travelListState', JSON.stringify({scroll: window.scrollY, continents, countries}));
+  const search = document.getElementById('searchInput')?.value || '';
+  sessionStorage.setItem('travelListState', JSON.stringify({scroll: window.scrollY, continents, countries, search}));
 }
 
 function restoreListState() {
@@ -343,6 +341,10 @@ function restoreListState() {
   sessionStorage.removeItem('travelListState');
   try {
     const state = JSON.parse(raw);
+    if (state.search) {
+      document.getElementById('searchInput').value = state.search;
+      renderList(state.search);
+    }
     state.continents?.forEach(value => document.querySelector(`.continent-group[data-continent="${CSS.escape(value)}"]`)?.classList.add('open'));
     state.countries?.forEach(value => document.querySelector(`.country-group[data-country="${CSS.escape(value)}"]`)?.classList.add('open'));
     if (state.scroll) setTimeout(() => window.scrollTo(0, state.scroll), 50);
@@ -357,7 +359,7 @@ function initTravelMap() {
     if (post.show_on_map === false || post.lat == null || post.lng == null) return;
     travelMapItems.push({
       id: `post:${post.slug}`,
-      name: post.title,
+      name: post.map_title || post.title,
       lat: Number(post.lat),
       lng: Number(post.lng),
       country_slug: canonicalCountrySlug(post),
@@ -371,7 +373,11 @@ function initTravelMap() {
   });
   populateTravelFilters();
   bindTravelFilters();
-  applyTravelFilters(false);
+  const params = new URLSearchParams(location.search);
+  const country = document.getElementById('travelCountry');
+  if ([...country.options].some(option => option.value === params.get('country'))) country.value = params.get('country');
+  document.getElementById('travelSearch').value = params.get('q') || '';
+  applyTravelFilters(params.has('country') || params.has('q'));
 }
 
 function populateTravelFilters() {
@@ -410,6 +416,11 @@ function travelMarkerIcon(linked) {
 function applyTravelFilters(fitMap) {
   const search = document.getElementById('travelSearch').value.trim().toLocaleLowerCase('en');
   const country = document.getElementById('travelCountry').value;
+  const params = new URLSearchParams();
+  if (country !== 'all') params.set('country', country);
+  const query = document.getElementById('travelSearch').value.trim();
+  if (query) params.set('q', query);
+  history.replaceState(history.state, '', `${location.pathname}${params.size ? `?${params}` : ''}`);
   const filtered = travelMapItems.filter(item => {
     if (country !== 'all' && item.country_slug !== country) return false;
     if (!search) return true;
@@ -903,12 +914,13 @@ function renderTimeline() {
         const primary = stop.posts.find(post => post.slug === 'siem-reap') || first;
         const related = stop.posts.filter(post => post !== primary).map(post =>
           `<a href="posts/${encodeURIComponent(post.slug)}.html">${escapeHtml(post.title)}</a>`
-        ).join('<span class="timeline-amp">, </span>');
+        ).join('<span class="timeline-separator">, </span>');
         titles = `<a href="posts/${encodeURIComponent(primary.slug)}.html">${escapeHtml(primary.title)}</a>${related ? ` <span class="timeline-parenthetical">(${related})</span>` : ''}`;
       } else {
         titles = stop.posts.map(post =>
-          `<a href="posts/${encodeURIComponent(post.slug)}.html">${escapeHtml(post.title)}</a>`
-        ).join('<span class="timeline-amp"> &amp; </span>');
+          `<a href="posts/${encodeURIComponent(post.slug)}.html">${escapeHtml(post.timeline_label || post.title)}</a>`
+        ).join('<span class="timeline-separator">, </span>');
+        if (first.timeline_region) titles = `${escapeHtml(first.timeline_region)} <span class="timeline-parenthetical">(${titles})</span>`;
       }
       const places = [...new Set(stop.posts.map(post => post.country_display).filter(Boolean))].join(' / ');
       return `<div class="timeline-stop-row"><span class="timeline-stop">
@@ -919,7 +931,7 @@ function renderTimeline() {
     }).join('');
     const stopLabel = stops.length === 1 ? 'stop' : 'stops';
     return `<section class="timeline-trip"><div class="timeline-trip-header">
-      <h2>${escapeHtml(trip.name)}</h2><span class="timeline-meta">${escapeHtml(period)} &middot; ${stops.length} ${stopLabel}</span>
+      <h2>${escapeHtml(trip.name.replace(/\s*&\s*/g, ', '))}</h2><span class="timeline-meta">${escapeHtml(period)} &middot; ${stops.length} ${stopLabel}</span>
       </div><div class="timeline-route">${route}</div></section>`;
   }).join('');
 }

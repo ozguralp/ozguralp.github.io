@@ -626,7 +626,7 @@
     "date": "Nov 2025",
     "category": "restaurant",
     "blog_slugs": [
-      "urla"
+      "seferihisar"
     ],
     "country_slug": "turkey",
     "country_display": "Türkiye",
@@ -879,7 +879,7 @@
     "date": "Sep 2025",
     "category": "restaurant",
     "blog_slugs": [
-      "urla"
+      "seferihisar"
     ],
     "country_slug": "turkey",
     "country_display": "Türkiye",
@@ -17216,7 +17216,7 @@
     "date": "2022",
     "category": "shop",
     "blog_slugs": [
-      "urla"
+      "seferihisar"
     ],
     "subcategory": "winery",
     "country_slug": "turkey",
@@ -17907,7 +17907,7 @@
     "date": "2022",
     "category": "cafe",
     "blog_slugs": [
-      "urla"
+      "seferihisar"
     ],
     "country_slug": "turkey",
     "country_display": "Türkiye",
@@ -18893,7 +18893,9 @@
     "text": "The view is very beautiful, the appetizers are okay, the fish and seafood are good, but the wine menu is mediocre.",
     "date": "Jul 2026",
     "category": "restaurant",
-    "blog_slugs": [],
+    "blog_slugs": [
+      "seferihisar"
+    ],
     "country_slug": "turkey",
     "country_display": "Türkiye",
     "maps_url": "https://www.google.com/maps/search/?api=1&query=Lavantal%C4%B1+Konak+Otel+%26+Restoran%2C+Akarca%2C+2124%2F1.+Sk.+No%3A3%2F1%2C+35460+Seferihisar%2F%C4%B0zmir",
@@ -18911,7 +18913,9 @@
     "text": "Their coffee is good, the owners are friendly, it's a pleasant coffee experience.",
     "date": "Jul 2026",
     "category": "cafe",
-    "blog_slugs": [],
+    "blog_slugs": [
+      "seferihisar"
+    ],
     "country_slug": "turkey",
     "country_display": "Türkiye",
     "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Ruva+Coffee+%26+Bistro%2C+S%C4%B1%C4%9Fac%C4%B1k%2C+127.+Sk.+no37%2C+35000+Seferihisar%2F%C4%B0zmir",
@@ -20244,6 +20248,826 @@
     "country_display": "Vietnam",
     "maps_url": "https://www.google.com/maps/search/?api=1&query=N%C3%A9t+Hu%E1%BA%BF+Restaurant%2C+198+P.+H%C3%A0ng+B%C3%B4ng%2C+Ho%C3%A0n+Ki%E1%BA%BFm%2C+H%C3%A0+N%E1%BB%99i%2C+Vietnam",
     "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=21.0288127%2C105.8440031",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.0820281,
+    "lng": 3.9422503,
+    "name": "Le beau lieu",
+    "address": "48 Rue de Cumières, 51160 Hautvillers, France",
+    "rating": 4,
+    "text": "",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Le+beau+lieu%2C+48+Rue+de+Cumi%C3%A8res%2C+51160+Hautvillers%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.0820281%2C3.9422503",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.0822798,
+    "lng": 3.9419112,
+    "name": "Caveau Champagne JM Gobillard et Fils",
+    "address": "38 Rue de l'Église, 51160 Hautvillers, France",
+    "rating": 5,
+    "text": "An excellent producer whose wines are distinctive and genuinely different from one another. The value for money is also very good. Definitely worth visiting.",
+    "date": "Aug 2026",
+    "category": "shop",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Caveau+Champagne+JM+Gobillard+et+Fils%2C+38+Rue+de+l%27%C3%89glise%2C+51160+Hautvillers%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.0822798%2C3.9419112",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 48.9921398,
+    "lng": 3.9909213,
+    "name": "Champagne Bonnaire",
+    "address": "120 Rue d'Epernay, 51530 Cramant, France",
+    "rating": 5,
+    "text": "They produce 12 different labels, each with a distinct profile. We were told that they make approximately 270,000 bottles per year from 27 hectares of vineyards. They have two presses, one of which is reserved for biodynamic production so that the two production streams are not mixed.\n\nWe mainly tasted Blanc de Blancs, but the differences between the wines were remarkable: some had no oak influence, some were fully aged in oak, while another had 50% oak influence and spent 72 months on the lees. Some bottles are also aged under cork rather than a traditional crown cap, allowing controlled oxygen exposure to create a different profile. With such an attentive and knowledgeable team, this is definitely not a producer to miss.",
+    "date": "Aug 2026",
+    "category": "shop",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Champagne+Bonnaire%2C+120+Rue+d%27Epernay%2C+51530+Cramant%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=48.9921398%2C3.9909213",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.0569407,
+    "lng": 3.9990009,
+    "name": "Pressoria",
+    "address": "11 Bd Pierre Cheval, 51160 Aÿ-Champagne, France",
+    "rating": 5,
+    "text": "A very well-designed Champagne museum in Aÿ. The interactive displays, videos, and overall presentation are excellent. The information is mostly introductory, but even someone already familiar with the subject can enjoy the visit purely for its visual design and atmosphere. The experience ends with a tasting of two Champagnes overlooking the vineyards.",
+    "date": "Aug 2026",
+    "category": "attraction",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Pressoria%2C+11+Bd+Pierre+Cheval%2C+51160+A%C3%BF-Champagne%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.0569407%2C3.9990009",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.0825335,
+    "lng": 3.9456771,
+    "name": "Le Clos des Arches",
+    "address": "80 Rue de la Prte d'en Bas, 51160 Hautvillers, France",
+    "rating": 4,
+    "text": "A pleasant atmosphere and a good Champagne menu. The food selection was somewhat limited.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Le+Clos+des+Arches%2C+80+Rue+de+la+Prte+d%27en+Bas%2C+51160+Hautvillers%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.0825335%2C3.9456771",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.0555393,
+    "lng": 3.998585,
+    "name": "AD'VINTAGE",
+    "address": "1 Bd Pierre Cheval, 51160 Aÿ-Champagne, France",
+    "rating": 5,
+    "text": "An excellent place. Although the kitchen had already closed and only cold plates were supposed to be available, the owner kindly prepared pasta for us, and it was delicious. Both the food and wine selection were very good. The owner was also one of the most attentive and polite people we encountered in France.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=AD%27VINTAGE%2C+1+Bd+Pierre+Cheval%2C+51160+A%C3%BF-Champagne%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.0555393%2C3.998585",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.2596288,
+    "lng": 4.0338555,
+    "name": "Veuve Clicquot Ponsardin - Headquarters",
+    "address": "12 Rue du Temple, 51100 Reims, France",
+    "rating": 5,
+    "text": "The facility and tour were excellent. The cellars descend approximately 24 to 25 metres underground and extend through a 24-kilometre network carved into the chalk. The crayères were originally separate quarries and were later connected by opening passages between them.\n\nAnyone familiar with Champagne production or who has watched the brand’s film will already know much of the information presented, but seeing the cellars in person is worthwhile on its own. There were three or four tours running simultaneously during our visit, so it was extremely crowded.",
+    "date": "Aug 2026",
+    "category": "attraction",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Veuve+Clicquot+Ponsardin+-+Headquarters%2C+12+Rue+du+Temple%2C+51100+Reims%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.2596288%2C4.0338555",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 49.2408421,
+    "lng": 4.0505792,
+    "name": "Brasserie Le Jardin",
+    "address": "7 Av. du Général Giraud, 51100 Reims, France",
+    "rating": 4,
+    "text": "A stylish restaurant serving fusion cuisine. We were very happy with the fish. Food prices were reasonable, although the Champagne prices were slightly higher than at similar restaurants.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "reims-champagne-region"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Brasserie+Le+Jardin%2C+7+Av.+du+G%C3%A9n%C3%A9ral+Giraud%2C+51100+Reims%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=49.2408421%2C4.0505792",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 48.0791586,
+    "lng": 7.363506,
+    "name": "ibis Colmar Centre",
+    "address": "10 Rue Saint-Eloi, 68000 Colmar, France",
+    "rating": 4,
+    "text": "The family room was spacious, the breakfast was good for the price, and the location was convenient. The hotel bar also had a surprisingly good selection for this class of hotel.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "colmar"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=ibis+Colmar+Centre%2C+10+Rue+Saint-Eloi%2C+68000+Colmar%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=48.0791586%2C7.363506",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 47.9961327,
+    "lng": 7.8530985,
+    "name": "Heiliggeist Stüble am Münster",
+    "address": "Münsterplatz 15, 79098 Freiburg im Breisgau, Germany",
+    "rating": 4,
+    "text": "A traditional restaurant with good-quality food. They also offer wines from the Freiburg region by the glass. I deducted one star because we had to wait unnecessarily long for dessert.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "freiburg"
+    ],
+    "country_slug": "germany",
+    "country_display": "Germany",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Heiliggeist+St%C3%BCble+am+M%C3%BCnster%2C+M%C3%BCnsterplatz+15%2C+79098+Freiburg+im+Breisgau%2C+Germany",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=47.9961327%2C7.8530985",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 48.5794632,
+    "lng": 7.7516788,
+    "name": "Mama Bubbele",
+    "address": "2 Quai des Bateliers, 67000 Strasbourg, France",
+    "rating": 4,
+    "text": "They clearly specialize in tarte flambée. There are several variations, although most stay fairly close to the original recipe, and the selection of wines by the glass is decent. The rule that each table can order only two tartes flambées at a time, whether there are two people or ten, is pretty ridiculous.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "strasbourg"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Mama+Bubbele%2C+2+Quai+des+Bateliers%2C+67000+Strasbourg%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=48.5794632%2C7.7516788",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 47.6574906,
+    "lng": 9.1747484,
+    "name": "Tolle Knolle",
+    "address": "Bodanpl. 9, 78462 Konstanz, Germany",
+    "rating": 5,
+    "text": "A restaurant built entirely around potatoes, with almost every dish on the menu featuring them in some form. We had the Kretzer fillet with roasted almonds and the pike-perch saltimbocca. Both were excellent, the portions were generous, and the food arrived surprisingly quickly.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "konstanz"
+    ],
+    "country_slug": "germany",
+    "country_display": "Germany",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Tolle+Knolle%2C+Bodanpl.+9%2C+78462+Konstanz%2C+Germany",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=47.6574906%2C9.1747484",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 47.2364229,
+    "lng": 9.5995923,
+    "name": "Gastwirtschaft Schattenburg",
+    "address": "Burggasse 1, 6800 Feldkirch, Austria",
+    "rating": 4,
+    "text": "The atmosphere was excellent. We tried both the veal and chicken schnitzel; both were good, but we preferred the chicken. Each dish also came with a side salad.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "feldkirch"
+    ],
+    "country_slug": "austria",
+    "country_display": "Austria",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Gastwirtschaft+Schattenburg%2C+Burggasse+1%2C+6800+Feldkirch%2C+Austria",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=47.2364229%2C9.5995923",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 47.236765,
+    "lng": 9.5976825,
+    "name": "Gutwinski Hotel & Restaurant",
+    "address": "Rosengasse 4-6, 6800 Feldkirch, Austria",
+    "rating": 4,
+    "text": "Located in a historic building, with a beautiful interior that creates a genuine old-world atmosphere. The rooms are a little small, and the breakfast is decent. Having a section reserved for hotel guests in the underground car park is a major advantage for those arriving by car.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "feldkirch"
+    ],
+    "country_slug": "austria",
+    "country_display": "Austria",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Gutwinski+Hotel+%26+Restaurant%2C+Rosengasse+4-6%2C+6800+Feldkirch%2C+Austria",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=47.236765%2C9.5976825",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 47.2364026,
+    "lng": 9.5964939,
+    "name": "Bunt Bar",
+    "address": "Marktgasse 1, 6800 Feldkirch, Austria",
+    "rating": 4,
+    "text": "A pleasant bar with a decent wine selection. The staff were also very attentive.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "feldkirch"
+    ],
+    "country_slug": "austria",
+    "country_display": "Austria",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Bunt+Bar%2C+Marktgasse+1%2C+6800+Feldkirch%2C+Austria",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=47.2364026%2C9.5964939",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.7981939,
+    "lng": 10.3017305,
+    "name": "Cafe Benderer",
+    "address": "Plazzöl, 7550 Scuol, Switzerland",
+    "rating": 4,
+    "text": "A pleasant café with quick service. It was a good stop along the way.",
+    "date": "Aug 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "davos"
+    ],
+    "country_slug": "switzerland",
+    "country_display": "Switzerland",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Benderer%2C+Plazz%C3%B6l%2C+7550+Scuol%2C+Switzerland",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.7981939%2C10.3017305",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.8090876,
+    "lng": 9.8391679,
+    "name": "Hotel Seehof Davos",
+    "address": "Promenade 159, 7260 Davos, Switzerland",
+    "rating": 4,
+    "text": "The rooms were very spacious. They left chocolates and brownies in one room and a complimentary bottle of wine in the other. Parking was directly in front of the building, and finding a space was easy. The breakfast, however, fell short of what we would expect from a five-star hotel. That was the only significant drawback.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "davos"
+    ],
+    "country_slug": "switzerland",
+    "country_display": "Switzerland",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Hotel+Seehof+Davos%2C+Promenade+159%2C+7260+Davos%2C+Switzerland",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.8090876%2C9.8391679",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.8030289,
+    "lng": 9.8365713,
+    "name": "1908 Restaurant & Bar",
+    "address": "Promenade 116, 7260 Davos Dorf, Switzerland",
+    "rating": 5,
+    "text": "We had the asparagus soup, asparagus salad, and chicken, which also came with asparagus on the side. It turned into a full asparagus feast. The food was very good, and the wine selection was also impressive.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "davos"
+    ],
+    "country_slug": "switzerland",
+    "country_display": "Switzerland",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=1908+Restaurant+%26+Bar%2C+Promenade+116%2C+7260+Davos+Dorf%2C+Switzerland",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.8030289%2C9.8365713",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.5003336,
+    "lng": 11.3535561,
+    "name": "Franziskanerstuben",
+    "address": "Via dei Francescani, 7, 39100 Bolzano BZ, Italy",
+    "rating": 5,
+    "text": "We had the leg of lamb and spinach ravioli. Both were exceptional, but the lamb was genuinely flawless. We practically wiped the plates clean.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "bolzano"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Franziskanerstuben%2C+Via+dei+Francescani%2C+7%2C+39100+Bolzano+BZ%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.5003336%2C11.3535561",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.497759,
+    "lng": 11.3552811,
+    "name": "Signorvino Bozen",
+    "address": "Piazza Walther, 10, 39100 Bolzano BZ, Italy",
+    "rating": 5,
+    "text": "A bar, restaurant, and wine shop all in one, with complimentary tastings as an additional bonus. The wine selection was also very good.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "bolzano"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Signorvino+Bozen%2C+Piazza+Walther%2C+10%2C+39100+Bolzano+BZ%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.497759%2C11.3552811",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.4995524,
+    "lng": 11.3535116,
+    "name": "Stay COOPER l Laubenhaus",
+    "address": "Via dei Portici, 53, 39100 Bolzano BZ, Italy",
+    "rating": 4,
+    "text": "A beautifully designed, well-equipped apartment with a fully automated check-in and stay experience. There was no note explaining that the complimentary beer in the room was from the property, so we were initially unsure about it, but we happily drank it. The only drawback was that breakfast was served at a different location. Had we known this in advance, especially while travelling with a baby, it might have changed our choice.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "bolzano"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Stay+COOPER+l+Laubenhaus%2C+Via+dei+Portici%2C+53%2C+39100+Bolzano+BZ%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.4995524%2C11.3535116",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.0685884,
+    "lng": 11.1237472,
+    "name": "Ristorante Ca' dei Gobj",
+    "address": "Via del Simonino, 14, 38122 Trento TN, Italy",
+    "rating": 5,
+    "text": "The portions were very generous, and the food was excellent. We ordered the grilled chicken and onion soup, with the onion soup being the clear highlight. It was outstanding.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "trento"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Ristorante+Ca%27+dei+Gobj%2C+Via+del+Simonino%2C+14%2C+38122+Trento+TN%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.0685884%2C11.1237472",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.9054828,
+    "lng": 12.0453121,
+    "name": "Trattoria Ristoro Fos De Marai",
+    "address": "Via Santo Stefano, 20, 31049 Valdobbiadene TV, Italy",
+    "rating": 4,
+    "text": "We had the gnocchi, rabbit, and a salad. The rabbit was well prepared and tasted similar to chicken, although it was extremely bony. What came with it was not oatmeal, as we first thought, but polenta. It is made from cornmeal, though the flavor was still rather underwhelming. The gnocchi was also too potato-heavy and contained very little meat. Being in the heart of Cartizze and not offering Cartizze by the glass was another disappointment.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "cartizze-valdobbiadene"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Trattoria+Ristoro+Fos+De+Marai%2C+Via+Santo+Stefano%2C+20%2C+31049+Valdobbiadene+TV%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.9054828%2C12.0453121",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.9018571,
+    "lng": 12.0357308,
+    "name": "Garbara Cartizze",
+    "address": "Via Menegazzi, 19, 31049 Santo Stefano TV, Italy",
+    "rating": 4,
+    "text": "A small family-run winery with a casual atmosphere that feels authentically Italian. The wines were good and reasonably priced; even the most expensive bottle was only €22. Our favorite was the Extra Brut, while the Col Fondo was the unexpected surprise. They serve cheese and charcuterie during the tasting, but be careful: what initially looks like a small complimentary snack can quickly turn into the full paid package.",
+    "date": "Aug 2026",
+    "category": "shop",
+    "blog_slugs": [
+      "cartizze-valdobbiadene"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Garbara+Cartizze%2C+Via+Menegazzi%2C+19%2C+31049+Santo+Stefano+TV%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.9018571%2C12.0357308",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.892868,
+    "lng": 12.0334573,
+    "name": "Cartizze PDC",
+    "address": "Strada Cartizze, 5, 31049 Valdobbiadene TV, Italy",
+    "rating": 4,
+    "text": "You reach the winery via a dirt road, which opens onto a large and beautiful vineyard setting. They produce organically, harvest their grapes by hand, and use temperature-controlled concrete tanks, which is unusual for the Prosecco region. We were told that the estate covers around 1.8 hectares. The vineyard tour spent a long time explaining very basic topics, from grafting to phylloxera, so it may feel slow for anyone who already knows a little about wine. The owners’ daughter led the tour and spoke excellent English. The atmosphere, the setting, and the wines were all very enjoyable.",
+    "date": "Aug 2026",
+    "category": "shop",
+    "blog_slugs": [
+      "cartizze-valdobbiadene"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Cartizze+PDC%2C+Strada+Cartizze%2C+5%2C+31049+Valdobbiadene+TV%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.892868%2C12.0334573",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.8963582,
+    "lng": 12.0407394,
+    "name": "Casa Callonga",
+    "address": "Via Callonga, 6, 31049 Valdobbiadene TV, Italy",
+    "rating": 5,
+    "text": "The accommodation was so good that there was no reason to look elsewhere. Free parking, a complimentary bottle of Prosecco, a beautiful room surrounded by vineyards, and a small but high-quality breakfast selection. Everything felt carefully considered, from the water they provided to the smallest details in the room.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "cartizze-valdobbiadene"
+    ],
+    "country_slug": "italy",
+    "country_display": "Italy",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Casa+Callonga%2C+Via+Callonga%2C+6%2C+31049+Valdobbiadene+TV%2C+Italy",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.8963582%2C12.0407394",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.0505199,
+    "lng": 14.5068562,
+    "name": "Vigò",
+    "address": "Mačkova ulica 2, 1000 Ljubljana, Slovenia",
+    "rating": 5,
+    "text": "A great gelato shop. We especially loved the coconut salted caramel flavor.",
+    "date": "Aug 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "ljubljana"
+    ],
+    "country_slug": "slovenia",
+    "country_display": "Slovenia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Vig%C3%B2%2C+Ma%C4%8Dkova+ulica+2%2C+1000+Ljubljana%2C+Slovenia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.0505199%2C14.5068562",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.0479366,
+    "lng": 14.506277,
+    "name": "Julija",
+    "address": "Stari trg 9, 1000 Ljubljana, Slovenia",
+    "rating": 5,
+    "text": "We had the porcini mushrooms, Mediterranean salad, and sea bass. The salad dressing was excellent, and the mushroom dish was also very enjoyable.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "ljubljana"
+    ],
+    "country_slug": "slovenia",
+    "country_display": "Slovenia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Julija%2C+Stari+trg+9%2C+1000+Ljubljana%2C+Slovenia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.0479366%2C14.506277",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.0469655,
+    "lng": 14.505161,
+    "name": "Wine Bar Šuklje",
+    "address": "Breg 10, 1000 Ljubljana, Slovenia",
+    "rating": 4,
+    "text": "Beautifully designed, with a very pleasant atmosphere. We ordered a tasting flight to get acquainted with Slovenian wines. The wines themselves were somewhat underwhelming, but it is still a good place to start exploring the region’s wine scene.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "ljubljana"
+    ],
+    "country_slug": "slovenia",
+    "country_display": "Slovenia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Wine+Bar+%C5%A0uklje%2C+Breg+10%2C+1000+Ljubljana%2C+Slovenia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.0469655%2C14.505161",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.0525375,
+    "lng": 14.5037719,
+    "name": "Best Western Premier Hotel Slon",
+    "address": "Slovenska cesta 34, 1000 Ljubljana, Slovenia",
+    "rating": 5,
+    "text": "A high-quality hotel with spacious, comfortable rooms. The soundproofing is excellent, and the location could hardly be more central.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [
+      "ljubljana"
+    ],
+    "country_slug": "slovenia",
+    "country_display": "Slovenia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Best+Western+Premier+Hotel+Slon%2C+Slovenska+cesta+34%2C+1000+Ljubljana%2C+Slovenia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.0525375%2C14.5037719",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.8121154,
+    "lng": 15.9751255,
+    "name": "La Bodega Zagreb",
+    "address": "Bogovićeva ul. 5, 10000, Zagreb, Croatia",
+    "rating": 4,
+    "text": "We went there expecting a wine bar, but it is definitely more of a regular bar. Still, they had around 15 wines available by the glass, which was a good selection.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "zagreb"
+    ],
+    "country_slug": "croatia",
+    "country_display": "Croatia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Bodega+Zagreb%2C+Bogovi%C4%87eva+ul.+5%2C+10000%2C+Zagreb%2C+Croatia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.8121154%2C15.9751255",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.8175207,
+    "lng": 15.9763224,
+    "name": "Batak Tkalčićeva",
+    "address": "Ul. Ivana Tkalčića 70, 10000, Zagreb, Croatia",
+    "rating": 5,
+    "text": "The menu is very extensive, with everything from meat dishes to vegetarian options. We ordered the ćevapi, potatoes, and quinoa salad, and everything was delicious. Having around 20 wines available by the glass was another major plus.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "zagreb"
+    ],
+    "country_slug": "croatia",
+    "country_display": "Croatia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Batak+Tkal%C4%8Di%C4%87eva%2C+Ul.+Ivana+Tkal%C4%8Di%C4%87a+70%2C+10000%2C+Zagreb%2C+Croatia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.8175207%2C15.9763224",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.8113739,
+    "lng": 15.9756898,
+    "name": "Vinodol",
+    "address": "ul. Nikole Tesle 10, 10000, Zagreb, Croatia",
+    "rating": 5,
+    "text": "A stylish, high-quality restaurant. I strongly recommend reserving a table inside, as the outdoor area feels fairly ordinary and the restaurant’s real historic atmosphere is found in the interior. Prices are slightly above the Zagreb average, but the quality of the food is also very high. The asparagus and hummus plate was particularly good as a starter.",
+    "date": "Aug 2026",
+    "category": "restaurant",
+    "blog_slugs": [
+      "zagreb"
+    ],
+    "country_slug": "croatia",
+    "country_display": "Croatia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Vinodol%2C+ul.+Nikole+Tesle+10%2C+10000%2C+Zagreb%2C+Croatia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.8113739%2C15.9756898",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 45.8110871,
+    "lng": 15.9667336,
+    "name": "AHA! slow wine bar",
+    "address": "Medulićeva ul. 20, 10000, Zagreb, Croatia",
+    "rating": 5,
+    "text": "This became one of my favorite wine spots in the city. They offer distinctive wines that are difficult to find elsewhere. We tried an orange pét-nat and a rosé pét-nat, and both were excellent. The owners were also very attentive and knowledgeable.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "zagreb"
+    ],
+    "country_slug": "croatia",
+    "country_display": "Croatia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=AHA%21+slow+wine+bar%2C+Meduli%C4%87eva+ul.+20%2C+10000%2C+Zagreb%2C+Croatia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=45.8110871%2C15.9667336",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 40.5249998,
+    "lng": 22.9749478,
+    "name": "The Lounge Thessaloniki",
+    "address": "Αεροδρόμιο Θεσσαλονίκης «Μακεδονία» (Thessaloniki Airport \"Makedonia\"), ΑΝΑΧΩΡΗΣΕΙΣ 570 01, Greece",
+    "rating": 3,
+    "text": "The pulses and salads were good, but there was no protein on offer at all; the tuna salad had run out of tuna. Small, but not a bad lounge overall.",
+    "date": "Aug 2026",
+    "category": "transport",
+    "blog_slugs": [
+      "thessaloniki"
+    ],
+    "country_slug": "greece",
+    "country_display": "Greece",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Lounge+Thessaloniki%2C+%CE%91%CE%B5%CF%81%CE%BF%CE%B4%CF%81%CF%8C%CE%BC%CE%B9%CE%BF+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7%CF%82+%C2%AB%CE%9C%CE%B1%CE%BA%CE%B5%CE%B4%CE%BF%CE%BD%CE%AF%CE%B1%C2%BB+%28Thessaloniki+Airport+%22Makedonia%22%29%2C+%CE%91%CE%9D%CE%91%CE%A7%CE%A9%CE%A1%CE%97%CE%A3%CE%95%CE%99%CE%A3+570+01%2C+Greece",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=40.5249998%2C22.9749478",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": [
+      "airport",
+      "airport_lounge"
+    ]
+  },
+  {
+    "lat": 41.1871537,
+    "lng": 23.9451269,
+    "name": "OENOPS WINES",
+    "address": "3ο χλμ επαρχιακής οδού Προσοτσάνης, Kokkinogia 662 00, Greece",
+    "rating": 5,
+    "text": "They offer tastings in sets of 3, 5, or 7 wines at reasonable prices, and they produce interesting project wines. Well worth a stop for anyone into wine.",
+    "date": "Aug 2026",
+    "category": "shop",
+    "blog_slugs": [],
+    "country_slug": "greece",
+    "country_display": "Greece",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=OENOPS+WINES%2C+3%CE%BF+%CF%87%CE%BB%CE%BC+%CE%B5%CF%80%CE%B1%CF%81%CF%87%CE%B9%CE%B1%CE%BA%CE%AE%CF%82+%CE%BF%CE%B4%CE%BF%CF%8D+%CE%A0%CF%81%CE%BF%CF%83%CE%BF%CF%84%CF%83%CE%AC%CE%BD%CE%B7%CF%82%2C+Kokkinogia+662+00%2C+Greece",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=41.1871537%2C23.9451269",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 41.5115936,
+    "lng": 23.8548726,
+    "name": "Hadzhidimovo Petting Zoo",
+    "address": "2933 Hadzhidimovo, Bulgaria",
+    "rating": 5,
+    "text": "A wonderful place, perfect if you're travelling with kids. You do wonder how they allow visitors to get so close to the animals, but clearly they trust them; we've been 3-4 times and never had a single issue. The fact that it's all open-air is a big plus.",
+    "date": "Aug 2026",
+    "category": "attraction",
+    "blog_slugs": [],
+    "country_slug": "bulgaria",
+    "country_display": "Bulgaria",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Hadzhidimovo+Petting+Zoo%2C+2933+Hadzhidimovo%2C+Bulgaria",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=41.5115936%2C23.8548726",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 41.1506945,
+    "lng": 24.1418432,
+    "name": "Hydrama Grand Hotel",
+    "address": "Agias Varvaras 11, Drama 661 31, Greece",
+    "rating": 5,
+    "text": "Excellent hotel and a paradise for wine lovers. The bar is beautiful, the rooms are spacious, and it sits right next to a small lake. It's an old building, but they've restored it wonderfully.",
+    "date": "Aug 2026",
+    "category": "hotel",
+    "blog_slugs": [],
+    "country_slug": "greece",
+    "country_display": "Greece",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Hydrama+Grand+Hotel%2C+Agias+Varvaras+11%2C+Drama+661+31%2C+Greece",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=41.1506945%2C24.1418432",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 40.5258129,
+    "lng": 22.9809274,
+    "name": "Sixt Thessaloniki Airport",
+    "address": "Thermi 570 01, Greece",
+    "rating": 4,
+    "text": "Good service, and they upgraded us for free. The one downside: the no-border-crossing rule wasn't clearly stated during booking, which was a letdown.",
+    "date": "Aug 2026",
+    "category": "transport",
+    "blog_slugs": [
+      "thessaloniki"
+    ],
+    "country_slug": "greece",
+    "country_display": "Greece",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Sixt+Thessaloniki+Airport%2C+Thermi+570+01%2C+Greece",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=40.5258129%2C22.9809274",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": [
+      "airport",
+      "car_rental"
+    ]
+  },
+  {
+    "lat": 48.5827892,
+    "lng": 7.7407801,
+    "name": "La Cuvette de Bouillons",
+    "address": "8 Rue du 22 Novembre, 67000 Strasbourg, France",
+    "rating": 5,
+    "text": "A very distinctive and playfully designed bar. There is table football, a pool table, several other games, and even a slide inside. A perfect place for a fun and lively night out.",
+    "date": "Aug 2026",
+    "category": "bar",
+    "blog_slugs": [
+      "strasbourg"
+    ],
+    "country_slug": "france",
+    "country_display": "France",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Cuvette+de+Bouillons%2C+8+Rue+du+22+Novembre%2C+67000+Strasbourg%2C+France",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=48.5827892%2C7.7407801",
+    "ozgur_star": false,
+    "ozgur_star_note": "",
+    "tags": []
+  },
+  {
+    "lat": 46.0530997,
+    "lng": 14.4990684,
+    "name": "moderna. - coffee&cocktails -",
+    "address": "Moderna galerija, Cankarjeva cesta 15, 1000 Ljubljana, Slovenia",
+    "rating": 5,
+    "text": "Located beneath the Museum of Modern Art and overlooking the park. The setting is lovely, and the beers were very good as well.",
+    "date": "Aug 2026",
+    "category": "cafe",
+    "blog_slugs": [
+      "ljubljana"
+    ],
+    "country_slug": "slovenia",
+    "country_display": "Slovenia",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=moderna.+-+coffee%26cocktails+-%2C+Moderna+galerija%2C+Cankarjeva+cesta+15%2C+1000+Ljubljana%2C+Slovenia",
+    "maps_coordinates_url": "https://www.google.com/maps/search/?api=1&query=46.0530997%2C14.4990684",
     "ozgur_star": false,
     "ozgur_star_note": "",
     "tags": []

@@ -782,7 +782,7 @@ a.toggle-btn:hover {
   background: var(--card-bg);
 }
 .stars-filter-shortcuts { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-.favorites-filter-shortcuts { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.favorites-filter-shortcuts { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .stars-filters {
   grid-template-columns: minmax(14rem, 2fr) repeat(2, minmax(9rem, 1fr)) auto;
 }
@@ -988,7 +988,8 @@ a.toggle-btn:hover {
   text-decoration: none;
 }
 .timeline-stop-title a:hover { color: var(--accent); text-decoration: underline; }
-.timeline-amp { color: var(--accent); font-weight: 700; }
+.timeline-separator { color: var(--accent); font-weight: 700; }
+[data-theme="dark"] .travel-base-tiles { filter: invert(1) hue-rotate(180deg) brightness(.8) contrast(.9); }
 .timeline-connector { display: block; }
 
 @media (max-width: 900px) {

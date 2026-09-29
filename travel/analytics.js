@@ -20,6 +20,8 @@
     ensureFavoriteDestinationLink();
   }
 
+  if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) return;
+
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag() {
     window.dataLayer.push(arguments);

@@ -613,17 +613,18 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="site-shell.css">
 </head>
 <body>
 
   <div class="wrap">
-    <div class="top-bar">
+    <div class="top-bar site-header">
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/" aria-current="page">Home/Bio</a>
         <a href="/services/">Services</a>
         <a href="/travel/">Travel</a>
       </nav>
-      <div style="display:flex;gap:0.5rem">
+      <div class="site-actions">
         <button class="toggle-btn" id="lang-toggle" onclick="toggleLang()" aria-label="Switch language">TR</button>
         <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">☽</button>
       </div>
@@ -907,7 +908,12 @@
       </ul>
     </section>
 
-    <footer>
+    <footer class="site-footer">
+      <nav class="site-footer-nav" aria-label="Footer navigation">
+        <a href="/" aria-current="page">Home/Bio</a>
+        <a href="/services/">Services</a>
+        <a href="/travel/">Travel</a>
+      </nav>
       <p>© 2026 Özgür Alp</p>
     </footer>
 

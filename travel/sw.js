@@ -1,4 +1,4 @@
-const CACHE_NAME = 'travel-notes-v22';
+const CACHE_NAME = 'travel-notes-v23';
 const STATIC_ASSETS = [
   './',
   './map.html',
@@ -10,6 +10,7 @@ const STATIC_ASSETS = [
   './app.js?v=20',
   './analytics.js',
   './navigation.js',
+  '../site-shell.css',
   './map-tiles.js',
   './data.json',
   './places.json',

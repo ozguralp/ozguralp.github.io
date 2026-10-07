@@ -29,17 +29,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../site-pages.css">
+  <link rel="stylesheet" href="../site-shell.css">
   <script src="../site-pages.js" defer></script>
 </head>
 <body>
   <div class="page">
-    <div class="page-top">
+    <div class="page-top site-header">
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/">Home/Bio</a>
         <a href="/services/" aria-current="page">Services</a>
         <a href="/travel/">Travel</a>
       </nav>
-      <div class="page-actions">
+      <div class="page-actions site-actions">
         <button id="lang-toggle" type="button" aria-label="Türkçeye geç">TR</button>
         <button id="theme-toggle" type="button" aria-label="Use dark theme">☽</button>
       </div>
@@ -101,7 +102,14 @@
       </section>
     </main>
 
-    <footer class="page-footer">© 2026 Özgür Alp</footer>
+    <footer class="page-footer site-footer">
+      <nav class="site-footer-nav" aria-label="Footer navigation">
+        <a href="/">Home/Bio</a>
+        <a href="/services/" aria-current="page">Services</a>
+        <a href="/travel/">Travel</a>
+      </nav>
+      <p>© 2026 Özgür Alp</p>
+    </footer>
   </div>
 </body>
 </html>

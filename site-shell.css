@@ -1,0 +1,83 @@
+/* Shared site navigation and footer across Home/Bio, Services and Travel. */
+.site-header.top-bar,
+.site-header.page-top {
+  width: min(100vw, 56rem);
+  max-width: none;
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
+  padding: .75rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+}
+
+.site-header .site-nav {
+  display: flex;
+  flex: none;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .35rem 1rem;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.site-header .site-actions {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: .5rem;
+  max-width: 100%;
+  min-width: 0;
+  margin-left: auto;
+}
+
+.site-footer,
+.site-footer.post-footer,
+.site-footer.country-footer {
+  width: min(100vw, 56rem);
+  max-width: none;
+  margin: 3rem 0 0 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  color: var(--text-muted, var(--muted));
+  font-size: .8125rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.site-footer-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .35rem 1rem;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.site-footer .site-footer-nav a {
+  color: var(--text-muted, var(--muted));
+  text-decoration: none;
+}
+
+.site-footer .site-footer-nav a:hover,
+.site-footer .site-footer-nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.site-footer .site-footer-nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.site-footer p { margin: 0 0 0 auto; }

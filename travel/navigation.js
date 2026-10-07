@@ -15,12 +15,24 @@
   });
   document.addEventListener('DOMContentLoaded', () => {
     const bar = document.querySelector('.top-bar');
+    bar?.classList.add('site-header');
+    bar?.querySelector('.top-actions')?.classList.add('site-actions');
     if (bar && !bar.querySelector('.site-nav')) {
       const nav = document.createElement('nav');
       nav.className = 'site-nav';
       nav.setAttribute('aria-label', 'Main navigation');
       nav.innerHTML = '<a href="/">Home/Bio</a><a href="/services/">Services</a><a href="/travel/" aria-current="page">Travel</a>';
       bar.prepend(nav);
+    }
+    const footer = document.querySelector('footer, .post-footer, .country-footer');
+    if (footer && !footer.querySelector('.site-footer-nav')) {
+      footer.classList.add('site-footer');
+      if (footer.tagName !== 'FOOTER') footer.setAttribute('role', 'contentinfo');
+      const nav = document.createElement('nav');
+      nav.className = 'site-footer-nav';
+      nav.setAttribute('aria-label', 'Footer navigation');
+      nav.innerHTML = '<a href="/">Home/Bio</a><a href="/services/">Services</a><a href="/travel/" aria-current="page">Travel</a>';
+      footer.prepend(nav);
     }
     const isLeaf = /\/(posts|countries)\/[^/]+\.html$/.test(location.pathname);
     const siteBackLink = bar?.querySelector('.back-link');

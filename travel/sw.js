@@ -1,4 +1,4 @@
-const CACHE_NAME = 'travel-notes-v21';
+const CACHE_NAME = 'travel-notes-v22';
 const STATIC_ASSETS = [
   './',
   './map.html',

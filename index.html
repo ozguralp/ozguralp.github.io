@@ -144,10 +144,25 @@
     /* Top bar: lang + theme toggles */
     .top-bar {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       gap: 0.5rem;
       padding: 0.75rem 0 0;
     }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .site-nav a { color: var(--text-muted); text-decoration: none; }
+    .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); }
+    .site-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
     .toggle-btn {
       background: none;
@@ -602,8 +617,12 @@
 <body>
 
   <div class="wrap">
-    <div class="top-bar" style="justify-content:space-between">
-      <a href="/travel/" style="color:var(--text-muted);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'"><span data-lang="en">Travel Notes &rarr;</span><span data-lang="tr">Gezi Notları &rarr;</span></a>
+    <div class="top-bar">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/" aria-current="page">Home/Bio</a>
+        <a href="/services/">Services</a>
+        <a href="/travel/">Travel</a>
+      </nav>
       <div style="display:flex;gap:0.5rem">
         <button class="toggle-btn" id="lang-toggle" onclick="toggleLang()" aria-label="Switch language">TR</button>
         <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">☽</button>
@@ -613,7 +632,7 @@
     <header>
       <picture>
         <source srcset="photo.webp" type="image/webp" />
-        <img src="photo.JPG" alt="Özgür Alp" class="header-photo" width="120" height="120">
+        <img src="photo.jpg" alt="Özgür Alp" class="header-photo" width="120" height="120">
       </picture>
       <h1>Özgür Alp</h1>
       <p class="tagline">
@@ -670,7 +689,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="bio">
       <h2><span data-lang="en">bio</span><span data-lang="tr">hakkında</span></h2>
       <div class="about-text">
         <p data-lang="en">I'm a cybersecurity specialist with over 10 years of experience in offensive security, consulting and training. I hold OSCP and OSWE certifications, and currently rank among the top 3 all-time researchers on Synack, with 2000+ accepted vulnerabilities across more than 500 unique client projects, including 250+ critical findings (CVSS 9.0+).</p>
@@ -684,6 +703,8 @@
 
         <p data-lang="en">Beyond hands-on work, I contribute to the security community through technical blogging, public speaking and university-level instruction. As a Synack Circle of Trust member, I advise on platform changes and researcher experience. I've helped 20+ new researchers join via the Envoy program and mentor 4–5 SRTs long-term, as well as organized the first official global SRT hangout. I've represented Synack on a global scale at live events such as Black Hat and engaged in on-site client projects.</p>
         <p data-lang="tr">Teknik blog yazarlığı, konuşmalar ve üniversite dersleriyle güvenlik topluluğuna katkı sağlıyor. Synack Circle of Trust üyesi olarak platform geliştirme süreçlerinde danışman rolü üstleniyor. Envoy programı aracılığıyla 20'den fazla yeni araştırmacının platforma katılmasına öncülük etti, 4-5 araştırmacıya uzun süreli mentorluk yapıyor ve ilk resmi küresel SRT buluşmasını organize etti. Synack'i Black Hat gibi uluslararası etkinliklerde küresel ölçekte temsil etti ve yerinde müşteri projelerinde yer aldı.</p>
+        <p data-lang="en">For scoped client work, see my <a href="/services/">security services</a>.</p>
+        <p data-lang="tr">Kapsamı belirlenmiş müşteri çalışmaları için <a href="/services/">siber güvenlik hizmetlerime</a> bakabilirsiniz.</p>
       </div>
     </section>
 

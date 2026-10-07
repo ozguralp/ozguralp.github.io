@@ -14,7 +14,18 @@
     write({from: location.pathname + location.search + location.hash, to: destination.pathname + destination.search + destination.hash, label: document.querySelector('h1')?.textContent.trim() || 'Travel Notes'});
   });
   document.addEventListener('DOMContentLoaded', () => {
-    if (!/\/(posts|countries)\/[^/]+\.html$/.test(location.pathname)) return;
+    const bar = document.querySelector('.top-bar');
+    if (bar && !bar.querySelector('.site-nav')) {
+      const nav = document.createElement('nav');
+      nav.className = 'site-nav';
+      nav.setAttribute('aria-label', 'Main navigation');
+      nav.innerHTML = '<a href="/">Home/Bio</a><a href="/services/">Services</a><a href="/travel/" aria-current="page">Travel</a>';
+      bar.prepend(nav);
+    }
+    const isLeaf = /\/(posts|countries)\/[^/]+\.html$/.test(location.pathname);
+    const siteBackLink = bar?.querySelector('.back-link');
+    if (siteBackLink && !isLeaf) siteBackLink.hidden = true;
+    if (!isLeaf) return;
     const link = document.querySelector('.back-link');
     if (!link) return;
     const saved = read();
